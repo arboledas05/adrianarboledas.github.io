@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="{{lang}}" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{t meta.title}}</title>
+<meta name="description" content="{{t meta.description}}">
+<meta name="author" content="Adrián Arboledas Azañón">
+<meta name="theme-color" content="#F4F1EA">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="{{self}}">
+<link rel="alternate" hreflang="es" href="{{abs es}}">
+<link rel="alternate" hreflang="ca" href="{{abs ca}}">
+<link rel="alternate" hreflang="en" href="{{abs en}}">
+<link rel="alternate" hreflang="x-default" href="{{abs en}}">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Adrián Arboledas">
+<meta property="og:title" content="{{t meta.ogTitle}}">
+<meta property="og:description" content="{{t meta.description}}">
+<meta property="og:url" content="{{self}}">
+<meta property="og:image" content="{{base}}img/og-{{lang}}.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{t meta.ogImageAlt}}">
+<meta property="og:locale" content="{{locale}}">
+{{each meta.altLocales}}<meta property="og:locale:alternate" content="{{t .}}">
+{{/each}}<meta property="profile:first_name" content="Adrián">
+<meta property="profile:last_name" content="Arboledas Azañón">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{t meta.ogTitle}}">
+<meta name="twitter:description" content="{{t meta.description}}">
+<meta name="twitter:image" content="{{base}}img/og-{{lang}}.jpg">
+<meta name="twitter:image:alt" content="{{t meta.ogImageAlt}}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='.5' y='3' width='31' height='28.5' rx='8.5' fill='%23A797FF'/%3E%3Crect x='1.5' y='1.5' width='29' height='26.5' rx='7.5' fill='%23fff' stroke='%23A797FF' stroke-width='2'/%3E%3Cpath d='M6.2 24.2 16 5.8l9.8 18.4' fill='none' stroke='%2317150F' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='20.2' r='5.6' fill='%23fff'/%3E%3Ccircle cx='16' cy='20.2' r='4.5' fill='%234A37F5'/%3E%3C/svg%3E">
+<script>(function(h,c,q,d,s,r){c.remove('no-js');c.add('js');q=/[?&]doc(?:=([^&#]*))?/.exec(location.search);try{if(q){d=q[1]!=='0';localStorage.setItem('aa-doc',d?'1':'0')}else d=localStorage.getItem('aa-doc')==='1'}catch(e){d=!!q&&q[1]!=='0'}d&&c.add('doc');r=matchMedia('(prefers-reduced-motion: reduce)').matches;r&&c.add('rm');try{s=sessionStorage.getItem('aa-intro')}catch(e){}s||r||d||c.add('intro');setTimeout(function(){c.remove('intro')},2200);setTimeout(function(){c.contains('aa-ready')||c.add('reveal-safe')},3000);try{var n=navigator,m=matchMedia('(max-width: 820px)').matches,dm=n.deviceMemory,hc=n.hardwareConcurrency;r||d||!window.WebGL2RenderingContext||n.connection&&n.connection.saveData||matchMedia('(forced-colors: active)').matches||sessionStorage.getItem('aa-q')==='0'||(m?dm<4||hc<4||!window.IntersectionObserver:dm<=2||hc<=2)||c.add('gl-pre')}catch(e){}})(document.documentElement,document.documentElement.classList)</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&amp;family=Inter+Tight:wght@400;500;600&amp;family=JetBrains+Mono:wght@400..700&amp;family=Kalam:wght@700&amp;display=swap">
+<link rel="stylesheet" href="{{asset assets/css/app.css}}">
+{{jsonld}}
+{{boot-json}}
+</head>
+<body>
+<a class="skip-link" href="#main">{{t nav.skip}}</a>
+{{> decor}}
+
+<!-- ============================== NAV -->
+<header id="nav" class="nav">
+  <a class="brand" href="#top" aria-label="{{t nav.brandAria}}" data-cursor>
+    <span class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="34" height="34" focusable="false" style="color:var(--nav-dot,#3A2BE0);transition:color .4s"><defs><radialGradient id="aa-bd" cx=".34" cy=".3" r=".8"><stop offset="0" stop-color="#9C90FF"/><stop offset=".26" stop-color="#5B47FF"/><stop offset=".58" stop-color="#3A2BE0"/><stop offset="1" stop-color="#2A1FC0"/></radialGradient></defs><rect x="1.5" y="3.4" width="29" height="27.4" rx="8.5" fill="#fff"/><rect x="1.5" y="3.4" width="29" height="27.4" rx="8.5" fill="currentColor" opacity=".34"/><rect x="1.5" y="1.2" width="29" height="27.4" rx="8.5" fill="#fff"/><path d="M6.4 24.2 16 5.8l9.6 18.4" fill="none" stroke="#17150F" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="19.4" r="4.9" fill="#fff"/><circle cx="16" cy="20" r="4.4" fill="currentColor" opacity=".34"/><g class="bd"><circle cx="16" cy="19.4" r="4.3" fill="url(#aa-bd)"/><ellipse cx="14.1" cy="17.3" rx="1.15" ry=".7" transform="rotate(-32 14.1 17.3)" fill="#fff" opacity=".72"/></g></svg></span>
+    <span class="bname">Adrián Arboledas</span>
+  </a>
+  <span class="nav-current" aria-hidden="true"></span>
+  <nav class="nav-links" aria-label="{{t nav.aria}}">
+    {{each nav.links}}<a href="#{{t .id}}" data-chapter-link="{{t .id}}" data-cursor>{{if .num}}<span class="nl-num">{{t .num}}</span> {{/if}}{{t .label}}</a>
+    {{/each}}
+  </nav>
+  <div class="lang-switch" role="group" aria-label="{{t nav.langAria}}">
+    <a href="{{page es}}" hreflang="es" lang="es" title="Español"{{if lang=es}} aria-current="page"{{/if}}>ES</a>
+    <a href="{{page ca}}" hreflang="ca" lang="ca" title="Català"{{if lang=ca}} aria-current="page"{{/if}}>CA</a>
+    <a href="{{page en}}" hreflang="en" lang="en" title="English"{{if lang=en}} aria-current="page"{{/if}}>EN</a>
+  </div>
+  <button type="button" class="doc-toggle" data-doc-toggle aria-pressed="false" title="{{t doc.toggle}}">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M6 2.75h8.5L19.25 7.5v13.75H6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14.25 2.75V7.75h5M9 12h7M9 15.5h7M9 19h4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span class="sr-only">{{t doc.toggle}}</span>
+  </button>
+  <details class="cv-menu">
+    <summary class="btn-pill">{{t nav.cvSummary}}</summary>
+    <ul class="cv-list" aria-label="{{t nav.cvAria}}">
+      {{each nav.cv}}<li><a href="{{t .href}}" type="application/pdf" hreflang="{{t .hreflang}}">{{t .label}}</a></li>
+      {{/each}}
+    </ul>
+  </details>
+  <button type="button" id="burger" class="burger" aria-controls="menu" aria-expanded="false" aria-label="{{t nav.menuOpen}}"><span></span><span></span></button>
+  <div id="rail" class="rail" aria-hidden="true">
+    <span class="rail-seg" data-seg="build" data-theme="build"><i></i></span><span class="rail-seg" data-seg="deploy" data-theme="deploy"><i></i></span><span class="rail-seg" data-seg="grow" data-theme="grow"><i></i></span><span class="rail-seg rail-seg--notch" data-seg="drone" data-theme="drone"><i></i></span><span class="rail-seg" data-seg="europe" data-theme="map"><i></i></span>
+  </div>
+</header>
+
+<div id="menu" class="menu" hidden role="dialog" aria-modal="true" aria-label="{{t nav.menuLabel}}">
+  <div class="menu-inner">
+    <button type="button" class="menu-close" data-menu-close aria-controls="menu" aria-label="{{t nav.menuClose}}"><span aria-hidden="true">×</span></button>
+    <ul class="menu-dl">
+      {{each nav.cv}}<li><a class="btn {{if @index=0}}btn-primary{{else}}btn-ghost{{/if}}" href="{{t .href}}" type="application/pdf" hreflang="{{t .hreflang}}">↓ {{t .label}}</a></li>
+      {{/each}}
+    </ul>
+    <nav class="menu-links" aria-label="{{t nav.aria}}">
+      {{each nav.links}}<a href="#{{t .id}}">{{if .num}}<span class="nl-num">{{t .num}}</span> {{/if}}{{t .label}}</a>
+      {{/each}}
+    </nav>
+    <div class="menu-langs lang-switch" role="group" aria-label="{{t nav.langAria}}">
+      <a href="{{page es}}" hreflang="es" lang="es" title="Español"{{if lang=es}} aria-current="page"{{/if}}>ES</a>
+      <a href="{{page ca}}" hreflang="ca" lang="ca" title="Català"{{if lang=ca}} aria-current="page"{{/if}}>CA</a>
+      <a href="{{page en}}" hreflang="en" lang="en" title="English"{{if lang=en}} aria-current="page"{{/if}}>EN</a>
+    </div>
+    <button type="button" class="doc-toggle menu-doc" data-doc-toggle aria-pressed="false">{{t doc.toggle}}</button>
+  </div>
+</div>
+
+<main id="main" tabindex="-1">
+<div class="doc-banner" role="note" hidden><span>{{t doc.banner}}</span> · <a href="?doc=0" data-doc-toggle>{{t doc.back}}</a></div>
+
+<!-- ============================== HERO (no theme; the World Deck lives in the visual column) -->
+<section id="top" class="hero" data-chapter="top" data-track aria-labelledby="hero-name">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">{{t hero.eyebrow}}</p>
+      <p class="now-chip">{{h hero.now}}</p>
+      <h1 class="hero-name" id="hero-name"><span class="l1">Adrián</span> <span class="l2">Arboledas</span></h1>
+      <p class="hero-tag" id="hero-tag"><span class="tag-vis" aria-hidden="true">{{h hero.tag}}</span><span class="sr-only">{{t hero.tagFull}}</span></p>
+      <p class="hero-sub">{{t hero.sub}}</p>
+      <ul class="hero-pills">
+        {{each hero.pills}}<li class="pill">{{h .}}</li>
+        {{/each}}
+      </ul>
+      <div class="hero-cta">
+        {{each hero.cta}}<a class="btn {{t .cls}}" href="{{t .href}}"{{if .pdf}} type="application/pdf" hreflang="{{t .pdf}}"{{/if}}{{if .doc}} data-doc-toggle{{/if}} data-magnetic data-cursor>{{t .label}}</a>
+        {{/each}}
+      </div>
+      <p class="hero-contact"><a href="mailto:arboledasadrian05@gmail.com">arboledasadrian05@gmail.com</a> · <a href="tel:+34647985945">+34 647 985 945</a> · <a href="https://www.linkedin.com/in/adrian-arboledas-1b33b5302" target="_blank" rel="noopener">LinkedIn ↗<span class="sr-only"> {{t nav.newTab}}</span></a> · <a href="https://github.com/arboledas05" target="_blank" rel="noopener">GitHub ↗<span class="sr-only"> {{t nav.newTab}}</span></a></p>
+      <p class="hero-type" aria-hidden="true"><span class="tw-prompt">~/adrian ›</span> <span id="tw" data-lines="{{json hero.type}}">{{t hero.type.0}}</span></p>
+    </div>
+    {{> world-hero}}
+  </div>
+</section>
+
+<!-- ============================== GLANCE -->
+<section id="glance" class="glance" aria-labelledby="glance-h">
+  <div class="container">
+    <div class="glance-card">
+      <div class="glance-head">
+        <h2 class="glance-h" id="glance-h">{{t glance.h}}</h2>
+        <a class="glance-doc" href="?doc" data-doc-toggle>{{t glance.doc}}</a>
+      </div>
+      <ol class="glance-list">
+        {{each glance.stops}}<li class="glance-stop" data-stop="{{t .id}}"{{if .world}} data-world="{{t .world}}"{{/if}}><a class="glance-link" href="#{{t .id}}">{{if .num}}<span class="glance-num">{{t .num}}</span>{{/if}}<span class="glance-name">{{t .name}}</span><span class="glance-line">{{t .line}}</span></a></li>
+        {{/each}}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ABOUT (text 7/12 + facts card 5/12; the photo now lives in the hero) -->
+<section id="about" class="about" aria-labelledby="about-h">
+  <div class="container about-grid">
+    <div class="about-text reveal">
+      <p class="eyebrow">{{t about.eyebrow}}</p>
+      <h2 class="h2" id="about-h">{{h about.h2}}</h2>
+      <p class="about-body">{{t about.body}}</p>
+    </div>
+    <div class="about-facts card reveal">
+      <dl class="facts">
+        {{each about.facts}}<div class="fact-row"><dt>{{t .k}}</dt><dd>{{t .v}}</dd></div>
+        {{/each}}
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== 01 BUILD · the phone world -->
+<section id="build" class="chapter world-sec" data-chapter="build" data-theme="build" data-track aria-labelledby="build-h">
+  <svg class="edge edge--build" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 48V30H150a14 14 0 0 1 14-14h60a14 14 0 0 1 14 14H560a14 14 0 0 1 14-14h60a14 14 0 0 1 14 14H970a14 14 0 0 1 14-14h60a14 14 0 0 1 14 14H1440V48Z"/></svg>
+  <div class="container">
+    <div class="chapter-head">
+      <span class="chapter-index" aria-hidden="true">01</span>
+      <p class="eyebrow">{{t build.eyebrow}}</p>
+      <h2 class="h2" id="build-h">{{h build.h2}}</h2>
+    </div>
+    {{> build-world}}
+    <p class="sites-h eyebrow" id="sites-h">{{t build.sitesH}}</p>
+    <ul class="sites" aria-labelledby="sites-h" data-evidence="freelance" data-evidence-name="{{t skills.ev.freelance}}">
+      {{each build.sites}}<li class="site site--{{t .id}}">
+        <a class="site-card reveal" href="{{t .href}}" target="_blank" rel="noopener" data-tilt="5" data-cursor="open">
+          {{if file:.shot}}<figure class="site-shot"><img src="{{t .shot}}"{{if file:.shot2}} srcset="{{t .shot}} 640w, {{t .shot2}} 1280w" sizes="(max-width: 760px) 100vw, 33vw"{{/if}} width="640" height="400" loading="lazy" decoding="async" alt="{{t .alt}}"></figure>
+          {{else}}<figure class="site-shot site-illus site-illus--{{t .illus}}" role="img" aria-label="{{t .alt}}">{{if .illus=drone}}<svg viewBox="0 0 640 400" aria-hidden="true" focusable="false"><rect width="640" height="400" fill="#F6E7CC"/><path d="M0 238C110 200 210 246 330 222S520 176 640 204V400H0Z" fill="#D9E6B8"/><path d="M0 292C130 262 250 310 380 284S560 250 640 270V400H0Z" fill="#A9C98A"/><path d="M0 352C140 330 270 366 410 344S590 322 640 334V400H0Z" fill="#8FB873"/><g fill="none" stroke="#17150F" stroke-opacity=".16" stroke-width="2"><path d="M40 262C120 238 210 270 300 250S470 214 560 232"/><path d="M90 312C170 290 270 326 360 304S520 278 600 292"/><path d="M180 222C240 206 300 222 360 210"/></g><path d="M0 368C150 350 280 384 420 360S600 344 640 352" fill="none" stroke="#7CC6E8" stroke-width="9" stroke-linecap="round"/><path d="M118 322C190 270 240 230 320 176" fill="none" stroke="#3A2BE0" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="16 9 3 9"/><g transform="translate(320 150)"><path d="M-62-22L62 22M-62 22L62-22" stroke="#2B2B33" stroke-width="7" stroke-linecap="round"/><g fill="#fff" fill-opacity=".72" stroke="#2B2B33" stroke-opacity=".35" stroke-width="2"><ellipse cx="-62" cy="-22" rx="30" ry="8"/><ellipse cx="62" cy="-22" rx="30" ry="8"/><ellipse cx="-62" cy="22" rx="30" ry="8"/><ellipse cx="62" cy="22" rx="30" ry="8"/></g><rect x="-34" y="-16" width="68" height="32" rx="12" fill="#fff" stroke="#17150F" stroke-opacity=".2" stroke-width="2"/><rect x="-26" y="-4" width="52" height="9" rx="4.5" fill="#FF8F6B"/><circle cy="24" r="9" fill="#17150F"/><circle cy="24" r="4" fill="#3A2BE0"/></g><g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"><path d="M36 76V40H72M568 40H604V76M604 324V360H568M72 360H36V324"/><path d="M308 200H332M320 188V212" stroke-width="3"/></g><circle cx="62" cy="64" r="7" fill="#FF5A4E"/></svg>{{else}}<svg viewBox="0 0 640 400" aria-hidden="true" focusable="false"><rect width="640" height="400" fill="#EFE8DA"/><rect x="44" y="38" width="552" height="324" rx="20" fill="#FFFDF8" stroke="#17150F" stroke-opacity=".08" stroke-width="2"/><path d="M44 58a20 20 0 0 1 20-20h512a20 20 0 0 1 20 20v22H44Z" fill="#17150F" fill-opacity=".05"/><circle cx="72" cy="59" r="6" fill="#FF8F6B"/><circle cx="92" cy="59" r="6" fill="#F4C95D"/><circle cx="112" cy="59" r="6" fill="#22B29A"/><rect x="84" y="122" width="214" height="22" rx="7" fill="#17150F" fill-opacity=".86"/><rect x="84" y="154" width="164" height="22" rx="7" fill="#C9A45C"/><rect x="84" y="196" width="236" height="9" rx="4.5" fill="#17150F" fill-opacity=".22"/><rect x="84" y="214" width="198" height="9" rx="4.5" fill="#17150F" fill-opacity=".22"/><rect x="84" y="256" width="128" height="34" rx="17" fill="#3A2BE0"/><g transform="translate(372 120)"><rect x="18" y="84" width="152" height="128" rx="10" fill="#F6E7CC"/><path d="M0 96L94 18L188 96" fill="none" stroke="#17150F" stroke-opacity=".8" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><rect x="74" y="140" width="40" height="72" rx="6" fill="#3A2BE0"/><rect x="36" y="108" width="28" height="28" rx="5" fill="#CFE3F1"/><rect x="124" y="108" width="28" height="28" rx="5" fill="#CFE3F1"/><rect x="138" y="28" width="16" height="40" rx="3" fill="#17150F" fill-opacity=".8"/></g></svg>{{/if}}</figure>{{/if}}
+          <div class="site-meta">
+            <h3>{{t .title}}</h3>
+            <p>{{t .desc}}</p>
+            <p class="site-foot"><span class="cap">{{t build.cap}}</span>{{if live:.live}} <span class="live">{{t build.live}}</span>{{/if}} <span class="site-link">{{t .linkLabel}}<span class="sr-only"> {{t nav.newTab}}</span></span></p>
+          </div>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+    <p class="stack-line">{{t build.stack}}</p>
+  </div>
+</section>
+
+<!-- ============================== 02 DEPLOY · the cloud world -->
+<section id="deploy" class="chapter world-sec" data-chapter="deploy" data-theme="deploy" data-track aria-labelledby="deploy-h">
+  <svg class="edge edge--deploy" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 48V32H320L346 16H1094L1120 32H1440V48Z"/></svg>
+  <div class="container">
+    <div class="chapter-head">
+      <span class="chapter-index" aria-hidden="true">02</span>
+      <p class="eyebrow">{{t deploy.eyebrow}}</p>
+      <h2 class="h2" id="deploy-h">{{h deploy.h2}}</h2>
+    </div>
+    <article class="card course-card reveal" data-evidence="itb" data-evidence-name="{{t skills.ev.itb}}">
+      <h3>{{t deploy.course.h3}}</h3>
+      <p class="sub">{{t deploy.course.sub}}</p>
+      <p class="meta">{{t deploy.course.meta}}</p>
+      <p>{{t deploy.course.line}}</p>
+    </article>
+    <p class="takeaway">{{t deploy.takeaway}}</p>
+    {{> cloudlab}}
+    <p class="chips-label"><a href="#skills">{{t deploy.skillsLink}}</a></p>
+  </div>
+</section>
+
+<!-- ============================== 03 GROW · the data world -->
+<section id="grow" class="chapter world-sec" data-chapter="grow" data-theme="grow" data-track aria-labelledby="grow-h">
+  <svg class="edge edge--grow" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 48V30C180 8 360 8 540 24S900 44 1080 26S1320 10 1440 22V48Z"/></svg>
+  <div class="container">
+    <div class="chapter-head">
+      <span class="chapter-index" aria-hidden="true">03</span>
+      <p class="eyebrow">{{t grow.eyebrow}}</p>
+      <h2 class="h2" id="grow-h">{{h grow.h2}}</h2>
+    </div>
+    <p class="intro" data-evidence="reno" data-evidence-name="{{t skills.ev.reno}}">{{t grow.intro}}</p>
+    {{> board}}
+    <p class="footnote">{{t grow.footnote}}</p>
+    <p class="chips-label">{{t grow.chipsH}}</p>
+    <ul class="chips">
+      {{each grow.chips}}<li class="chip">{{t .}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== CV (formal record, Europass order) · quiet zone -->
+<section id="cv" class="record" data-chapter="cv" aria-labelledby="cv-h">
+  <div class="container">
+    <p class="eyebrow">{{t cv.eyebrow}}</p>
+    <h2 class="h2" id="cv-h">{{h cv.h2}}</h2>
+    <p class="cv-dl"><a href="{{t cv.dl.href}}" type="application/pdf" hreflang="{{t cv.dl.hreflang}}">{{t cv.dl.label}}</a></p>
+    <div class="record-grid">
+      <div class="record-col record-col--work">
+        <h3 class="record-h" id="cv-work">{{t cv.workH}}</h3>
+        <ol class="timeline" aria-labelledby="cv-work">
+          {{each cv.work}}<li class="tl-item reveal{{if .now}} is-now{{/if}}" id="cv-{{t .ev}}" data-evidence="{{t .ev}}" data-evidence-name="{{t skills.ev[.ev]}}">
+            <div class="tl-head"><h4 id="cv-w{{@index}}"><span class="tl-role">{{t .role}}</span> <span class="org">{{t .org}}</span></h4><time class="tl-date" datetime="{{t .dt}}">{{t .date}}</time></div>
+            {{if .tags}}<p class="tl-tags">{{each .tags}}<span class="pill">{{t .}}</span> {{/each}}</p>{{/if}}
+            <ul class="tl-bullets">{{each .bullets}}<li{{if .ev}} data-evidence="{{t .ev}}" data-evidence-name="{{t skills.ev[.ev]}}"{{/if}}>{{t .text}}</li>{{/each}}</ul>
+            {{if .more}}<details class="tl-more" open><summary aria-describedby="cv-w{{@index}}">{{t cv.more}}</summary><ul>{{each .more}}<li>{{t .}}</li>{{/each}}</ul></details>{{/if}}
+            {{if .link}}<a class="tl-link" href="{{t .link}}">{{t .linkLabel}}</a>{{/if}}
+          </li>
+          {{/each}}
+        </ol>
+        <p class="footnote cv-refs">{{t cv.refs}}</p>
+      </div>
+      <div class="record-col record-col--edu">
+        <h3 class="record-h" id="cv-edu">{{t cv.eduH}}</h3>
+        <ol class="timeline" aria-labelledby="cv-edu">
+          {{each cv.edu}}<li class="tl-item reveal{{if .now}} is-now{{/if}}"{{if .ev}} data-evidence="{{t .ev}}" data-evidence-name="{{t skills.ev[.ev]}}"{{/if}}>
+            <div class="tl-head"><h4 id="cv-e{{@index}}"><span class="tl-role">{{t .role}}</span> <span class="org">{{t .org}}</span></h4><time class="tl-date" datetime="{{t .dt}}">{{t .date}}</time></div>
+            {{if .tags}}<p class="tl-tags">{{each .tags}}<span class="pill">{{t .}}</span> {{/each}}</p>{{/if}}
+            {{if .grade}}<p class="tl-grade"><b>{{t .grade}}</b></p>{{/if}}
+            {{if .bullets}}<ul class="tl-bullets">{{each .bullets}}<li{{if .ev}} data-evidence="{{t .ev}}" data-evidence-name="{{t skills.ev[.ev]}}"{{/if}}>{{t .text}}</li>{{/each}}</ul>{{/if}}
+            {{if .more}}<details class="tl-more" open><summary aria-describedby="cv-e{{@index}}">{{t cv.more}}</summary><ul>{{each .more}}<li>{{t .}}</li>{{/each}}</ul></details>{{/if}}
+            {{if .link}}<a class="tl-link" href="{{t .link}}">{{t .linkLabel}}</a>{{/if}}
+          </li>
+          {{/each}}<li class="tl-item tl-next reveal">
+            <div class="tl-head"><h4><span class="tl-role">{{t cv.next.role}}</span> <span class="org">{{t cv.next.org}}</span></h4><span class="tl-date">{{t cv.next.date}}</span></div>
+            <p class="tl-tags"><span class="pill pill--next">{{t cv.next.tag}}</span></p>
+            <ul class="tl-bullets"><li>{{t cv.next.line}}</li></ul>
+            <a class="tl-link" href="#europe">{{t cv.next.linkLabel}}</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SKILLS · quiet zone -->
+<section id="skills" class="skills" data-chapter="skills" aria-labelledby="skills-h">
+  <div class="container">
+    <p class="eyebrow">{{t skills.eyebrow}}</p>
+    <h2 class="h2" id="skills-h">{{h skills.h2}}</h2>
+    <p class="skills-hint">{{t skills.hint}}</p>
+    <div class="stack-grid">
+      {{each skills.cards}}<article class="stack card reveal" data-n="{{t .n}}">
+        <h3>{{t .title}}</h3>
+        <p class="desc">{{t .desc}}</p>
+        <div class="chips">{{each .chips}}{{if .uses}}<button type="button" class="chip{{if .learning}} chip--learning{{/if}}" data-uses="{{t .uses}}">{{t .label}}{{if .learning}}<span class="sr-only"> ({{t skills.learningSr}})</span>{{/if}}</button>{{else}}<span class="chip{{if .learning}} chip--learning{{/if}}">{{t .label}}{{if .learning}}<span class="sr-only"> ({{t skills.learningSr}})</span>{{/if}}</span>{{/if}}
+        {{/each}}</div>
+      </article>
+      {{/each}}
+    </div>
+    <p id="query-out" class="query-out" aria-live="polite"></p>
+    <p class="legend"><span class="legend-real">{{t skills.legendReal}}</span> · <span class="legend-learning">{{t skills.legendLearning}}</span></p>
+    <p class="footnote code-note">{{t skills.code}} <a href="https://github.com/arboledas05/adrianarboledas.github.io" target="_blank" rel="noopener">{{t skills.codeLink}}<span class="sr-only"> {{t nav.newTab}}</span></a></p>
+    <div class="how">
+      <h3>{{t skills.howH}}</h3>
+      <ul>
+        {{each skills.how}}<li><b>{{t .k}}</b> — {{t .v}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="langs">
+      <h3>{{t skills.langsH}}</h3>
+      <ul class="lang-list">
+        {{each skills.langs}}<li class="lang-row{{if .grid}} lang-row--grid{{/if}}">
+          <span class="lang-name">{{t .name}}</span>
+          {{if .grid}}<span class="lang-level">{{t .level}}</span>
+          <ul class="lang-skills" aria-label="{{t skills.cefrAria}}">{{each .grid}}<li class="lang-skill{{if .top}} is-top{{/if}}"><span class="ls-k">{{t .k}}</span> <b class="ls-v">{{t .v}}</b></li>{{/each}}</ul>
+          <span class="lang-cert">{{t .cert}}</span>{{else}}<span class="pill lang-native">{{t .level}}</span>{{/if}}
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <ul class="licences">
+      {{each skills.licences}}<li class="pill">{{t .}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== + BEYOND CODE · the drone world (illustrated, never footage) -->
+<section id="drone" class="chapter world-sec" data-chapter="drone" data-theme="drone" data-track aria-labelledby="drone-h">
+  <svg class="edge edge--drone" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 48V36L130 28L230 32L380 12L470 24L590 16L720 30L860 18L990 6L1110 22L1250 14L1360 26L1440 20V48Z"/></svg>
+  <div class="container drone-grid">
+    {{> drone-stage}}
+    <div class="drone-card">
+      <span class="chapter-index" aria-hidden="true">+</span>
+      <p class="eyebrow">{{t drone.eyebrow}}</p>
+      <h2 class="h2" id="drone-h">{{h drone.h2}}</h2>
+      <p class="drone-body">{{t drone.body}}</p>
+      <p class="drone-link"><a href="{{t drone.link}}" target="_blank" rel="noopener" data-cursor="open">{{t drone.linkLabel}}<span class="sr-only"> {{t nav.newTab}}</span></a>{{if live:elevvavisuals.com}} <span class="live">{{t drone.live}}</span>{{/if}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== 04 EUROPE & THE AMERICAS · the map world (id kept) -->
+<section id="europe" class="chapter world-sec" data-chapter="europe" data-theme="map" data-track aria-labelledby="europe-h">
+  <svg class="edge edge--map" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 48V26Q60 17 120 26Q180 33 240 24Q300 15 360 26Q420 31 480 26Q540 19 600 24Q660 35 720 26Q780 16 840 26Q900 30 960 24Q1020 18 1080 26Q1140 34 1200 26Q1260 15 1320 24Q1380 32 1440 26V48Z"/></svg>
+  <div class="container">
+    <div class="chapter-head">
+      <span class="chapter-index" aria-hidden="true">04</span>
+      <p class="eyebrow">{{t europe.eyebrow}}</p>
+      <h2 class="h2" id="europe-h">{{h europe.h2}}</h2>
+    </div>
+    <div class="europe-intro">
+      <p class="lead">{{t europe.lead}}</p>
+      <p class="status">{{t europe.status}}</p>
+    </div>
+    {{> map-stage}}
+    <div class="europe-cols">
+      <div class="bring">
+        <h3>{{t europe.bringH}}</h3>
+        <ul>
+          {{each europe.bring}}<li>{{t .}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      {{if learn}}<div class="learn">
+        <h3>{{t europe.learnH}}</h3>
+        <p>{{t europe.learn}}</p>
+      </div>{{/if}}
+      <div class="places-col">
+        <h3 class="places-h" id="places-h">{{t europe.placesH}}</h3>
+        <ul id="places" class="places" aria-labelledby="places-h">
+          {{each europe.places}}<li data-place="{{t .id}}"><span class="place-name">{{t .name}}</span> <span class="place-line">{{t .line}}</span></li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="{{t europe.cta.href}}" type="application/pdf" hreflang="{{t europe.cta.hreflang}}" data-magnetic data-cursor>{{t europe.cta.label}}</a>
+      <a class="btn btn-ghost" id="write-me" href="mailto:arboledasadrian05@gmail.com" data-magnetic data-cursor>{{t europe.ctaWrite}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTACT · quiet zone -->
+<section id="contact" class="contact" data-chapter="contact" aria-labelledby="contact-h">
+  <div class="container contact-inner">
+    <h2 class="h2 contact-h" id="contact-h">{{h contact.h2}}</h2>
+    <p class="sub">{{t contact.sub}}</p>
+    <div class="contact-cta">
+      <a class="btn btn-primary" href="mailto:arboledasadrian05@gmail.com" data-magnetic data-cursor>arboledasadrian05@gmail.com</a>
+      <button type="button" class="btn btn-ghost btn-copy" data-copy="arboledasadrian05@gmail.com" aria-label="{{t contact.copyAria}}" data-cursor>{{t contact.copy}}</button>
+      <a class="btn btn-ghost" href="tel:+34647985945" data-magnetic data-cursor>+34 647 985 945</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/adrian-arboledas-1b33b5302" target="_blank" rel="noopener" data-magnetic data-cursor>LinkedIn ↗<span class="sr-only"> {{t nav.newTab}}</span></a>
+      <a class="btn btn-ghost" href="https://github.com/arboledas05" target="_blank" rel="noopener" data-magnetic data-cursor>GitHub ↗<span class="sr-only"> {{t nav.newTab}}</span></a>
+      {{each contact.cvs}}<a class="btn btn-ghost" href="{{t .href}}" type="application/pdf" hreflang="{{t .hreflang}}" data-magnetic data-cursor>{{t .label}}</a>
+      {{/each}}
+    </div>
+    <p class="contact-meta">{{t contact.meta}}</p>
+  </div>
+</section>
+</main>
+
+<!-- ============================== FOOTER -->
+<footer class="site-footer">
+  <p>{{t footer.updated}}</p>
+  <p class="foot-langs">
+    <a href="{{page es}}" hreflang="es" lang="es" title="Español"{{if lang=es}} aria-current="page"{{/if}}>ES</a> ·
+    <a href="{{page ca}}" hreflang="ca" lang="ca" title="Català"{{if lang=ca}} aria-current="page"{{/if}}>CA</a> ·
+    <a href="{{page en}}" hreflang="en" lang="en" title="English"{{if lang=en}} aria-current="page"{{/if}}>EN</a>
+  </p>
+  <a href="https://www.linkedin.com/in/adrian-arboledas-1b33b5302" target="_blank" rel="noopener">{{t footer.linkedin}}<span class="sr-only"> {{t nav.newTab}}</span></a>
+  <a href="https://github.com/arboledas05" target="_blank" rel="noopener">{{t footer.github}}<span class="sr-only"> {{t nav.newTab}}</span></a>
+  <a href="https://github.com/arboledas05/adrianarboledas.github.io" target="_blank" rel="noopener">{{t footer.code}}<span class="sr-only"> {{t nav.newTab}}</span></a>
+  <a href="?doc" data-doc-toggle>{{t footer.doc}}</a>
+  <a href="#top">{{t footer.top}}</a>
+</footer>
+
+<!-- ============================== MOBILE DOCK -->
+<nav id="dock" class="dock"{{if dock.aria}} aria-label="{{t dock.aria}}"{{/if}}>
+  <a class="dock-btn" href="mailto:arboledasadrian05@gmail.com">{{t dock.email}}</a>
+  <a class="dock-btn" href="tel:+34647985945">{{t dock.call}}</a>
+  <a class="dock-btn dock-btn--cv" href="{{t dock.cvHref}}" type="application/pdf">{{t dock.cv}}</a>
+</nav>
+
+<script type="module" src="{{asset assets/js/main.js}}"></script>
+</body>
+</html>

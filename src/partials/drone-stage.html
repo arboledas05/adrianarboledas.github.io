@@ -1,0 +1,14 @@
+<figure class="world world--drone" data-world="drone" aria-labelledby="fig-drone">
+<div class="world-slot" data-world-slot="drone" style="--ar:16/9">
+<div class="slot-fallback dv-fallback" data-track>{{> gen-contours}}</div>
+<div class="slot-ui drone-hud" aria-hidden="true">
+<span class="hud-grid"></span><span class="hud-c hud-c--tl"></span><span class="hud-c hud-c--tr"></span><span class="hud-c hud-c--bl"></span><span class="hud-c hud-c--br"></span>
+<span class="hud-cross"></span><span class="hud-horizon"><i></i></span><span class="hud-ladder"></span>
+<span class="hud-top"><span class="hud-rec"><i></i><b class="hud-rec-t">{{t ui.w.drone.rec}}</b><b class="hud-saved">{{t ui.w.drone.saved}}</b></span><span class="hud-compass"><span class="hud-tape">{{if lang=en}}N · NE · E · SE · S · SW · W · NW · N · NE · E · SE · S · SW · W · NW · N{{else}}N · NE · E · SE · S · SO · O · NO · N · NE · E · SE · S · SO · O · NO · N{{/if}}</span></span><span class="hud-bat"><i></i><i></i><i></i><i></i><i></i></span></span>
+<span class="hud-bottom"><span class="hud-aesa">{{t ui.w.drone.aesa}}</span><span class="hud-brand">{{t ui.w.drone.brand}}</span></span>
+<span class="hud-shot">{{t ui.w.drone.shot}}</span><span class="hud-flash"></span>
+</div>
+<div class="slot-hit" data-cursor="steer" aria-hidden="true"></div>
+</div>
+<figcaption class="world-cap"><span class="fig-n">FIG. 04</span> <span class="fig-name" id="fig-drone">{{t drone.fig}}</span> <span class="fig-hint">{{t drone.hint}}</span> <button type="button" class="fig-pause" aria-pressed="false">{{t ui.w.pause}}</button> <span class="fig-mode">{{t ui.w.mode2d}}</span></figcaption>
+</figure>

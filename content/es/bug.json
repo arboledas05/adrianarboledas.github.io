@@ -1,0 +1,24 @@
+{
+  "bug": {
+    "title": "Tipos de bug que corregí en producción",
+    "alt": "Esquema de la pantalla de un móvil (ilustración)",
+    "group": "Muestra un tipo de bug y su solución",
+    "rotate": "Girar",
+    "keyboard": "Teclado",
+    "overflow": "Contenido largo",
+    "cRotate": "En horizontal: el diseño se recoloca en vez de romperse",
+    "cKeyboard": "Con el teclado abierto: el footer fijo queda por encima",
+    "cOverflow": "Con mucho contenido: se desplaza en vez de desbordarse",
+    "idle": "Elige un tipo de bug para ver la solución.",
+    "note": "Solo es una ilustración: no es la app real del cliente.",
+    "st0": "GetX",
+    "st1": "Componentes",
+    "st2": "Responsive",
+    "st3": "REST → Dart",
+    "st4": "Refactor",
+    "st5": "Flujo de financiación",
+    "st6": "Release",
+    "stripe": "el aviso de desbordamiento de Flutter",
+    "stripeFix": "corregido: ya cabe"
+  }
+}

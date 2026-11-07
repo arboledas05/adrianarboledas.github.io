@@ -1,0 +1,197 @@
+<div id="lab" class="lab">
+<svg class="lab-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs>
+<filter id="lab-clay" x="-15%" y="-15%" width="130%" height="170%" color-interpolation-filters="sRGB"><feOffset in="SourceAlpha" dy="8" result="o"/><feFlood flood-color="#D4C8F9"/><feComposite in2="o" operator="in" result="side"/><feGaussianBlur in="SourceAlpha" stdDeviation="9"/><feOffset dy="16" result="b"/><feFlood flood-color="#3A2BE0" flood-opacity=".2"/><feComposite in2="b" operator="in" result="sh"/><feMerge><feMergeNode in="sh"/><feMergeNode in="side"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="lab-hp" x="500" y="144" width="124" height="92" patternUnits="userSpaceOnUse"><rect class="lab-holer" x="1" y="1" width="98" height="68" rx="12"/></pattern>
+<pattern id="lab-hpm" x="40" y="420" width="148" height="56" patternUnits="userSpaceOnUse"><rect class="lab-holer" x="1" y="1" width="130" height="46" rx="10"/></pattern>
+<g id="lab-ti"><rect class="lab-face" width="100" height="62" rx="12"/><path class="lab-rack" d="M20 24h60M20 40h36"/></g>
+<g id="lab-tim"><rect class="lab-face" width="132" height="42" rx="10"/><path class="lab-rack" d="M18 21h70"/></g>
+</defs></svg>
+<div class="lab-top">
+  <div class="lab-intro"><p class="lab-kicker">{{t lab.kicker}}</p><p class="lab-hint lab-js">{{t lab.hint}}</p></div>
+  <div class="lab-switch lab-js" role="tablist" aria-label="{{t lab.tabs}}">
+    <button type="button" role="tab" id="lab-tab-nexa" aria-selected="true" aria-controls="lab-nexa"><b>{{t lab.tNexa}}</b><small>{{t lab.tNexaS}}</small></button>
+    <button type="button" role="tab" id="lab-tab-ld" aria-selected="false" aria-controls="lab-ld" tabindex="-1"><b>{{t lab.tLd}}</b><small>{{t lab.tLdS}}</small></button>
+  </div>
+</div>
+<div class="lab-mods lab-js" role="group" aria-labelledby="lab-mods-k">
+  <p class="lab-h" id="lab-mods-k">{{t lab.mods.h}} <span class="lab-mods-cap">· {{t lab.mods.cap}}</span></p>
+  <div class="lab-mods-row">
+    <button type="button" class="lab-mod" data-module="5160" data-parts="lab-region lab-vpc" aria-pressed="false"><b>5160</b><span>{{t lab.m.5160.name}}</span></button>
+    <button type="button" class="lab-mod" data-module="5161" data-parts="lab-web lab-app lab-asg" aria-pressed="false"><b>5161</b><span>{{t lab.m.5161.name}}</span></button>
+    <button type="button" class="lab-mod" data-module="5162" data-parts="lab-data lab-rds-primary lab-rds-standby" aria-pressed="false"><b>5162</b><span>{{t lab.m.5162.name}}</span></button>
+    <button type="button" class="lab-mod" data-module="5163" data-parts="lab-vpc lab-nat lab-sg-web lab-sg-app lab-sg-data" aria-pressed="false"><b>5163</b><span>{{t lab.m.5163.name}}</span></button>
+    <button type="button" class="lab-mod" data-module="5164" data-parts="lab-dms lab-rds-standby" aria-pressed="false"><b>5164</b><span>{{t lab.m.5164.name}}</span></button>
+  </div>
+</div>
+<figure class="world lab-world" data-world="deploy" aria-labelledby="fig-deploy">
+  <div class="world-slot lab-stage" data-world-slot="deploy" style="--ar:1200/640">
+    <div class="slot-fallback">
+      <div class="lab-scene" data-scene="nexa">
+      <p class="lab-scene-k">{{t lab.tNexa}} · {{t lab.tNexaS}}</p>
+<svg class="lab-svg lab-svg--d" viewBox="0 0 1200 640" role="group"><title>{{t lab.nexa.svgT}}</title><desc>{{t lab.nexa.svgD}}</desc>
+<g class="lab-c" id="lab-internet" data-c="lab-internet" data-i="internet" aria-label="{{t lab.nexa.nInternet}}"><path class="lab-face" d="M78 330a26 26 0 0 1-4-50 34 34 0 0 1 58-24 36 36 0 0 1 58 26 25 25 0 0 1-4 48z"/><text class="lab-t" x="131" y="306">{{t lab.nexa.internet}}</text></g>
+<g class="lab-c" id="lab-updates" data-c="lab-updates" data-i="updates" aria-label="{{t lab.nexa.nUpdates}}"><g transform="translate(0 -190)"><path class="lab-face" d="M78 330a26 26 0 0 1-4-50 34 34 0 0 1 58-24 36 36 0 0 1 58 26 25 25 0 0 1-4 48z"/><text class="lab-t lab-t--s" x="131" y="304">{{t lab.nexa.updates}}</text></g></g>
+<g class="lab-c lab-vpc" id="lab-vpc" data-c="lab-vpc" data-i="vpc" aria-label="{{t lab.nexa.nVpc}}"><rect class="lab-bound" x="250" y="40" width="920" height="540" rx="26"/><rect class="lab-pill" x="276" y="24" width="84" height="32" rx="16"/><text class="lab-pillt" x="318" y="46">VPC</text></g>
+<g class="lab-c" id="lab-web" data-c="lab-web" data-i="web" aria-label="{{t lab.nexa.nWeb}}"><rect class="lab-plate lab-plate--pub" x="290" y="96" width="270" height="450" rx="18"/><text class="lab-m" x="312" y="128">{{t lab.nexa.pub}}</text><rect class="lab-face" x="335" y="182" width="180" height="84" rx="12"/><text class="lab-t" x="425" y="231">{{t lab.nexa.web}}</text></g>
+<g class="lab-c" id="lab-app" data-c="lab-app" data-i="app" aria-label="{{t lab.nexa.nApp}}"><rect class="lab-plate lab-plate--priv" x="600" y="96" width="270" height="450" rx="18"/><path class="lab-lock" d="M622 120h12v10h-12zM624.5 120v-3a3.5 3.5 0 0 1 7 0v3"/><text class="lab-m" x="642" y="130">{{t lab.nexa.priv}}</text><rect class="lab-face" x="645" y="182" width="180" height="84" rx="12"/><text class="lab-t" x="735" y="231">{{t lab.nexa.app}}</text></g>
+<g class="lab-c" id="lab-data" data-c="lab-data" data-i="data" aria-label="{{t lab.nexa.nData}}"><rect class="lab-plate lab-plate--priv" x="910" y="96" width="230" height="450" rx="18"/><path class="lab-lock" d="M932 120h12v10h-12zM934.5 120v-3a3.5 3.5 0 0 1 7 0v3"/><text class="lab-m" x="952" y="130">{{t lab.nexa.priv}}</text><rect class="lab-face" x="935" y="182" width="180" height="84" rx="12"/><text class="lab-t" x="1025" y="231">{{t lab.nexa.data}}</text></g>
+<g class="lab-c" id="lab-nat" data-c="lab-nat" data-i="nat" aria-label="{{t lab.nexa.nNat}}"><rect class="lab-face" x="335" y="400" width="180" height="70" rx="12"/><text class="lab-t" x="425" y="442">{{t lab.nexa.nat}}</text></g>
+<g class="lab-c lab-gate" id="lab-sg-web" data-c="lab-sg-web" data-i="sg" aria-label="{{t lab.nexa.nSgWeb}}"><rect class="lab-gbox" x="272" y="164" width="36" height="96" rx="8"/><text class="lab-mc" x="290" y="174">SG</text><rect class="lab-door" x="285" y="196" width="10" height="56" rx="4"/><circle class="lab-post" cx="290" cy="196" r="5"/></g>
+<g class="lab-c lab-gate" id="lab-sg-app" data-c="lab-sg-app" data-i="sg" aria-label="{{t lab.nexa.nSgApp}}"><rect class="lab-gbox" x="582" y="164" width="36" height="96" rx="8"/><text class="lab-mc" x="600" y="174">SG</text><rect class="lab-door" x="595" y="196" width="10" height="56" rx="4"/><circle class="lab-post" cx="600" cy="196" r="5"/></g>
+<g class="lab-c lab-gate" id="lab-sg-data" data-c="lab-sg-data" data-i="sg" aria-label="{{t lab.nexa.nSgData}}"><rect class="lab-gbox" x="892" y="164" width="36" height="96" rx="8"/><text class="lab-mc" x="910" y="174">SG</text><rect class="lab-door" x="905" y="196" width="10" height="56" rx="4"/><circle class="lab-post" cx="910" cy="196" r="5"/></g>
+<text class="lab-tag lab-mc" x="425" y="514">{{t lab.nexa.out}}</text>
+<path class="lab-route" id="route-request" data-route="request" data-stops="lab-internet lab-sg-web lab-web lab-sg-app lab-app lab-sg-data lab-data" d="M196 296C240 296 250 224 290 224H1025"/>
+<path class="lab-route" id="route-updates" data-route="updates" data-stops="lab-app lab-nat lab-internet lab-updates" d="M735 266V435H215C150 435 131 400 131 330V112"/>
+<path class="lab-route" id="route-blocked" data-route="blocked" data-stops="lab-internet lab-vpc lab-data" d="M196 276C236 276 244 70 300 70H990Q1025 70 1025 96"/>
+</svg>
+<svg class="lab-svg lab-svg--m" viewBox="0 0 360 760" role="group"><title>{{t lab.nexa.svgT}}</title><desc>{{t lab.nexa.svgD}}</desc>
+<g class="lab-c" data-c="lab-internet" data-i="internet" aria-label="{{t lab.nexa.nInternet}}"><g transform="translate(-14 -180) scale(.8)"><path class="lab-face" d="M78 330a26 26 0 0 1-4-50 34 34 0 0 1 58-24 36 36 0 0 1 58 26 25 25 0 0 1-4 48z"/><text class="lab-t" x="131" y="306">{{t lab.nexa.internet}}</text></g></g>
+<g class="lab-c" data-c="lab-updates" data-i="updates" aria-label="{{t lab.nexa.nUpdates}}"><g transform="translate(166 -180) scale(.8)"><path class="lab-face" d="M78 330a26 26 0 0 1-4-50 34 34 0 0 1 58-24 36 36 0 0 1 58 26 25 25 0 0 1-4 48z"/><text class="lab-t lab-t--s" x="131" y="304">{{t lab.nexa.updates}}</text></g></g>
+<g class="lab-c lab-vpc" data-c="lab-vpc" data-i="vpc" aria-label="{{t lab.nexa.nVpc}}"><rect class="lab-bound" x="10" y="112" width="340" height="636" rx="20"/><rect class="lab-pill" x="24" y="98" width="72" height="28" rx="14"/><text class="lab-pillt" x="60" y="117">VPC</text></g>
+<g class="lab-c" data-c="lab-web" data-i="web" aria-label="{{t lab.nexa.nWeb}}"><rect class="lab-plate lab-plate--pub" x="26" y="150" width="308" height="184" rx="16"/><text class="lab-m" x="42" y="188">{{t lab.nexa.pub}}</text><rect class="lab-face" x="40" y="206" width="148" height="68" rx="12"/><text class="lab-t" x="114" y="246">{{t lab.nexa.web}}</text></g>
+<g class="lab-c" data-c="lab-app" data-i="app" aria-label="{{t lab.nexa.nApp}}"><rect class="lab-plate lab-plate--priv" x="26" y="370" width="308" height="170" rx="16"/><path class="lab-lock" d="M42 394h11v9H42zM44.5 394v-3a3 3 0 0 1 6 0v3"/><text class="lab-m" x="60" y="403">{{t lab.nexa.priv}}</text><rect class="lab-face" x="90" y="420" width="180" height="68" rx="12"/><text class="lab-t" x="180" y="460">{{t lab.nexa.app}}</text></g>
+<g class="lab-c" data-c="lab-data" data-i="data" aria-label="{{t lab.nexa.nData}}"><rect class="lab-plate lab-plate--priv" x="26" y="566" width="308" height="170" rx="16"/><path class="lab-lock" d="M42 590h11v9H42zM44.5 590v-3a3 3 0 0 1 6 0v3"/><text class="lab-m" x="60" y="599">{{t lab.nexa.priv}}</text><rect class="lab-face" x="90" y="616" width="180" height="68" rx="12"/><text class="lab-t" x="180" y="656">{{t lab.nexa.data}}</text></g>
+<g class="lab-c" data-c="lab-nat" data-i="nat" aria-label="{{t lab.nexa.nNat}}"><rect class="lab-face" x="202" y="206" width="118" height="68" rx="12"/><text class="lab-t" x="261" y="246">{{t lab.nexa.nat}}</text></g>
+<g class="lab-c lab-gate" data-c="lab-sg-web" data-i="sg" aria-label="{{t lab.nexa.nSgWeb}}"><rect class="lab-gbox" x="80" y="134" width="70" height="32" rx="8"/><text class="lab-m" x="152" y="164">SG</text><rect class="lab-door" x="90" y="145" width="48" height="10" rx="4"/><circle class="lab-post" cx="90" cy="150" r="5"/></g>
+<g class="lab-c lab-gate" data-c="lab-sg-app" data-i="sg" aria-label="{{t lab.nexa.nSgApp}}"><rect class="lab-gbox" x="146" y="354" width="70" height="32" rx="8"/><text class="lab-m" x="218" y="384">SG</text><rect class="lab-door" x="156" y="365" width="48" height="10" rx="4"/><circle class="lab-post" cx="156" cy="370" r="5"/></g>
+<g class="lab-c lab-gate" data-c="lab-sg-data" data-i="sg" aria-label="{{t lab.nexa.nSgData}}"><rect class="lab-gbox" x="146" y="550" width="70" height="32" rx="8"/><text class="lab-m" x="218" y="580">SG</text><rect class="lab-door" x="156" y="561" width="48" height="10" rx="4"/><circle class="lab-post" cx="156" cy="566" r="5"/></g>
+<text class="lab-tag lab-m lab-end" x="250" y="140">{{t lab.nexa.out}}</text>
+<path class="lab-route" data-route="request" data-stops="lab-internet lab-sg-web lab-web lab-sg-app lab-app lab-sg-data lab-data" d="M90 86C90 120 114 118 114 150V246C114 330 180 316 180 370V656"/>
+<path class="lab-route" data-route="updates" data-stops="lab-app lab-nat lab-internet lab-updates" d="M240 420C240 372 261 352 261 300V136C261 108 160 108 118 74C150 36 220 30 258 48"/>
+<path class="lab-route" data-route="blocked" data-stops="lab-internet lab-vpc lab-data" d="M60 86C38 106 20 128 20 170V540C20 560 50 566 100 566"/>
+</svg>
+<div class="lab-packets" aria-hidden="true"></div>
+<p class="lab-note" style="--x:54%;--y:72%" aria-hidden="true"><svg viewBox="0 0 44 40"><path d="M40 34C26 34 12 26 8 6M8 6l-4 9M8 6l8 6"/></svg>{{t lab.nexa.note}}</p>
+      </div>
+      <div class="lab-scene" data-scene="ld">
+      <p class="lab-scene-k">{{t lab.tLd}} · {{t lab.tLdS}}</p>
+<svg class="lab-svg lab-svg--d" viewBox="0 0 1200 640" role="group"><title>{{t lab.ld.svgT}}</title><desc>{{t lab.ld.svgD}}</desc>
+<g class="lab-c lab-cut" id="lab-cutover" data-c="lab-cutover" data-i="cut" aria-label="{{t lab.ld.nCut}}"><rect class="lab-gbox" x="56" y="60" width="250" height="124" rx="10"/><path class="lab-pole" d="M80 178V84"/><path class="lab-flag" d="M80 86h46l-10 14 10 14H80z"/><text class="lab-m" x="138" y="118">{{t lab.ld.cut1}}</text><text class="lab-m" x="138" y="142">{{t lab.ld.cut2}}</text></g>
+<g class="lab-c" id="lab-onprem" data-c="lab-onprem" data-i="op" aria-label="{{t lab.ld.nOp}}"><rect class="lab-face" x="40" y="210" width="250" height="210" rx="14"/><text class="lab-t" x="165" y="258">{{t lab.ld.op1}}</text><text class="lab-t" x="165" y="284">{{t lab.ld.op2}}</text><text class="lab-mc" x="165" y="312">{{t lab.ld.opS}}</text><path class="lab-rack" d="M72 344h186M72 368h186M72 392h186"/></g>
+<g class="lab-c" id="lab-hybrid" data-c="lab-hybrid" data-i="hyb" aria-label="{{t lab.ld.nHyb}}"><path class="lab-hit" d="M290 262H430"/><path class="lab-link" d="M290 262H430"/><circle class="lab-post" cx="290" cy="262" r="5"/><circle class="lab-post" cx="430" cy="262" r="5"/><text class="lab-mc" x="360" y="246">{{t lab.ld.hyb}}</text></g>
+<g class="lab-c" id="lab-dms" data-c="lab-dms" data-i="dms" aria-label="{{t lab.ld.nDms}}"><path class="lab-hit" d="M290 380C360 380 380 471 440 471H556"/><path class="lab-arrow" d="M290 380C360 380 380 471 440 471H548"/><path class="lab-head" d="M544 463l12 8-12 8"/><text class="lab-mc" x="330" y="470">{{t lab.ld.dms}}</text></g>
+<g class="lab-c lab-vpc" id="lab-region" data-c="lab-region" data-i="region" aria-label="{{t lab.ld.nRegion}}"><rect class="lab-bound" x="430" y="40" width="740" height="560" rx="26"/><rect class="lab-pill" x="456" y="24" width="280" height="32" rx="16"/><text class="lab-pillt" x="596" y="46">{{t lab.ld.region}}</text></g>
+<g class="lab-c lab-asg" id="lab-asg-slots" data-c="lab-asg" data-i="asg" aria-label="{{t lab.ld.nAsg}}"><rect class="lab-frame" x="470" y="90" width="660" height="252" rx="18"/><text class="lab-l" x="494" y="124">{{t lab.ld.asg}}</text><text class="lab-m lab-end" x="1106" y="124">{{t lab.ld.asgS}}</text>
+<rect class="lab-holes" x="500" y="144" width="596" height="162" fill="url(#lab-hp)"/>
+<use class="lab-inst is-up" href="#lab-ti" x="500" y="144" data-n="1"/><use class="lab-inst is-up" href="#lab-ti" x="624" y="144" data-n="2"/><use class="lab-inst" href="#lab-ti" x="748" y="144" data-n="3"/><use class="lab-inst" href="#lab-ti" x="872" y="144" data-n="4"/><use class="lab-inst" href="#lab-ti" x="996" y="144" data-n="5"/><use class="lab-inst" href="#lab-ti" x="500" y="236" data-n="6"/><use class="lab-inst" href="#lab-ti" x="624" y="236" data-n="7"/><use class="lab-inst" href="#lab-ti" x="748" y="236" data-n="8"/><use class="lab-inst" href="#lab-ti" x="872" y="236" data-n="9"/><use class="lab-inst" href="#lab-ti" x="996" y="236" data-n="10"/></g>
+<text class="lab-l" x="560" y="404">{{t lab.ld.rds}}</text><path class="lab-sync" d="M790 470H880"/>
+<g class="lab-c" id="lab-rds-primary" data-c="lab-rds-primary" data-i="pri" aria-label="{{t lab.ld.nPri}}"><rect class="lab-face" x="560" y="420" width="230" height="100" rx="14"/><path class="lab-ico" d="M590 452a20 7 0 0 0 40 0a20 7 0 0 0-40 0v34a20 7 0 0 0 40 0v-34"/><text class="lab-t lab-st" x="648" y="478">{{t lab.ld.pri}}</text></g>
+<g class="lab-c" id="lab-rds-standby" data-c="lab-rds-standby" data-i="stb" aria-label="{{t lab.ld.nStb}}"><rect class="lab-face" x="880" y="420" width="230" height="100" rx="14"/><path class="lab-ico" d="M910 452a20 7 0 0 0 40 0a20 7 0 0 0-40 0v34a20 7 0 0 0 40 0v-34"/><text class="lab-t lab-st" x="968" y="478">{{t lab.ld.stb}}</text></g>
+<path class="lab-route" id="route-dms" data-route="dms" data-stops="lab-onprem lab-dms lab-rds-primary" d="M290 380C360 380 380 471 440 471H675"/>
+</svg>
+<svg class="lab-svg lab-svg--m" viewBox="0 0 360 760" role="group"><title>{{t lab.ld.svgT}}</title><desc>{{t lab.ld.svgD}}</desc>
+<g class="lab-c" data-c="lab-onprem" data-i="op" aria-label="{{t lab.ld.nOp}}"><rect class="lab-face" x="16" y="14" width="190" height="100" rx="12"/><text class="lab-t" x="111" y="50">{{t lab.ld.op1}}</text><text class="lab-t" x="111" y="74">{{t lab.ld.op2}}</text><text class="lab-mc" x="111" y="98">{{t lab.ld.opS}}</text></g>
+<g class="lab-c lab-cut" data-c="lab-cutover" data-i="cut" aria-label="{{t lab.ld.nCut}}"><rect class="lab-gbox" x="224" y="12" width="130" height="138" rx="10"/><path class="lab-pole" d="M290 100V30"/><path class="lab-flag" d="M290 32h36l-8 11 8 11h-36z"/><text class="lab-m lab-end" x="350" y="124">{{t lab.ld.cut1}}</text><text class="lab-m lab-end" x="350" y="142">{{t lab.ld.cut2}}</text></g>
+<g class="lab-c" data-c="lab-hybrid" data-i="hyb" aria-label="{{t lab.ld.nHyb}}"><path class="lab-hit" d="M180 122V196"/><path class="lab-link" d="M180 122V196"/><circle class="lab-post" cx="180" cy="122" r="4"/><circle class="lab-post" cx="180" cy="196" r="4"/><text class="lab-m" x="190" y="168">{{t lab.ld.hyb}}</text></g>
+<g class="lab-c" data-c="lab-dms" data-i="dms" aria-label="{{t lab.ld.nDms}}"><path class="lab-hit" d="M60 122C60 172 99 172 99 222"/><path class="lab-arrow" d="M60 122C60 172 99 172 99 216"/><path class="lab-head" d="M92 210l7 11 7-11"/><text class="lab-m" x="96" y="160">{{t lab.ld.dms}}</text></g>
+<g class="lab-c lab-vpc" data-c="lab-region" data-i="region" aria-label="{{t lab.ld.nRegion}}"><rect class="lab-bound" x="8" y="196" width="344" height="540" rx="20"/><rect class="lab-pill" x="24" y="722" width="200" height="28" rx="14"/><text class="lab-pillt" x="124" y="741">{{t lab.ld.region}}</text></g>
+<text class="lab-mc" x="180" y="340">{{t lab.ld.rds}}</text><path class="lab-sync" d="M172 266H188"/>
+<g class="lab-c" data-c="lab-rds-primary" data-i="pri" aria-label="{{t lab.ld.nPri}}"><rect class="lab-face" x="24" y="226" width="148" height="80" rx="12"/><text class="lab-t" x="98" y="272">{{t lab.ld.pri}}</text></g>
+<g class="lab-c" data-c="lab-rds-standby" data-i="stb" aria-label="{{t lab.ld.nStb}}"><rect class="lab-face" x="188" y="226" width="148" height="80" rx="12"/><text class="lab-t" x="262" y="272">{{t lab.ld.stb}}</text></g>
+<g class="lab-c lab-asg" data-c="lab-asg" data-i="asg" aria-label="{{t lab.ld.nAsg}}"><rect class="lab-frame" x="24" y="356" width="312" height="356" rx="16"/><text class="lab-l" x="40" y="386">{{t lab.ld.asg}}</text><text class="lab-m" x="40" y="406">{{t lab.ld.asgS}}</text>
+<rect class="lab-holes" x="40" y="420" width="280" height="272" fill="url(#lab-hpm)"/>
+<use class="lab-inst is-up" href="#lab-tim" x="40" y="420" data-n="1"/><use class="lab-inst is-up" href="#lab-tim" x="188" y="420" data-n="2"/><use class="lab-inst" href="#lab-tim" x="40" y="476" data-n="3"/><use class="lab-inst" href="#lab-tim" x="188" y="476" data-n="4"/><use class="lab-inst" href="#lab-tim" x="40" y="532" data-n="5"/><use class="lab-inst" href="#lab-tim" x="188" y="532" data-n="6"/><use class="lab-inst" href="#lab-tim" x="40" y="588" data-n="7"/><use class="lab-inst" href="#lab-tim" x="188" y="588" data-n="8"/><use class="lab-inst" href="#lab-tim" x="40" y="644" data-n="9"/><use class="lab-inst" href="#lab-tim" x="188" y="644" data-n="10"/></g>
+<path class="lab-route" data-route="dms" data-stops="lab-onprem lab-dms lab-rds-primary" d="M60 122C60 172 99 172 99 266"/>
+</svg>
+<div class="lab-packets" aria-hidden="true"></div>
+<p class="lab-note lab-note--down" style="--x:71%;--y:0%" aria-hidden="true"><svg viewBox="0 0 44 40"><path d="M40 34C26 34 12 26 8 6M8 6l-4 9M8 6l8 6"/></svg>{{t lab.ld.note}}</p>
+      </div>
+    </div>
+    <div class="slot-ui">
+      <span class="hs lab-co is-off" data-hotspot="lab-internet" aria-hidden="true">{{t ui.w.deploy.callouts.internet}}</span>
+      <span class="hs lab-co is-off" data-hotspot="lab-web" aria-hidden="true">{{t ui.w.deploy.callouts.web}}</span>
+      <span class="hs lab-co is-off" data-hotspot="lab-app" aria-hidden="true">{{t ui.w.deploy.callouts.app}}</span>
+      <span class="hs lab-co is-off" data-hotspot="lab-data" aria-hidden="true">{{t ui.w.deploy.callouts.data}}</span>
+      <span class="hs lab-co is-off" data-hotspot="lab-nat" aria-hidden="true">{{t ui.w.deploy.callouts.nat}}</span>
+      <span class="hs lab-co is-off" data-hotspot="lab-onprem" aria-hidden="true">{{t ui.w.deploy.callouts.onprem}}</span>
+      <span class="hs lab-co is-off" data-hotspot="lab-region" aria-hidden="true">{{t ui.w.deploy.callouts.region}}</span>
+      <span class="hs lab-co is-off" data-hotspot="lab-asg" aria-hidden="true">{{t ui.w.deploy.callouts.asg}}</span>
+      <span class="hs lab-co is-off" data-hotspot="lab-rds-primary" aria-hidden="true">{{t ui.w.deploy.callouts.rds}}</span>
+      <span class="hs lab-co is-off" data-hotspot="lab-dms" aria-hidden="true">{{t ui.w.deploy.callouts.dms}}</span>
+      <span class="hs lab-co is-off" data-hotspot="lab-cutover" aria-hidden="true">{{t ui.w.deploy.callouts.cutover}}</span>
+      <span class="hs lab-key is-off" data-hotspot="m5160" aria-hidden="true"><b>5160</b><span>{{t lab.m.5160.cap}}</span></span>
+      <span class="hs lab-key is-off" data-hotspot="m5161" aria-hidden="true"><b>5161</b><span>{{t lab.m.5161.cap}}</span></span>
+      <span class="hs lab-key is-off" data-hotspot="m5162" aria-hidden="true"><b>5162</b><span>{{t lab.m.5162.cap}}</span></span>
+      <span class="hs lab-key is-off" data-hotspot="m5163" aria-hidden="true"><b>5163</b><span>{{t lab.m.5163.cap}}</span></span>
+      <span class="hs lab-key is-off" data-hotspot="m5164" aria-hidden="true"><b>5164</b><span>{{t lab.m.5164.cap}}</span></span>
+      <ul class="lab-parts" aria-label="{{t lab.partsH}}">
+        <li data-set="nexa"><button type="button" class="lab-pb" data-part="lab-internet">{{t lab.parts.lab-internet}}</button></li>
+        <li data-set="nexa"><button type="button" class="lab-pb" data-part="lab-vpc">{{t lab.parts.lab-vpc}}</button></li>
+        <li data-set="nexa"><button type="button" class="lab-pb" data-part="lab-sg-web">{{t lab.parts.lab-sg-web}}</button></li>
+        <li data-set="nexa"><button type="button" class="lab-pb" data-part="lab-web">{{t lab.parts.lab-web}}</button></li>
+        <li data-set="nexa"><button type="button" class="lab-pb" data-part="lab-nat">{{t lab.parts.lab-nat}}</button></li>
+        <li data-set="nexa"><button type="button" class="lab-pb" data-part="lab-sg-app">{{t lab.parts.lab-sg-app}}</button></li>
+        <li data-set="nexa"><button type="button" class="lab-pb" data-part="lab-app">{{t lab.parts.lab-app}}</button></li>
+        <li data-set="nexa"><button type="button" class="lab-pb" data-part="lab-sg-data">{{t lab.parts.lab-sg-data}}</button></li>
+        <li data-set="nexa"><button type="button" class="lab-pb" data-part="lab-data">{{t lab.parts.lab-data}}</button></li>
+        <li data-set="nexa"><button type="button" class="lab-pb" data-part="lab-updates">{{t lab.parts.lab-updates}}</button></li>
+        <li data-set="ld" hidden><button type="button" class="lab-pb" data-part="lab-onprem">{{t lab.parts.lab-onprem}}</button></li>
+        <li data-set="ld" hidden><button type="button" class="lab-pb" data-part="lab-hybrid">{{t lab.parts.lab-hybrid}}</button></li>
+        <li data-set="ld" hidden><button type="button" class="lab-pb" data-part="lab-dms">{{t lab.parts.lab-dms}}</button></li>
+        <li data-set="ld" hidden><button type="button" class="lab-pb" data-part="lab-region">{{t lab.parts.lab-region}}</button></li>
+        <li data-set="ld" hidden><button type="button" class="lab-pb" data-part="lab-asg">{{t lab.parts.lab-asg}}</button></li>
+        <li data-set="ld" hidden><button type="button" class="lab-pb" data-part="lab-rds-primary">{{t lab.parts.lab-rds-primary}}</button></li>
+        <li data-set="ld" hidden><button type="button" class="lab-pb" data-part="lab-rds-standby">{{t lab.parts.lab-rds-standby}}</button></li>
+        <li data-set="ld" hidden><button type="button" class="lab-pb" data-part="lab-cutover">{{t lab.parts.lab-cutover}}</button></li>
+      </ul>
+    </div>
+    <div class="slot-hit" data-cursor="drag" aria-hidden="true"></div>
+  </div>
+  <figcaption class="world-cap"><span class="fig-n">FIG. 02</span> <span class="fig-name" id="fig-deploy">{{t ui.w.deploy.fig}}</span> <span class="fig-hint">{{t ui.w.deploy.hint}}</span> <button type="button" class="fig-pause" aria-pressed="false">{{t ui.w.pause}}</button> <span class="fig-mode">{{t ui.w.mode2d}}</span></figcaption>
+</figure>
+
+<section id="lab-nexa" class="lab-panel" role="tabpanel" aria-labelledby="lab-tab-nexa">
+<header class="lab-head">
+  <h3 class="lab-title">{{t lab.nexa.h}}</h3>
+  <p class="lab-chip">{{t lab.nexa.chip}} · {{if nexaStatus:delivered}}{{t lab.nexa.stDone}}{{else}}{{t lab.nexa.stProg}}{{/if}}</p>
+  <p class="lab-tool">{{if nexaStatus:delivered}}{{t lab.nexa.toolDone}}{{else}}{{t lab.nexa.tool}}{{/if}}</p>
+  <p class="lab-tool lab-part">{{h lab.nexa.part}}</p>
+</header>
+<div class="lab-ctl">
+  <div class="lab-actions lab-js" role="group" aria-label="{{t lab.acts}}">
+    <button type="button" class="lab-act" data-action="request">{{t lab.nexa.aReq}}</button>
+    <button type="button" class="lab-act" data-action="updates">{{t lab.nexa.aUpd}}</button>
+    <button type="button" class="lab-act" data-action="blocked">{{t lab.nexa.aBlk}}</button>
+  </div>
+  <div class="lab-box lab-js"><p class="lab-h" aria-hidden="true">{{t lab.insp}}</p><aside class="lab-inspector" role="status" aria-live="polite" aria-label="{{t lab.insp}}"><p class="lab-idle">{{t lab.inspIdle}}</p></aside></div>
+  <div class="lab-box lab-box--con lab-js"><p class="lab-h" id="lab-con-nexa">{{t lab.cons}}</p><ol class="lab-console" aria-live="polite" aria-labelledby="lab-con-nexa"><li class="lab-idle">{{t lab.consIdle}}</li></ol></div>
+</div>
+<ol class="sr-only lab-desc">{{each lab.nexa.desc}}<li>{{t .}}</li>{{/each}}</ol>
+<div class="lab-factbox"><p class="lab-h">{{t lab.factsH}}</p><ul class="lab-facts lab-facts--4">{{each lab.nexa.facts}}<li>{{t .}}</li>{{/each}}</ul></div>
+</section>
+
+<section id="lab-ld" class="lab-panel" role="tabpanel" aria-labelledby="lab-tab-ld">
+<header class="lab-head">
+  <h3 class="lab-title">{{t lab.ld.h}}</h3>
+  <p class="lab-chip">{{t lab.ld.chip}}</p>
+  <p class="lab-tool">{{t lab.ld.case}}</p>
+  <p class="lab-tool lab-part">{{h lab.ld.part}}</p>
+</header>
+<div class="lab-ctl">
+  <div class="lab-actions lab-js" role="group" aria-label="{{t lab.acts}}">
+    <div class="lab-asgc">
+      <label class="lab-asgl" for="lab-asg">{{t lab.ld.asgL}}</label>
+      <div class="lab-asgrow">
+        <button type="button" class="lab-step" data-step="-1" aria-label="{{t lab.ld.less}}">−</button>
+        <input id="lab-asg" type="range" min="2" max="10" step="1" value="2" aria-valuetext="{{t lab.ld.asgV n=2}}">
+        <p class="lab-readout" id="lab-asg-out">{{t lab.ld.asgR n=2}}</p>
+        <button type="button" class="lab-step" data-step="1" aria-label="{{t lab.ld.more}}">+</button>
+      </div>
+    </div>
+    <button type="button" class="lab-act" data-action="migrate">{{t lab.ld.aMig}}</button>
+    <button type="button" class="lab-act" data-action="cost">{{t lab.ld.aCost}}</button>
+  </div>
+  <div class="lab-box lab-js"><p class="lab-h" aria-hidden="true">{{t lab.insp}}</p><aside class="lab-inspector" role="status" aria-live="polite" aria-label="{{t lab.insp}}"><p class="lab-idle">{{t lab.inspIdle}}</p></aside></div>
+  <div class="lab-box lab-box--con lab-js"><p class="lab-h" id="lab-con-ld">{{t lab.cons}}</p><ol class="lab-console" aria-live="polite" aria-labelledby="lab-con-ld"><li class="lab-idle">{{t lab.consIdle}}</li></ol></div>
+  <figure class="lab-cost">
+    <figcaption class="lab-h">{{t lab.ld.costT}}</figcaption>
+    <div class="lab-cost-row lab-cost-row--op"><span class="lab-cost-k">{{t lab.ld.costOp}}</span><span class="lab-cost-bar"><i style="--v:1"></i></span><span class="lab-cost-v">{{t lab.ld.costOpV}}</span></div>
+    <div class="lab-cost-row lab-cost-row--aws"><span class="lab-cost-k">{{t lab.ld.costAws}}</span><span class="lab-cost-bar"><i style="--v:.48"></i></span><span class="lab-cost-v">{{t lab.ld.costAwsV}}</span></div>
+    <p class="lab-cost-meta">{{t lab.ld.payback}}</p>
+    <div class="lab-plan"><p class="lab-plan-k" id="lab-plan-k">{{t lab.ld.phases}}</p><ol class="lab-phases" aria-labelledby="lab-plan-k"><li><span>1</span></li><li><span>2</span></li><li><span>3</span></li><li><span>4</span></li><li><span>5</span></li></ol></div>
+  </figure>
+</div>
+<ol class="sr-only lab-desc">{{each lab.ld.desc}}<li>{{t .}}</li>{{/each}}</ol>
+<div class="lab-factbox"><p class="lab-h">{{t lab.factsH}}</p><ul class="lab-facts">{{each lab.ld.facts}}<li>{{t .}}</li>{{/each}}</ul></div>
+</section>
+</div>

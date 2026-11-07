@@ -1,0 +1,235 @@
+{
+  "lab": {
+    "_src": "FACTS §2.1 (ITB course projects AP1 module 5160 'Logística Directa', AP01 module 5163 'NexaRetail'). Course projects in a pair, never work experience. Every € is projected. No AZ labels or ports; the only CIDR shown is the VPC's 10.20.0.0/16 (FACTS §11, 7-nov-2026); load balancer, IGW, CI/CD, containers or Terraform. The Auto Scaling demand control is illustrative.",
+    "kicker": "Cloud Lab · my two course projects",
+    "hint": "Select a part of the diagram to inspect it, or run an action.",
+    "tabs": "Course projects",
+    "tNexa": "NexaRetail",
+    "tNexaS": "three-tier network",
+    "tLd": "Logística Directa",
+    "tLdS": "migration plan",
+    "insp": "Inspector",
+    "inspIdle": "Select a part of the diagram to see what it does.",
+    "cons": "Console",
+    "consIdle": "Run an action: each step appears here.",
+    "acts": "Actions",
+    "factsH": "In short",
+    "nexa": {
+      "h": "NexaRetail · a highly available three-tier network on AWS",
+      "chip": "Course project · module 5163 · pair",
+      "stProg": "Nov 2026",
+      "stDone": "Nov 2026",
+      "tool": "Built in the AWS Management Console, as the brief requires; the pair's optional extra is a CloudFormation template (Infrastructure as Code), written by my partner.",
+      "toolDone": "Built in the AWS Management Console, as the brief requires; the pair's optional extra is a CloudFormation template (Infrastructure as Code), written by my partner.",
+      "part": "<b>My part:</b> the design defence (9 case questions on security, maintenance, audit and cost) and a monitoring and audit demo in my own AWS Learner Lab with CloudTrail, CloudWatch, AWS Config and VPC Reachability Analyzer.",
+      "svgT": "NexaRetail network diagram",
+      "svgD": "A VPC on AWS with a web tier in a public subnet, an app tier and a data tier in private subnets, security groups between the tiers, and a NAT for outbound OS updates.",
+      "internet": "Internet",
+      "updates": "OS updates",
+      "pub": "public subnet",
+      "priv": "private subnet",
+      "web": "Web tier",
+      "app": "App tier",
+      "data": "Data tier",
+      "nat": "NAT",
+      "out": "outbound only",
+      "nInternet": "Internet",
+      "nUpdates": "OS update servers",
+      "nVpc": "VPC, the private network",
+      "nWeb": "Web tier, public subnet",
+      "nApp": "App tier, private subnet",
+      "nData": "Data tier, private subnet",
+      "nNat": "NAT",
+      "nSgWeb": "Security group of the web tier",
+      "nSgApp": "Security group of the app tier",
+      "nSgData": "Security group of the data tier",
+      "aReq": "Send a customer request",
+      "aUpd": "Run OS updates",
+      "aBlk": "Try to reach the database from the internet",
+      "note": "private = no way in from the internet",
+      "desc": [
+        "Customers reach the web tier from the internet, through its security group. The web tier is in a public subnet.",
+        "The web tier calls the app tier, and the app tier queries the data tier. Both are in private subnets.",
+        "A security group sits in front of each tier and controls which tier can talk to which.",
+        "A NAT lets the private tiers download OS updates, outbound only. Nothing can reach them from the internet."
+      ],
+      "facts": [
+        "One VPC (10.20.0.0/16) with three tiers (web, app and data) across two Availability Zones",
+        "Two subnets per tier: public for the web tier, private for the app and data tiers (one per Availability Zone; the diagram is simplified)",
+        "A security group per tier controls which tier can talk to which, and every resource is tagged",
+        "A NAT, so the private tiers can only go out to the internet for OS updates"
+      ]
+    },
+    "ld": {
+      "h": "Logística Directa S.A. · a migration plan to AWS",
+      "chip": "Course project · module 5160 · pair · designed and presented in class (10-minute talk, 16 slides)",
+      "case": "A plan for a case-study company: all costs are projections.",
+      "part": "<b>My part:</b> co-author of the written plan; in the talk I presented the problem, the context and the conclusions (cost and payback).",
+      "svgT": "Logística Directa migration diagram",
+      "svgD": "An on-premises data centre linked to AWS in eu-west-1 (Ireland) in a hybrid model; EC2 Auto Scaling from 2 to 10 instances; RDS Multi-AZ with a primary and a standby database; AWS DMS copying the data; the cutover over one weekend.",
+      "op1": "On-premises",
+      "op2": "data centre",
+      "opS": "case study",
+      "hyb": "hybrid model",
+      "region": "AWS eu-west-1 · Ireland",
+      "asg": "EC2 Auto Scaling",
+      "asgS": "min 2 · max 10",
+      "rds": "RDS Multi-AZ",
+      "pri": "primary",
+      "stb": "standby",
+      "dms": "AWS DMS",
+      "cut1": "cutover",
+      "cut2": "over one weekend",
+      "nOp": "On-premises data centre",
+      "nHyb": "Hybrid model",
+      "nRegion": "AWS region eu-west-1, Ireland",
+      "nAsg": "EC2 Auto Scaling group",
+      "nPri": "RDS primary database",
+      "nStb": "RDS standby database",
+      "nDms": "AWS DMS",
+      "nCut": "Weekend cutover",
+      "asgL": "Demand (illustrative)",
+      "asgR": "instances {n} / 10 · min 2 · max 10",
+      "asgV": "{n} of 10 instances",
+      "less": "Fewer instances",
+      "more": "More instances",
+      "aMig": "Migrate data",
+      "aCost": "Yearly cost",
+      "costT": "Yearly cost (projected)",
+      "costOp": "On-premises",
+      "costOpV": "≈€150,000 / year",
+      "costAws": "On AWS",
+      "costAwsV": "≈€72,000 / year",
+      "payback": "payback ≈6 months (projected)",
+      "plan": "12-week plan · 5 phases",
+      "phases": "12-week plan in 5 phases",
+      "note": "2 → 10 instances",
+      "desc": [
+        "The on-premises data centre of a case-study company connects to AWS in a hybrid model.",
+        "On AWS, in the eu-west-1 region (Ireland), EC2 Auto Scaling runs between 2 and 10 instances.",
+        "The database moves to RDS Multi-AZ, with a primary and a standby.",
+        "AWS DMS copies about 1.6 TB (full load, then CDC), and the cutover happens over one weekend."
+      ],
+      "facts": [
+        "Plan to migrate an on-premises data centre to AWS (case-study company)",
+        "Region eu-west-1 (Ireland) · hybrid model",
+        "EC2 Auto Scaling from 2 to 10 instances · RDS Multi-AZ",
+        "AWS DMS (full load + CDC) for ≈1.6 TB · cutover over one weekend",
+        "Yearly cost ≈€150,000 → ≈€72,000 (projected) · payback ≈6 months (projected)",
+        "12-week plan in 5 phases"
+      ],
+      "phaseN": "Phase {n}",
+      "weeks": "12 weeks"
+    },
+    "i": {
+      "internet": "Where customers' requests come from.",
+      "updates": "Servers outside the VPC that provide the operating-system updates.",
+      "vpc": "The private network that contains all three tiers.",
+      "web": "Web tier, in a public subnet: the part customers reach.",
+      "app": "App tier, in a private subnet: not reachable from the internet.",
+      "data": "Data tier, in a private subnet: not reachable from the internet.",
+      "nat": "Lets the private tiers download OS updates, outbound only.",
+      "sg": "Firewalls that control which tier can talk to which.",
+      "op": "The case-study company's current data centre, the starting point of the plan.",
+      "hyb": "Hybrid model: the on-premises environment and AWS, connected and working together.",
+      "region": "The AWS region chosen in the plan: eu-west-1, in Ireland.",
+      "asg": "Adds or removes EC2 instances with demand: never fewer than 2, never more than 10.",
+      "pri": "RDS Multi-AZ: the main database.",
+      "stb": "RDS Multi-AZ: a standby copy that takes over if the primary fails.",
+      "dms": "Copies the data to AWS: a full load of ≈1.6 TB, then the ongoing changes (CDC).",
+      "cut": "The final switch to AWS, planned over one weekend."
+    },
+    "c": {
+      "req1": "→ the request reaches the web tier (public subnet)",
+      "req2": "→ the web tier calls the app tier (private subnet)",
+      "req3": "→ the app tier queries the data tier (private subnet)",
+      "req4": "← the response returns to the customer",
+      "upd1": "→ the app tier goes out through the NAT for OS updates (the data tier does the same)",
+      "upd2": "✓ outbound only: nothing can come in this way",
+      "blk": "✕ blocked: the data tier is private (no way in from the internet), and its security group is a second barrier",
+      "mig1": "AWS DMS · full load: ≈1.6 TB",
+      "mig2": "AWS DMS · CDC: ongoing changes replicated",
+      "mig3": "✓ cutover over one weekend",
+      "cost1": "≈€150,000 / year on-premises → ≈€72,000 / year on AWS (projected)",
+      "cost2": "payback ≈6 months (projected) · 12-week plan · 5 phases"
+    },
+    "mods": {
+      "h": "Course modules",
+      "cap": "Where each module shows up in the course projects",
+      "aria": "Highlight a module in the diagram"
+    },
+    "m": {
+      "5160": {
+        "id": "5160",
+        "name": "Fundamentals and initial configuration of cloud services",
+        "cap": "5160 · Fundamentals and initial configuration of cloud services",
+        "parts": [
+          "lab-region",
+          "lab-vpc"
+        ]
+      },
+      "5161": {
+        "id": "5161",
+        "name": "Cloud compute resources administration",
+        "cap": "5161 · Cloud compute resources administration",
+        "parts": [
+          "lab-web",
+          "lab-app",
+          "lab-asg"
+        ]
+      },
+      "5162": {
+        "id": "5162",
+        "name": "Cloud databases and storage administration",
+        "cap": "5162 · Cloud databases and storage administration",
+        "parts": [
+          "lab-data",
+          "lab-rds-primary",
+          "lab-rds-standby"
+        ]
+      },
+      "5163": {
+        "id": "5163",
+        "name": "Cloud networking administration",
+        "cap": "5163 · Cloud networking administration",
+        "parts": [
+          "lab-vpc",
+          "lab-nat",
+          "lab-sg-web",
+          "lab-sg-app",
+          "lab-sg-data"
+        ]
+      },
+      "5164": {
+        "id": "5164",
+        "name": "Deployment of managed cloud services",
+        "cap": "5164 · Deployment of managed cloud services",
+        "parts": [
+          "lab-dms",
+          "lab-rds-standby"
+        ]
+      }
+    },
+    "partsH": "Parts of the diagram",
+    "parts": {
+      "lab-internet": "Internet",
+      "lab-updates": "OS update servers",
+      "lab-vpc": "VPC, the private network",
+      "lab-web": "Web tier, public subnet",
+      "lab-app": "App tier, private subnet",
+      "lab-data": "Data tier, private subnet",
+      "lab-nat": "NAT",
+      "lab-sg-web": "Security group of the web tier",
+      "lab-sg-app": "Security group of the app tier",
+      "lab-sg-data": "Security group of the data tier",
+      "lab-onprem": "On-premises data centre",
+      "lab-hybrid": "Hybrid model",
+      "lab-region": "AWS region eu-west-1, Ireland",
+      "lab-asg": "EC2 Auto Scaling group",
+      "lab-rds-primary": "RDS primary database",
+      "lab-rds-standby": "RDS standby database",
+      "lab-dms": "AWS DMS",
+      "lab-cutover": "Weekend cutover"
+    }
+  }
+}

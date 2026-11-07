@@ -1,0 +1,1142 @@
+{
+  "_about": "content/ca/core.json — traducció nativa de l'original anglès (content/en/core.json). El curs es diu sempre 'curs d'especialització'. Xifres en format ca (9,3 %, 7,87/10, 150.000 €). Pendent: lectura nativa de l'Adrián abans de publicar.",
+  "_same": [
+    "**.id",
+    "**.href",
+    "**.cvHref",
+    "**.cls",
+    "**.img",
+    "**.domain",
+    "**.ev",
+    "**.uses",
+    "**.dt",
+    "**.num",
+    "**.n",
+    "**.pdf",
+    "**.hreflang",
+    "skills.cards.*.chips.*.label",
+    "build.acc.chips.*",
+    "hero.type.*",
+    "hero.now",
+    "dock.email",
+    "footer.linkedin",
+    "meta.altLocales.*",
+    "nav.cvSummary",
+    "build.live",
+    "**.org",
+    "**.link",
+    "skills.ev.growlityc",
+    "cv.work.3.tags.0",
+    "footer.github"
+  ],
+  "meta": {
+    "title": "Adrián Arboledas — Desenvolupador de programari júnior · Cloud (AWS) · Flutter · Web | CV",
+    "description": "Desenvolupador de programari júnior a Barcelona (anglès C1): pràctiques de Flutter a Accenture i cloud (AWS) a l'ITB. Disponible ja a mitja jornada; jornada completa a partir d'abril de 2027.",
+    "ogTitle": "Adrián Arboledas — Construir · Desplegar · Créixer",
+    "ogImageAlt": "Adrián Arboledas davant de cinc mons de plastilina, amb el lema «Construir · Desplegar · Créixer»",
+    "altLocales": [
+      "es_ES",
+      "en_GB"
+    ]
+  },
+  "nav": {
+    "skip": "Salta al contingut",
+    "aria": "Seccions",
+    "brandAria": "Adrián Arboledas, torna a l'inici",
+    "langAria": "Idioma",
+    "newTab": "(s'obre en una pestanya nova)",
+    "links": [
+      {
+        "id": "build",
+        "num": "01",
+        "label": "Construir"
+      },
+      {
+        "id": "deploy",
+        "num": "02",
+        "label": "Desplegar"
+      },
+      {
+        "id": "grow",
+        "num": "03",
+        "label": "Créixer"
+      },
+      {
+        "id": "cv",
+        "num": "",
+        "label": "CV"
+      },
+      {
+        "id": "europe",
+        "num": "04",
+        "label": "Destí"
+      },
+      {
+        "id": "contact",
+        "num": "",
+        "label": "Contacte"
+      }
+    ],
+    "cvSummary": "↓ CV",
+    "cvAria": "Descarrega el meu CV",
+    "cv": [
+      {
+        "href": "cv/Adrian-Arboledas-CV-2026-CA.pdf",
+        "hreflang": "ca",
+        "label": "CV · català (PDF, {size:cv/Adrian-Arboledas-CV-2026-CA.pdf})"
+      },
+      {
+        "href": "cv/Adrian-Arboledas-CV-2026-EN.pdf",
+        "hreflang": "en",
+        "label": "CV · anglès (PDF, {size:cv/Adrian-Arboledas-CV-2026-EN.pdf})"
+      },
+      {
+        "href": "cv/Adrian-Arboledas-CV-2026-ES.pdf",
+        "hreflang": "es",
+        "label": "CV · castellà (PDF, {size:cv/Adrian-Arboledas-CV-2026-ES.pdf})"
+      }
+    ],
+    "menuLabel": "Menú",
+    "menuOpen": "Obre el menú",
+    "menuClose": "Tanca el menú"
+  },
+  "hero": {
+    "eyebrow": "Desenvolupador de programari júnior · Cloud (AWS) · Flutter · Barcelona",
+    "now": "Ara · Curs d'especialització cloud (AWS) · ITB Barcelona · 2026–⁠27 · <b>disponible a mitja jornada; jornada completa a partir d'abril de 2027</b>",
+    "tag": "<em>Construeixo</em><span class=\"caret\"></span><span class=\"ins\">, desplego</span> i <em>faig créixer</em> productes digitals.",
+    "tagFull": "Construeixo, desplego i faig créixer productes digitals.",
+    "sub": "Desenvolupador Flutter en pràctiques a Accenture durant uns 8 mesos, en una app bancària en producció. Ara m'especialitzo en cloud (AWS) a l'ITB de Barcelona. Desenvolupador web i gestor de Google Ads a temps parcial en una empresa familiar de reformes.",
+    "pills": [
+      "Accenture · pràctiques de Flutter · ≈8 mesos (≈435 h)",
+      "CFGS DAM · nota mitjana 7,87/10",
+      "Castellà i català nadius · anglès C1 (Cambridge C1 Advanced)",
+      "AWS · VPC de tres capes + pla de migració <span class=\"pill-period\">projectes en parella (ITB)</span>"
+    ],
+    "cta": [
+      {
+        "cls": "btn-primary",
+        "href": "cv/Adrian-Arboledas-CV-2026-CA.pdf",
+        "pdf": "ca",
+        "doc": "",
+        "label": "↓ CV en català (PDF · {size:cv/Adrian-Arboledas-CV-2026-CA.pdf})"
+      },
+      {
+        "cls": "btn-ghost",
+        "href": "cv/Adrian-Arboledas-CV-2026-EN.pdf",
+        "pdf": "en",
+        "doc": "",
+        "label": "↓ CV en anglès"
+      },
+      {
+        "cls": "btn-ghost",
+        "href": "?doc",
+        "pdf": "",
+        "doc": "1",
+        "label": "Lectura ràpida"
+      }
+    ],
+    "type": [
+      "build › app Flutter per a un banc espanyol líder (pràctiques a Accenture)",
+      "deploy › xarxa de tres capes d'alta disponibilitat a AWS (projecte de l'ITB)",
+      "grow › Google Ads per a una empresa de reformes · CTR 9,3 %",
+      "next › un equip de programari (Flutter, web) o cloud · Barcelona o en remot"
+    ]
+  },
+  "glance": {
+    "h": "El CV d'un cop d'ull",
+    "doc": "Lectura ràpida",
+    "stops": [
+      {
+        "id": "build",
+        "world": "build",
+        "num": "01",
+        "name": "Construir",
+        "line": "Pràctiques de desenvolupador Flutter a Accenture (≈8 mesos, ≈435 h) · CFGS DAM, nota mitjana 7,87/10 · 3 webs en producció"
+      },
+      {
+        "id": "deploy",
+        "world": "deploy",
+        "num": "02",
+        "name": "Desplegar",
+        "line": "Especialització cloud (AWS, OpenNebula) · ITB · 2026–27"
+      },
+      {
+        "id": "grow",
+        "world": "grow",
+        "num": "03",
+        "name": "Créixer",
+        "line": "Web i Google Ads per a una empresa de reformes · CTR 9,3 % (abr.–jul. 2026) · 19 contactes (8–23 oct. 2026) · vaig resoldre un error de CSP que bloquejava la mesura de conversions"
+      },
+      {
+        "id": "drone",
+        "world": "drone",
+        "num": "+",
+        "name": "Més enllà del codi",
+        "line": "Pilot de dron certificat per AESA (A1/A2/A3) · ElevvaVisuals"
+      },
+      {
+        "id": "europe",
+        "world": "map",
+        "num": "04",
+        "name": "Destí",
+        "line": "Programari (Flutter, web) o cloud · Barcelona: presencial, híbrid o remot · resta d'Espanya, Europa i Amèrica: en remot · disponible ja a mitja jornada; jornada completa a partir d'abril de 2027"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "Sobre mi",
+    "h2": "Del codi <em>als clients.</em>",
+    "body": "Desenvolupador de programari júnior de Mollet del Vallès, a prop de Barcelona. Després d'uns vuit mesos de pràctiques com a desenvolupador Flutter a Accenture, actualment faig un curs d'especialització oficial de FP en cloud (AWS i OpenNebula) a l'Institut Tecnològic de Barcelona. A temps parcial, creo i gestiono el web i les campanyes de Google Ads de l'empresa de reformes de la meva família; aquestes campanyes han ajudat a augmentar-ne la facturació. A partir d'abril de 2027, quan acabi el curs, estaré disponible a jornada completa per a feines de desenvolupament de programari (Flutter, web) o d'infraestructura cloud, a Barcelona o en remot.",
+    "facts": [
+      {
+        "k": "Visc a",
+        "v": "Barcelona (Mollet del Vallès), Espanya · CET (UTC+1; UTC+2 a l'estiu)"
+      },
+      {
+        "k": "Nacionalitat",
+        "v": "Espanyola · ciutadà de la UE"
+      },
+      {
+        "k": "Disponibilitat",
+        "v": "Ara: mitja jornada, a la tarda (el curs de l'ITB és al matí) · jornada completa a partir d'abril de 2027 (puc treballar fins a les 18:00–19:00, hora d'Espanya) · en tots dos casos coincideixo amb els matins de la Costa Est dels EUA · accepto remot · trasllat negociable"
+      },
+      {
+        "k": "Idiomes",
+        "v": "Castellà i català (nadius) · anglès C1 (comprensió oral C2)"
+      },
+      {
+        "k": "Estudio",
+        "v": "Curs d'especialització cloud, ITB, 2026–27"
+      },
+      {
+        "k": "Carnet",
+        "v": "Permís B, cotxe propi"
+      },
+      {
+        "k": "Dron",
+        "v": "Certificat de pilot d'AESA, A1/A2/A3"
+      },
+      {
+        "k": "Interessos",
+        "v": "Filmació i fotografia amb dron · gimnàs (uns 4 anys) · IA, disseny web i animació"
+      }
+    ]
+  },
+  "build": {
+    "eyebrow": "01 — Construir",
+    "h2": "Apps i webs, <em>en producció.</em>",
+    "acc": {
+      "h3": "Desenvolupador Flutter (pràctiques) · Accenture",
+      "pill": "Pràctiques (FCT) · part del CFGS DAM",
+      "meta": "Barcelona (oficina de Sant Gervasi) · 18 set. 2025 – 14 maig 2026 (≈8 mesos, ≈435 hores) · pràctiques a través de Tecnilógica Ecosistemas, S.A.U. (grup Accenture)",
+      "lead": "Una app Flutter en producció per a un dels principals bancs espanyols: finançament al consum al punt de venda (crèdit a la botiga), que fan servir grans cadenes de distribució i milers d'usuaris.",
+      "teamH": "Com treballava l'equip",
+      "team": "Scrum amb sprints de dues setmanes i reunions diàries · merge requests, revisió de codi i integració contínua a GitLab · Jira i Confluence · amb perfils de disseny, QA i backend",
+      "sprintsH": "Registre de sprints · set. 2025 → maig 2026",
+      "sprintsAria": "En què vaig treballar en cada període de les pràctiques",
+      "sprints": [
+        {
+          "k": "set.–nov. 2025",
+          "d": "Incorporació: Flutter SDK, Android Studio, VS Code, GitLab i Jira; vaig aprendre l'arquitectura GetX (controllers, routes, bindings); primeres correccions d'UI supervisades."
+        },
+        {
+          "k": "des. 2025",
+          "d": "Nous components visuals segons les guies de disseny; imatges, icones SVG (flutter_svg) i animacions Lottie; configuració d'Android, iOS i web; proves d'usabilitat en dispositius."
+        },
+        {
+          "k": "gen. 2026",
+          "d": "UI responsive per a mòbil i tauleta (MediaQuery, LayoutBuilder); vaig corregir errors amb el teclat, desbordaments, el peu fix, el mode horitzontal i SafeArea; vaig revisar la configuració de xarxa HTTPS."
+        },
+        {
+          "k": "febr. 2026",
+          "d": "Integració d'API REST amb mapatge de JSON a models Dart; vaig llegir el disseny lògic de dades de l'app i vaig participar en la implementació; vaig corregir errors de scroll, peu fix i menú lateral (drawer); documentació tècnica."
+        },
+        {
+          "k": "març 2026",
+          "d": "Vaig refactoritzar components d'UI; vaig optimitzar els fluxos de navegació i la UX dels processos de finançament; menys reconstruccions de widgets (constructors const); revisions de codi i proves de regressió."
+        },
+        {
+          "k": "abr. 2026",
+          "d": "Noves funcionalitats i pantalles per als fluxos de finançament a partir de les especificacions de l'equip de disseny; proves en dispositius amb QA; vaig resoldre incidències a Jira."
+        },
+        {
+          "k": "maig 2026",
+          "d": "Builds de distribució APK / AAB per a Android amb Firebase App Distribution; proves finals d'usabilitat; documentació de tancament."
+        }
+      ],
+      "bullets": [
+        "Dart amb gestió d'estat GetX; integració d'APIs REST (autenticació, control d'errors)",
+        "Vaig corregir errors d'UX complexos en producció a Android i iOS: vistes en horitzontal, peus fixos, desbordaments, drawer, teclat, scroll",
+        "Refactorització responsive per a mòbil i tauleta",
+        "Sprints Agile/Scrum en equip, amb Jira, GitLab i revisions de codi"
+      ],
+      "chipsAria": "Tecnologies de les pràctiques",
+      "chips": [
+        "Flutter",
+        "Dart",
+        "GetX",
+        "REST/JSON",
+        "MediaQuery",
+        "LayoutBuilder",
+        "Lottie",
+        "flutter_svg",
+        "Android",
+        "iOS",
+        "GitLab",
+        "Jira",
+        "Confluence",
+        "Scrum"
+      ]
+    },
+    "sitesH": "Webs que he desenvolupat",
+    "sites": [
+      {
+        "id": "reno",
+        "title": "Empresa de reformes",
+        "desc": "Web trilingüe en Astro · més de 260 pàgines · pàgines de destinació per servei i per municipi",
+        "href": "https://reformasmopri.com/",
+        "linkLabel": "Visita el web ↗",
+        "live": "reformasmopri.com",
+        "shot": "img/work/renovation-640.webp",
+        "shot2": "img/work/renovation-1280.webp",
+        "illus": "reno",
+        "alt": "Pàgina d'inici del web d'una empresa de reformes"
+      },
+      {
+        "id": "servicempro",
+        "title": "servicempro.com",
+        "desc": "Empresa de reformes de luxe a Texas, EUA · web multilingüe",
+        "href": "https://servicempro.com/",
+        "linkLabel": "Visita el web ↗",
+        "live": "servicempro.com",
+        "shot": "img/work/servicempro-640.webp",
+        "shot2": "img/work/servicempro-1280.webp",
+        "illus": "remodel",
+        "alt": "Pàgina d'inici de servicempro.com"
+      },
+      {
+        "id": "elevva",
+        "title": "elevvavisuals.com",
+        "desc": "La meva pròpia marca de vídeo aeri (pilot de dron certificat per AESA, A1/A2/A3)",
+        "href": "https://elevvavisuals.com/",
+        "linkLabel": "Visita el web ↗",
+        "live": "elevvavisuals.com",
+        "shot": "",
+        "shot2": "",
+        "illus": "drone",
+        "alt": "Il·lustració: el visor d'un dron sobre una vall dibuixada"
+      }
+    ],
+    "cap": "Web que he fet",
+    "live": "LIVE",
+    "stack": "Fets amb Astro, React, Tailwind CSS, TypeScript, GSAP, Three.js i Lenis · multilingües, SEO, rendiment."
+  },
+  "deploy": {
+    "eyebrow": "02 — Desplegar",
+    "h2": "Ara aprenc a <em>portar-los al núvol.</em>",
+    "course": {
+      "h3": "Curs d'especialització en Recursos i Serveis al Núvol",
+      "sub": "FP de grau superior · títol oficial, nivell 5 de l'EQF · 41 ECTS · 700 hores",
+      "meta": "Institut Tecnològic de Barcelona (ITB), centre públic · oct. 2026 – abr. 2027 · en curs",
+      "line": "S'imparteix amb Amazon Web Services (AWS) i OpenNebula, en cinc mòduls oficials (5160–5164): fonaments del núvol, computació, bases de dades i emmagatzematge, xarxes i serveis administrats."
+    },
+    "takeaway": "Dos projectes en parella del curs: un pla de migració a AWS (dissenyat i presentat a classe) i una xarxa de tres capes d'alta disponibilitat a AWS (nov. 2026).",
+    "skillsLink": "Totes les tecnologies cloud, a Competències →"
+  },
+  "grow": {
+    "eyebrow": "03 — Créixer",
+    "h2": "I després <em>els faig créixer,</em> amb dades.",
+    "intro": "Des de l'abril de 2026, alhora que estudio, soc el desenvolupador web i gestor de Google Ads d'una empresa familiar de reformes de l'àrea de Barcelona, fundada el 1994. És la meva feina actual, a temps parcial. Dades del seu compte de Google Ads:",
+    "footnote": "Font: el compte de Google Ads de l'empresa. Cada dada indica el seu període; els períodes no se sumen mai.",
+    "chipsH": "També per a aquesta empresa:",
+    "chips": [
+      "SEO local + pla de Google Business Profile",
+      "Reels d'Instagram fets amb Remotion (vídeo programàtic en React)",
+      "Disseny gràfic: targetes de visita, flyers i una lona"
+    ]
+  },
+  "cv": {
+    "eyebrow": "CV",
+    "h2": "Experiència i <em>formació.</em>",
+    "workH": "Experiència laboral",
+    "eduH": "Educació i formació",
+    "more": "Més",
+    "dl": {
+      "href": "cv/Adrian-Arboledas-CV-2026-CA.pdf",
+      "hreflang": "ca",
+      "label": "↓ CV (PDF · {size:cv/Adrian-Arboledas-CV-2026-CA.pdf})"
+    },
+    "refs": "Referències disponibles a petició.",
+    "work": [
+      {
+        "ev": "reno",
+        "now": true,
+        "dt": "2026-04",
+        "role": "Desenvolupador web i gestor de Google Ads (a temps parcial)",
+        "org": "Empresa familiar de reformes · àrea de Barcelona",
+        "date": "abr. 2026 – actualitat",
+        "tags": [
+          "Temps parcial",
+          "Compaginat amb els estudis"
+        ],
+        "bullets": [
+          {
+            "text": "Creo i mantinc el web de l'empresa (Astro, ES/CA/EN, més de 260 pàgines, pàgines de destinació per servei i per municipi) i el sistema de mesura (GA4, conversions de Google Ads, Meta Pixel, Consent Mode v2); vaig detectar i corregir un error de Content-Security-Policy que bloquejava el seguiment de conversions"
+          },
+          {
+            "text": "Gestiono la campanya de cerca de Google Ads (més de 170 paraules clau negatives, revisió setmanal dels termes de cerca): CTR del 9,3 % davant del ≈6 % del sector de la construcció (21 abr. – 27 jul. 2026) i 19 contactes de 430 clics (8–23 oct. 2026)"
+          }
+        ],
+        "more": [
+          "Anuncis adaptables, concordança exacta i de frase, radi al voltant de Mollet i municipis propers, pàgines de destinació alineades amb cada anunci",
+          "SEO local i pla de Google Business Profile; reels d'Instagram amb Remotion; disseny gràfic"
+        ],
+        "link": "#grow",
+        "linkLabel": "Mira-ho a 03 Créixer →"
+      },
+      {
+        "ev": "accenture",
+        "now": false,
+        "dt": "2025-09-18",
+        "role": "Desenvolupador Flutter (pràctiques, FCT)",
+        "org": "Accenture · Tecnilógica Ecosistemas, S.A.U. (grup Accenture) · Barcelona",
+        "date": "18 set. 2025 – 14 maig 2026",
+        "tags": [
+          "Pràctiques (FCT)"
+        ],
+        "bullets": [
+          {
+            "text": "Dins d'un equip Scrum, vaig treballar en una app Flutter en producció per a un dels principals bancs espanyols (finançament al consum al punt de venda), que grans cadenes fan servir a les botigues: Dart, gestió d'estat amb GetX i API REST amb autenticació i control d'errors"
+          },
+          {
+            "text": "Vaig corregir errors d'UX complexos en producció a Android i iOS: vistes en horitzontal, peus fixos, desbordaments i el comportament del drawer, el teclat i el scroll"
+          }
+        ],
+        "more": [
+          "Vaig refactoritzar la interfície per a mòbil i tauleta (MediaQuery, LayoutBuilder)",
+          "≈435 hores; sprints de dues setmanes amb daily stand-ups",
+          "Vaig seguir un flux de treball a GitLab amb merge requests, revisions de codi i integració contínua; Jira i Confluence",
+          "Builds APK / AAB amb Firebase App Distribution"
+        ],
+        "link": "#build",
+        "linkLabel": "Mira-ho a 01 Construir →"
+      },
+      {
+        "ev": "growlityc",
+        "now": false,
+        "dt": "2025",
+        "role": "Cofundador i CMO",
+        "org": "Growlityc · Barcelona",
+        "date": "2025 – nov. 2026",
+        "tags": [
+          "Cofundador (50/50)"
+        ],
+        "bullets": [
+          {
+            "text": "Projecte d'agència de dos socis que oferia automatitzacions sobre el CRM GoHighLevel a clíniques dentals privades; vaig crear pipelines, fluxos, recordatoris de cites i reactivació de pacients"
+          },
+          {
+            "text": "Vaig dirigir el màrqueting i la prospecció (Google Ads, Meta Ads i demos), amb una demo per a una clínica d'ortodòncia de Figueres"
+          },
+          {
+            "text": "Va acabar el novembre de 2026 sense arribar a tenir clients de pagament"
+          }
+        ],
+        "more": [
+          "IA aplicada; web i marca"
+        ],
+        "link": "",
+        "linkLabel": ""
+      },
+      {
+        "ev": "freelance",
+        "now": true,
+        "dt": "2025",
+        "role": "Desenvolupador web",
+        "org": "Freelance · projectes propis i de clients",
+        "date": "2025 – actualitat",
+        "tags": [
+          "Freelance"
+        ],
+        "bullets": [
+          {
+            "text": "Webs multilingües optimitzats per a SEO: servicempro.com (empresa de reformes de luxe a Texas, EUA) i elevvavisuals.com (la meva marca de vídeo aeri)"
+          },
+          {
+            "text": "Astro, React, TypeScript, Tailwind CSS, GSAP, Three.js i Lenis, amb cura del rendiment"
+          }
+        ],
+        "more": [],
+        "link": "#build",
+        "linkLabel": "Mira-ho a 01 Construir →"
+      },
+      {
+        "ev": "pcbox",
+        "now": false,
+        "dt": "2024-02",
+        "role": "Tècnic informàtic (pràctiques, FCT)",
+        "org": "PcBox · Barcelona",
+        "date": "febr. – maig 2024",
+        "tags": [
+          "Pràctiques (FCT)"
+        ],
+        "bullets": [
+          {
+            "text": "Diagnosi, manteniment i muntatge de maquinari"
+          },
+          {
+            "text": "Instal·lació de Windows i Linux"
+          }
+        ],
+        "more": [],
+        "link": "",
+        "linkLabel": ""
+      }
+    ],
+    "edu": [
+      {
+        "ev": "itb",
+        "now": true,
+        "dt": "2026-10",
+        "role": "Curs d'especialització en Recursos i Serveis al Núvol (FP de grau superior)",
+        "org": "Institut Tecnològic de Barcelona (ITB) · Barcelona",
+        "date": "oct. 2026 – abr. 2027",
+        "tags": [
+          "En curs",
+          "Nivell 5 de l'EQF"
+        ],
+        "grade": "",
+        "bullets": [
+          {
+            "text": "Títol oficial d'especialització de FP: 41 ECTS, 700 hores, amb AWS i OpenNebula",
+            "ev": ""
+          },
+          {
+            "text": "Projecte en parella: pla de migració a AWS per a l'empresa d'un cas pràctic, dissenyat i presentat a classe; la meva part: el problema, el context i les conclusions (cost i amortització)",
+            "ev": "itb-ap1"
+          },
+          {
+            "text": "Projecte en parella: NexaRetail, una xarxa de tres capes d'alta disponibilitat a AWS, en dues zones de disponibilitat (nov. 2026); la meva part: la defensa del disseny i una demo de monitoratge i auditoria al meu propi AWS Learner Lab",
+            "ev": "itb-nexa"
+          }
+        ],
+        "more": [
+          "Mòduls 5160–5164: fonaments del núvol, computació, bases de dades i emmagatzematge, xarxes, serveis administrats",
+          "Pla de migració: EC2 Auto Scaling de 2 a 10 instàncies, RDS Multi-AZ, AWS DMS (càrrega completa + CDC) per a ≈1,6 TB amb el canvi en un cap de setmana; cost anual previst ≈150.000 € → ≈72.000 €"
+        ],
+        "link": "#deploy",
+        "linkLabel": "Mira-ho a 02 Desplegar →"
+      },
+      {
+        "ev": "dam",
+        "now": false,
+        "dt": "2024",
+        "role": "CFGS Desenvolupament d'Aplicacions Multiplataforma (DAM)",
+        "org": "Institut La Ferreria · Montcada i Reixac",
+        "date": "2024 – juny 2026",
+        "tags": [
+          "Finalitzat",
+          "Nivell 5 de l'EQF"
+        ],
+        "grade": "Nota mitjana 7,87/10",
+        "bullets": [
+          {
+            "text": "Java, bases de dades SQL i NoSQL, desenvolupament mòbil i proves unitàries amb JUnit",
+            "ev": ""
+          },
+          {
+            "text": "Va incloure les pràctiques (FCT) de desenvolupador Flutter a Accenture",
+            "ev": ""
+          }
+        ],
+        "more": [],
+        "link": "",
+        "linkLabel": ""
+      },
+      {
+        "ev": "smx",
+        "now": false,
+        "dt": "2022",
+        "role": "CFGM Sistemes Microinformàtics i Xarxes (SMX)",
+        "org": "Educem · Granollers",
+        "date": "2022 – 2024",
+        "tags": [
+          "Finalitzat"
+        ],
+        "grade": "",
+        "bullets": [
+          {
+            "text": "Maquinari, sistemes operatius (Windows, Linux) i xarxes locals",
+            "ev": ""
+          },
+          {
+            "text": "Va incloure les pràctiques (FCT) de tècnic informàtic a PcBox",
+            "ev": ""
+          }
+        ],
+        "more": [],
+        "link": "",
+        "linkLabel": ""
+      },
+      {
+        "ev": "",
+        "now": false,
+        "dt": "2022",
+        "role": "Educació secundària obligatòria (ESO)",
+        "org": "Institut Gallecs · Mollet del Vallès",
+        "date": "2022",
+        "tags": [
+          "Finalitzat"
+        ],
+        "grade": "",
+        "bullets": [],
+        "more": [],
+        "link": "",
+        "linkLabel": ""
+      }
+    ],
+    "next": {
+      "role": "Proper destí: Barcelona, o en remot",
+      "org": "un equip de programari (Flutter, web) o cloud",
+      "date": "Ja · mitja jornada",
+      "tag": "Jornada completa: abr. 2027",
+      "line": "Barcelona en presencial, híbrid o remot; en remot per a la resta d'Espanya, Europa i Amèrica (trasllat negociable)",
+      "linkLabel": "Mira-ho al mapa (04) →"
+    }
+  },
+  "skills": {
+    "eyebrow": "Competències",
+    "h2": "Amb què <em>treballo.</em>",
+    "hint": "Tria una tecnologia per veure on l'he feta servir.",
+    "legendReal": "▭ ja l'he feta servir (feina o estudis)",
+    "legendLearning": "┅ l'aprenc a l'ITB",
+    "learningSr": "en aprenentatge",
+    "code": "El codi d'aquest web és públic: mons en three.js, un pipeline de build multilingüe i eines de QA.",
+    "codeLink": "Mira el codi a GitHub ↗",
+    "cards": [
+      {
+        "n": "01",
+        "title": "Construir",
+        "desc": "Apps i webs: amb què els construeixo.",
+        "chips": [
+          {
+            "label": "Flutter",
+            "uses": "accenture"
+          },
+          {
+            "label": "Dart",
+            "uses": "accenture"
+          },
+          {
+            "label": "GetX",
+            "uses": "accenture"
+          },
+          {
+            "label": "REST APIs",
+            "uses": "accenture"
+          },
+          {
+            "label": "Material Design",
+            "uses": ""
+          },
+          {
+            "label": "Android Studio",
+            "uses": "accenture"
+          },
+          {
+            "label": "Java",
+            "uses": "dam"
+          },
+          {
+            "label": "JavaScript",
+            "uses": "reno,freelance"
+          },
+          {
+            "label": "TypeScript",
+            "uses": "freelance"
+          },
+          {
+            "label": "HTML5",
+            "uses": "reno,freelance"
+          },
+          {
+            "label": "CSS3",
+            "uses": "reno,freelance"
+          },
+          {
+            "label": "Astro",
+            "uses": "reno,freelance"
+          },
+          {
+            "label": "React",
+            "uses": "freelance"
+          },
+          {
+            "label": "Tailwind CSS",
+            "uses": "freelance"
+          },
+          {
+            "label": "GSAP",
+            "uses": "freelance"
+          },
+          {
+            "label": "Three.js",
+            "uses": "freelance"
+          },
+          {
+            "label": "Lenis",
+            "uses": "freelance"
+          },
+          {
+            "label": "WordPress",
+            "uses": ""
+          },
+          {
+            "label": "i18n",
+            "uses": "reno"
+          },
+          {
+            "label": "SEO tècnic",
+            "uses": "freelance"
+          },
+          {
+            "label": "JUnit",
+            "uses": "dam"
+          }
+        ]
+      },
+      {
+        "n": "02",
+        "title": "Desplegar",
+        "desc": "Cloud: el que aprenc a l'ITB amb projectes del curs. Examen AWS Cloud Practitioner previst abans d'abril de 2027.",
+        "chips": [
+          {
+            "label": "Amazon EC2",
+            "uses": "itb",
+            "learning": true
+          },
+          {
+            "label": "Auto Scaling",
+            "uses": "itb-ap1",
+            "learning": true
+          },
+          {
+            "label": "VPC",
+            "uses": "itb-nexa",
+            "learning": true
+          },
+          {
+            "label": "Subxarxes",
+            "uses": "itb-nexa",
+            "learning": true
+          },
+          {
+            "label": "NAT",
+            "uses": "itb-nexa",
+            "learning": true
+          },
+          {
+            "label": "Grups de seguretat",
+            "uses": "itb-nexa",
+            "learning": true
+          },
+          {
+            "label": "IAM",
+            "uses": "itb",
+            "learning": true
+          },
+          {
+            "label": "S3",
+            "uses": "itb",
+            "learning": true
+          },
+          {
+            "label": "RDS Multi-AZ",
+            "uses": "itb-ap1",
+            "learning": true
+          },
+          {
+            "label": "DMS",
+            "uses": "itb-ap1",
+            "learning": true
+          },
+          {
+            "label": "OpenNebula",
+            "uses": "itb",
+            "learning": true
+          },
+          {
+            "label": "CloudFormation",
+            "uses": "itb",
+            "learning": true
+          },
+          {
+            "label": "CloudTrail",
+            "uses": "itb-nexa",
+            "learning": true
+          },
+          {
+            "label": "CloudWatch",
+            "uses": "itb-nexa",
+            "learning": true
+          },
+          {
+            "label": "AWS Config",
+            "uses": "itb-nexa",
+            "learning": true
+          },
+          {
+            "label": "VPC Reachability Analyzer",
+            "uses": "itb-nexa",
+            "learning": true
+          }
+        ]
+      },
+      {
+        "n": "03",
+        "title": "Créixer",
+        "desc": "Màrqueting i mesura en campanyes reals.",
+        "chips": [
+          {
+            "label": "Google Ads (cerca, anuncis adaptables, seguiment de conversions)",
+            "uses": "reno,growlityc"
+          },
+          {
+            "label": "GA4",
+            "uses": "reno"
+          },
+          {
+            "label": "Meta Ads",
+            "uses": "growlityc"
+          },
+          {
+            "label": "Meta Pixel",
+            "uses": "reno"
+          },
+          {
+            "label": "Consent Mode v2",
+            "uses": "reno"
+          },
+          {
+            "label": "CRM GoHighLevel",
+            "uses": "growlityc"
+          },
+          {
+            "label": "SEO local",
+            "uses": "reno"
+          },
+          {
+            "label": "Remotion",
+            "uses": "reno"
+          }
+        ]
+      },
+      {
+        "n": "04",
+        "title": "Fonaments",
+        "desc": "Dades, eines, mètodes i sistemes.",
+        "chips": [
+          {
+            "label": "SQL",
+            "uses": "dam"
+          },
+          {
+            "label": "NoSQL",
+            "uses": "dam"
+          },
+          {
+            "label": "Git",
+            "uses": "accenture"
+          },
+          {
+            "label": "GitHub",
+            "uses": ""
+          },
+          {
+            "label": "GitLab",
+            "uses": "accenture"
+          },
+          {
+            "label": "Jira",
+            "uses": "accenture"
+          },
+          {
+            "label": "Agile/Scrum",
+            "uses": "accenture"
+          },
+          {
+            "label": "Revisió de codi",
+            "uses": "accenture"
+          },
+          {
+            "label": "VS Code",
+            "uses": "accenture"
+          },
+          {
+            "label": "Desenvolupament assistit per IA",
+            "uses": ""
+          },
+          {
+            "label": "Muntatge i reparació de maquinari",
+            "uses": "pcbox"
+          },
+          {
+            "label": "Windows",
+            "uses": "pcbox"
+          },
+          {
+            "label": "Linux",
+            "uses": "pcbox"
+          },
+          {
+            "label": "Xarxes LAN",
+            "uses": "smx"
+          }
+        ]
+      }
+    ],
+    "ev": {
+      "accenture": "pràctiques a Accenture (app Flutter)",
+      "reno": "empresa de reformes (web + Google Ads)",
+      "growlityc": "Growlityc",
+      "freelance": "webs freelance",
+      "pcbox": "pràctiques a PcBox",
+      "dam": "CFGS DAM",
+      "smx": "CFGM SMX",
+      "itb": "curs cloud de l'ITB",
+      "itb-ap1": "pla de migració a AWS (ITB)",
+      "itb-nexa": "xarxa NexaRetail (ITB)"
+    },
+    "howH": "Com treballo",
+    "how": [
+      {
+        "k": "Treball en equip",
+        "v": "un equip Scrum durant les pràctiques a Accenture; projectes en parella a l'ITB"
+      },
+      {
+        "k": "Comunicació",
+        "v": "trucades i demos amb clients potencials (Growlityc); una exposició de 10 minuts a classe sobre el pla de migració a AWS, amb un company"
+      },
+      {
+        "k": "Responsabilitat",
+        "v": "gestiono el compte publicitari d'una empresa real"
+      },
+      {
+        "k": "Emprenedoria",
+        "v": "vaig cofundar Growlityc i en vaig portar el màrqueting"
+      },
+      {
+        "k": "Resolució de problemes",
+        "v": "vaig trobar i corregir l'error de CSP que bloquejava les conversions; vaig corregir errors d'UX en producció"
+      },
+      {
+        "k": "Adaptabilitat i aprenentatge ràpid",
+        "v": "del maquinari (SMX) a les apps (DAM) i al núvol (ITB)"
+      },
+      {
+        "k": "Organització",
+        "v": "compagino el curs de l'ITB amb una feina a temps parcial"
+      }
+    ],
+    "langsH": "Idiomes",
+    "langs": [
+      {
+        "name": "Castellà",
+        "level": "Nadiu",
+        "cert": ""
+      },
+      {
+        "name": "Català",
+        "level": "Nadiu",
+        "cert": ""
+      },
+      {
+        "name": "Anglès",
+        "level": "C1 · comprensió oral C2",
+        "grid": [
+          {
+            "k": "Comprensió oral",
+            "v": "C2",
+            "top": true
+          },
+          {
+            "k": "Comprensió lectora",
+            "v": "C1",
+            "top": false
+          },
+          {
+            "k": "Interacció oral",
+            "v": "C1",
+            "top": false
+          },
+          {
+            "k": "Expressió oral",
+            "v": "C1",
+            "top": false
+          },
+          {
+            "k": "Expressió escrita",
+            "v": "C1",
+            "top": false
+          }
+        ],
+        "cert": "Cambridge C1 Advanced (CAE) · juliol de 2024 · puntuació global 192"
+      }
+    ],
+    "cefrAria": "Anglès: comprensió oral C2 i la resta d'habilitats C1 (MECR)",
+    "licences": [
+      "Permís de conduir B · cotxe propi",
+      "Pilot de dron AESA · A1/A2/A3"
+    ]
+  },
+  "drone": {
+    "eyebrow": "Més enllà del codi",
+    "h2": "Lluny del teclat, <em>volo.</em>",
+    "body": "Pilot de dron certificat per AESA, l'Agència Estatal de Seguretat Aèria, en les categories A1, A2 i A3. Gravo vídeo aeri amb la meva pròpia marca, ElevvaVisuals, i n'he fet el web.",
+    "link": "https://elevvavisuals.com/",
+    "linkLabel": "elevvavisuals.com ↗",
+    "live": "LIVE",
+    "fig": "Una vall dibuixada, sense metratge",
+    "hint": "mou el cursor per pilotar · fes clic per fer una foto",
+    "hintTouch": "toca per guiar el dron",
+    "svgT": "Una vall dibuixada vista a través del visor d'un dron",
+    "svgD": "Una vall il·lustrada amb corbes de nivell, un riu, arbres i un poble petit. Un quadricòpter dibuixat segueix una ruta de vol de traços i punts fins a una plataforma d'aterratge. És una il·lustració, no metratge."
+  },
+  "europe": {
+    "eyebrow": "04 — Destí",
+    "h2": "Proper destí: <em>Barcelona</em>, o en remot.",
+    "lead": "Busco pràctiques o una feina júnior com a desenvolupador de programari (Flutter, web) o en infraestructura cloud. La meva primera opció és Barcelona: presencial, híbrid o en remot. També m'interessen feines en remot a la resta d'Espanya, Europa i Amèrica, i el trasllat es pot parlar. Treballo en anglès (C1), castellà i català.",
+    "status": "Estat: mitja jornada (tardes) ara · jornada completa a partir d'abril de 2027",
+    "bringH": "Què aporto",
+    "bring": [
+      "Desenvolupament Flutter i web portat a producció",
+      "Fonaments de cloud a AWS amb dos projectes del curs",
+      "Google Ads i analítica amb resultats mesurats",
+      "Treball en equip: un equip Scrum a les pràctiques d'Accenture i projectes en parella a l'ITB"
+    ],
+    "learnH": "Què vull aprendre",
+    "learn": "Com un equip professional desenvolupa i manté apps (Flutter, web) en producció, i com gestiona serveis cloud amb infraestructura com a codi (per exemple, CloudFormation), segurs i amb el cost controlat.",
+    "placesH": "Llocs del mapa",
+    "places": [
+      {
+        "id": "mollet",
+        "name": "Barcelona",
+        "line": "casa i primera opció per treballar · l'ITB, les pràctiques a Accenture, la meva feina actual a temps parcial"
+      },
+      {
+        "id": "ireland",
+        "name": "Irlanda · eu-west-1",
+        "line": "la regió d'AWS del meu pla de migració (projecte del curs)"
+      },
+      {
+        "id": "texas",
+        "name": "Texas, EUA",
+        "line": "servicempro.com, un web que he desenvolupat"
+      },
+      {
+        "id": "eu",
+        "name": "? · Europa",
+        "line": "la teva empresa?"
+      },
+      {
+        "id": "am",
+        "name": "? · Amèrica",
+        "line": "la teva empresa?"
+      }
+    ],
+    "pins": {
+      "mollet": {
+        "label": "Barcelona",
+        "name": "Barcelona",
+        "line": "casa i primera opció per treballar · l'ITB, les pràctiques a Accenture, la meva feina actual a temps parcial"
+      },
+      "ireland": {
+        "label": "Irlanda",
+        "name": "Irlanda · eu-west-1",
+        "line": "la regió d'AWS del meu pla de migració (projecte del curs)"
+      },
+      "texas": {
+        "label": "Texas",
+        "name": "Texas, EUA",
+        "line": "servicempro.com, un web que he desenvolupat"
+      },
+      "eu": {
+        "label": "Europa",
+        "name": "? · Europa",
+        "line": "la teva empresa?"
+      },
+      "am": {
+        "label": "Amèrica",
+        "name": "? · Amèrica",
+        "line": "la teva empresa?"
+      }
+    },
+    "arcTip": "la teva empresa?",
+    "stageLabel": "Mapa de l'Atlàntic Nord: els llocs del meu camí",
+    "mapT": "Mapa il·lustrat de l'Atlàntic Nord",
+    "mapD": "Amèrica a l'esquerra i Europa a la dreta. Dues línies discontínues surten de Barcelona, una per Europa i una altra a través de l'Atlàntic, i cadascuna acaba a «la teva empresa?».",
+    "pinIdle": "Tria un pin per veure per què és al mapa.",
+    "fig": "L'Atlàntic Nord",
+    "hint": "deixa el teu pin",
+    "cta": {
+      "href": "cv/Adrian-Arboledas-CV-2026-CA.pdf",
+      "hreflang": "ca",
+      "label": "↓ CV en català (PDF · {size:cv/Adrian-Arboledas-CV-2026-CA.pdf})"
+    },
+    "ctaWrite": "Escriu-me"
+  },
+  "contact": {
+    "h2": "<em>Parlem.</em>",
+    "sub": "Obert a pràctiques i llocs júniors de desenvolupament de programari (Flutter, web) i cloud: ara a mitja jornada a la tarda, i a jornada completa a partir d'abril de 2027. Prioritat: Barcelona (presencial, híbrid o remot). Per a la resta d'Espanya, Europa i Amèrica, en remot; trasllat negociable. Des de Barcelona (CET), les meves tardes coincideixen amb els matins de la Costa Est dels EUA.",
+    "copy": "Copia",
+    "copyAria": "Copia l'adreça de correu",
+    "cvs": [
+      {
+        "href": "cv/Adrian-Arboledas-CV-2026-CA.pdf",
+        "hreflang": "ca",
+        "label": "↓ CV en català (PDF)"
+      },
+      {
+        "href": "cv/Adrian-Arboledas-CV-2026-EN.pdf",
+        "hreflang": "en",
+        "label": "↓ CV en anglès (PDF)"
+      }
+    ],
+    "meta": "Barcelona (Mollet del Vallès), Espanya"
+  },
+  "footer": {
+    "updated": "© 2026 Adrián Arboledas Azañón · Actualitzat: novembre de 2026",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "code": "Codi d'aquest web",
+    "doc": "Lectura ràpida",
+    "top": "Torna a dalt ↑"
+  },
+  "doc": {
+    "toggle": "Lectura ràpida",
+    "banner": "Lectura ràpida",
+    "back": "Torna a la pàgina completa"
+  },
+  "dock": {
+    "aria": "Contacte ràpid",
+    "email": "Escriu-me",
+    "call": "Truca",
+    "cv": "↓ CV",
+    "cvHref": "cv/Adrian-Arboledas-CV-2026-CA.pdf"
+  },
+  "ld": {
+    "jobTitle": "Desenvolupador de programari júnior",
+    "description": "Desenvolupador de programari júnior de Mollet del Vallès (Barcelona): pràctiques de Flutter a Accenture, curs d'especialització en cloud (AWS) a l'ITB i, a temps parcial, desenvolupament web i Google Ads per a una empresa familiar de reformes. Disponible a mitja jornada a la tarda i a jornada completa a partir d'abril de 2027.",
+    "seeks": "Pràctiques o feina júnior de desenvolupament de programari (Flutter, web) o de cloud: mitja jornada a la tarda ara i jornada completa a partir d'abril de 2027; Barcelona (presencial, híbrid o remot), i en remot per a la resta d'Espanya, Europa i Amèrica.",
+    "credDam": "CFGS Desenvolupament d'Aplicacions Multiplataforma (DAM)",
+    "credLangCat": "certificat d'idioma",
+    "eqf": "nivell 5 de l'EQF",
+    "localSeo": "SEO local",
+    "restApi": "API REST",
+    "langs": [
+      "Castellà",
+      "Català",
+      "Anglès"
+    ]
+  }
+}

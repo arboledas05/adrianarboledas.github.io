@@ -1,0 +1,67 @@
+/* src/css/stage.css (B2): the shared world-figure contract (all six worlds). CSS_ORDER: right after site.
+   figure.world > .world-slot[data-world-slot] > .slot-fallback (2D twin) · .slot-ui (z 3: hotspots, HUD) · .slot-hit (input)
+   + figcaption.world-cap. STACKING: no ancestor of a .world-slot may set transform / opacity<1 / filter / will-change /
+   isolation / contain / mix-blend / z-index — the fixed canvas (z 1) must paint above in-flow content and below .slot-ui. */
+.world{position:relative;margin:0;min-width:0}
+.world-slot{position:relative;display:grid;width:100%;aspect-ratio:var(--ar,16/9);touch-action:pan-y}
+.world-slot>.slot-fallback{grid-area:1/1;min-width:0;min-height:0}
+.world-slot.is-live>.slot-fallback{visibility:hidden}
+.slot-ui{position:absolute;inset:0;z-index:var(--z-slotui,3);pointer-events:none}
+.slot-ui :is(a,button,input,select,summary,[tabindex],[data-hotspot]:not(.hs)){pointer-events:auto}
+.slot-hit{position:absolute;inset:0;display:none;touch-action:pan-y;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+.world-slot.is-live>.slot-hit{display:block}
+/* phones: the single canvas lives inside the one live slot and scrolls with it on the compositor */
+.world-slot>#stage{position:absolute;inset:0;z-index:var(--z-stage,1);width:100%;height:100%;border-radius:inherit}
+
+/* hotspots positioned by stage.js: .hs-on pins them to the slot origin, stage writes translate3d + visibility */
+.hs-on{left:0!important;top:0!important;right:auto!important;bottom:auto!important}
+.hs{position:absolute;left:0;top:0;display:inline-flex;align-items:center;gap:6px;max-width:min(340px,86vw);padding:4px 10px 4px 8px;border:1px solid var(--line);border-radius:var(--r-pill);background:rgba(255,255,255,.94);box-shadow:0 6px 16px -10px rgba(23,21,15,.3);color:var(--ink);font:500 11px/1.35 var(--f-mono);white-space:nowrap;translate:-50% calc(-100% - 10px);pointer-events:none;transition:opacity .2s}
+.hs::before{content:'';flex:none;width:6px;height:6px;border-radius:1.5px;background:var(--w-accent,var(--indigo))}
+.hs .hs-lead{position:absolute;left:50%;top:100%;width:1px;height:10px;overflow:visible;stroke:var(--ink-3);stroke-width:1}
+.hs.is-dim{opacity:.35}
+.world-slot:not(.is-live) .hs{visibility:hidden}
+/* a focusable pin outside the frame (stage.js .hs-off): kept in the tab order at the slot edge, visible only while focused */
+.hs-off:not(:focus-visible){opacity:0!important;pointer-events:none!important}
+/* HUD-safe text card (text that sits over a figure) */
+.hud-card{max-width:36ch;padding:clamp(14px,2vw,20px);border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.93);box-shadow:var(--sh-card);color:var(--ink)}
+
+/* figcaption bar: FIG. 0n · name · hint · pause · mode ('3D · live' / '2D') */
+.world-cap{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .9rem;margin-top:10px;font:500 .72rem/1.5 var(--f-mono);color:var(--ink-3)}
+.fig-n{font-weight:700;color:var(--w-accent,var(--indigo));letter-spacing:.06em}
+.fig-name{color:var(--ink-2)}
+.fig-hint{order:5;flex:1 1 100%;text-wrap:balance} /* own line, balanced: the bar never wraps raggedly or leaves a one-word orphan */
+.fig-pause{margin-left:auto}
+.fig-pause,.fig-mode{display:none}
+/* pause = one page-wide switch (site.js): 3D and the 2D loops, so it shows whenever motion can run */
+html.js:not(.rm) .fig-pause,:is(.gl,.gl-pre) .fig-mode{display:inline-flex}
+.fig-pause{align-items:center;gap:.45rem;min-height:32px;padding:.2rem .7rem;border:1px solid var(--line);border-radius:var(--r-pill);background:rgba(255,255,255,.7);font:600 .7rem/1 var(--f-mono);color:var(--ink-2)}
+.fig-pause::before{content:'';width:8px;height:9px;border-inline:2.5px solid currentColor;box-sizing:border-box}
+.fig-pause[aria-pressed=true]{border-color:var(--w-accent,var(--indigo));color:var(--w-accent,var(--indigo))}
+.fig-pause[aria-pressed=true]::before{width:0;height:0;border:0;border-left:8px solid currentColor;border-block:5px solid transparent}
+.fig-pause:hover{border-color:var(--w-accent,var(--indigo));color:var(--ink)}
+.fig-mode{align-items:center;gap:.4rem;padding:.15rem .55rem;border-radius:var(--r-pill);background:var(--paper-3);font-weight:600;color:var(--ink-2)}
+.fig-mode::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--ink-3)}
+.world:has(.world-slot.is-live) .fig-mode{background:var(--indigo-wash);color:var(--indigo-deep)}
+.world:has(.world-slot.is-live) .fig-mode::before{background:var(--w-accent,var(--indigo))}
+@media (pointer:coarse){.fig-pause{min-height:44px;padding-inline:.9rem}}
+/* phones: a tidy label block, never a ragged wrap: FIG / name beside the pause, then hint | mode */
+@media (max-width:820px){
+ .world-cap{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:.1rem .7rem;font-size:.68rem}
+ .world-cap>.fig-n{grid-area:1/1;font-size:.62rem}
+ .world-cap>.fig-name{grid-area:2/1;min-width:0;line-height:1.35}
+ .world-cap>.fig-pause{grid-area:1/2/3/3}
+ .world-cap>.fig-hint{grid-area:3/1;min-width:0;margin-top:.25rem}
+ .world-cap>.fig-mode{grid-area:3/2;justify-self:end;margin-top:.25rem;white-space:nowrap}
+}
+/* narrow phones: the pause is an icon button (its text stays the accessible name) */
+@media (max-width:480px){html.js .fig-pause{justify-content:center;width:44px;padding:0;gap:0;font-size:0}}
+/* hints promise an interaction: only while the 3D world is live, and on touch only a touch string (site.js sets [data-touch]) */
+.fig-hint:empty,html:is(.no-js,.rm) .fig-hint,html:not(.gl,.gl-pre) .fig-hint{display:none}
+.world:not(:has(.world-slot.is-live)) .fig-hint{visibility:hidden} /* its line is reserved: going live never reflows the caption */
+@media (hover:none){.fig-hint:not([data-touch]){display:none}}
+
+/* reduced motion, doc and print: the 2D twin, always */
+.rm .world-slot>.slot-fallback{visibility:visible!important}
+.rm :is(#stage,.slot-hit,.hs){display:none!important}
+:is(.doc,.print) .world-slot>.slot-fallback{visibility:visible!important}
+@media (forced-colors:active){.world-slot>.slot-fallback{visibility:visible!important}.slot-hit,.hs{display:none!important}}

@@ -1,0 +1,85 @@
+/* hero.css (B3) · FIG. 00 the World Deck: hero visual column, his cut-out portrait (rim light, shadow, parallax,
+   scroll exit), the poster → live crossfade, the phone banner with its CSS bead. Never a rectangle around him.
+   Stacking: nothing here sets transform / opacity / filter / z-index on an ancestor of .world-slot. */
+.hero{position:relative}
+.hero-visual{align-self:end;justify-self:end;width:100%;max-width:min(680px,calc((100svh - var(--nav-h) - 48px)*.926));margin:0}
+@media (min-width:1100px){.hero-copy{grid-column:1/span 6}.hero-visual{grid-column:7/-1}}
+@media (min-width:821px) and (max-width:1099px){.hero-copy{grid-column:1/span 7}.hero-visual{grid-column:8/-1}}
+@media (min-width:821px) and (max-width:1099px) and (orientation:portrait){.hero{min-height:0}.hero-grid{column-gap:20px}.hero-visual{max-width:none;width:calc(100% + var(--gutter));align-self:center;margin:-4vh calc(-1*var(--gutter)) 0 0}.hero-visual .world-cap{padding-right:calc(var(--gutter) - 8px)}} /* iPad portrait: no 100svh gap above the name, the deck sits beside the copy */
+.hero-visual .world-slot{position:relative;width:100%;aspect-ratio:1/1.08}
+.hero-visual .slot-fallback{position:absolute;inset:0;transition:opacity .4s var(--ease-out),visibility 0s linear .4s}
+.hero-visual .slot-fallback img{display:block;width:100%;height:100%;object-fit:contain}
+.hero-visual .world-slot.is-live>.slot-fallback{opacity:0;visibility:hidden}
+
+/* his cut-out: a DOM layer above the canvas (z 3). Pointer parallax from w-hero's --hx/--hy (opposite to the deck),
+   scroll exit −6vh by a scroll timeline (no JS). The torso fades into PAPER, not into the canvas: the slot's ::after
+   (z 2, between the canvas and him) lays a paper floor over the blade roots, so no colour shows through his shirt.
+   Rim light: one soft directional light from the upper left (a feathered indigo kiss on his left/top contour, never a
+   crisp offset edge: fixed CSS px read as a lilac stroke at phone scale) + a long, faint fall shadow under him. */
+.hero-visual .world-slot::after{content:'';position:absolute;inset:auto 0 0;height:26%;z-index:2;pointer-events:none;
+  background:radial-gradient(ellipse 50% 100% at 50% 100%,var(--paper) 42%,rgba(244,241,234,0))} /* feathered: no box edge on the aurora */
+.hero-portrait{position:absolute;z-index:3;left:14%;bottom:0;width:66%;pointer-events:none;
+  transform:translate3d(calc(var(--hx,0)*-10px),calc(var(--hy,0)*-6px),0)}
+.hero-portrait img{display:block;width:100%;height:auto;
+  filter:drop-shadow(-2px -2px 3px rgba(91,71,255,.26)) drop-shadow(0 18px 24px rgba(58,43,224,.08));
+  /* the photo's shoulders touch its left/right borders: fade the sides and the foot so no straight edge (or rim) shows */
+  -webkit-mask-image:linear-gradient(#000 80%,transparent 98%),linear-gradient(90deg,transparent,#000 10%,#000 92%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(#000 80%,transparent 98%),linear-gradient(90deg,transparent,#000 10%,#000 92%,transparent);mask-composite:intersect}
+/* a neutral contact shadow, not an indigo glow */
+.hero-portrait::after{content:'';position:absolute;z-index:-1;left:10%;right:6%;bottom:-2%;height:7%;border-radius:50%;
+  background:radial-gradient(closest-side,rgba(23,21,15,.1),rgba(23,21,15,0))}
+@supports (animation-timeline:scroll()){
+  html:not(.rm) .hero-portrait{animation:hero-exit linear both;animation-timeline:scroll(root);animation-range:0 100vh}
+}
+@keyframes hero-exit{to{translate:0 -6vh}}
+
+/* the bead (2D twin of the 3D bead): perched on the Build blade, a small hop every 6 s; the live deck has its own */
+.hero-bead{position:absolute;z-index:3;left:12%;top:35.2%;width:4.6%;aspect-ratio:1;margin:-2.3% 0 0 -2.3%;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle at 34% 30%,#9C90FF 0,#5B47FF 26%,#3A2BE0 58%,#2A1FC0 100%);box-shadow:0 6px 10px -4px rgba(42,31,192,.55)}
+html.js:not(.rm) .hero-bead{animation:hero-hop 6s var(--ease-out) 1.4s infinite}
+.hero-visual .world-slot.is-live .hero-bead{visibility:hidden;animation:none}
+@keyframes hero-hop{0%,84%,100%{transform:none}87%{transform:scale(1.15,.8)}92%{transform:translateY(-110%)}96%{transform:scale(1.1,.88)}}
+
+/* hover pills (aria-hidden; the glance list is their DOM twin) show one at a time */
+.hero-visual .hs{opacity:0;transition:opacity .18s var(--ease-out)}
+.hero-visual .hs.is-on{opacity:1}
+/* the two right-hand blades: the pill grows leftwards from its anchor, so a long label never leaves the viewport (1024–1280) */
+.hero-visual .hs:is([data-hotspot=drone],[data-hotspot=europe]){translate:calc(-100% + 18px) calc(-100% - 10px)}
+.hero-visual .world-cap{margin-top:6px}
+
+/* the eyebrow is the first line a reader sees: never a one-word orphan ("… CODE TO / CLOUD"). Tighter tracking keeps it on
+   one line wherever the column allows; balance splits it evenly where it does not (ES/CA are longer) */
+.hero .eyebrow{letter-spacing:.12em;text-wrap:balance;max-width:100%}
+
+/* phones and small tablets: a top banner in the hero's flex column (site.css puts the copy after it, z 4):
+   poster + portrait, no WebGL. IT first and the CV in 10 s: the first screen holds the banner, the role line, the name,
+   the tagline, the fact pills (Accenture and DAM first) and the CV button; the "now" chip, the sub and the contact line
+   follow. The banner is shorter than before and overlaps the copy only a little, so his shoulders stay in the picture. */
+@media (max-width:820px){
+  .hero-visual{position:relative;align-self:stretch;height:36svh;max-width:none;width:auto;margin:-46px calc(-1*var(--gutter)) -3vh;display:flex;justify-content:center;pointer-events:none}
+  .hero-visual .world-slot{height:100%;width:auto}
+  .hero-visual .world-cap,.hero-visual .slot-ui,.hero-visual .slot-hit{display:none}
+  .hero-portrait{left:21%;width:60%;bottom:-2%} /* smaller and seated lower: his head sits under the blade-label band */
+  .hero-portrait img{filter:drop-shadow(-1px -1px 2px rgba(91,71,255,.22))}
+  html.js:not(.rm) .hero-visual .slot-fallback img{animation:hero-float 7s ease-in-out infinite}
+  .hero-grid .hero-copy::before{height:28px}
+  .hero-copy>*{order:5}
+  .hero-copy>.eyebrow,.hero-copy>.hero-name,.hero-copy>.hero-tag{order:0}
+  .hero-copy>.hero-pills{order:1}
+  .hero-copy>.hero-cta{order:2}
+  .hero-copy>.now-chip{order:3}
+  .hero-copy>.hero-sub{order:4}
+  .hero-grid .hero-copy{gap:10px}
+  .hero-tag{font-size:clamp(1.15rem,5.2vw,1.45rem)}
+  .hero-pills{grid-template-columns:1fr 1fr;gap:6px}
+  .hero-pills .pill{padding:.42rem .6rem;border-radius:10px;font-size:.74rem;line-height:1.3}
+  .hero-pills .pill-period{font-size:.6rem}
+}
+@media (max-width:820px) and (max-height:760px){.hero-visual{height:31svh}.hero .hero-name{font-size:clamp(2.3rem,11vw,2.9rem)}}
+@media (min-width:600px) and (max-width:820px){.hero-visual{height:40svh}.hero-pills .pill{font-size:.8rem}}
+@keyframes hero-float{50%{transform:translate3d(0,-4px,0)}}
+
+@media (prefers-reduced-motion:reduce){.hero-visual *{animation:none!important;transition:none!important}}
+html:is(.doc,.print) .hero-visual{display:none!important}
+@media print{.hero-visual{display:none!important}}
+@media (forced-colors:active){.hero-portrait::after,.hero-bead,.hero-visual .world-slot::after{display:none}.hero-portrait img{filter:none}}

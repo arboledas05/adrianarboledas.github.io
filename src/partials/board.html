@@ -1,0 +1,115 @@
+<div id="board" class="board">
+  <figure class="world board-world" data-world="grow" aria-labelledby="fig-grow">
+    <div class="world-slot board-stage" data-world-slot="grow" style="--ar:16/8">
+      <div class="slot-fallback"><picture><source media="(max-width: 820px)" srcset="{{asset img/worlds/grow-m.webp}}" width="600" height="600"><img src="{{asset img/worlds/grow-d.webp}}" width="1000" height="500" alt="" loading="lazy" decoding="async"></picture></div>
+      <div class="slot-ui">
+        <span class="hs board-tip" data-hotspot="sign" aria-hidden="true">{{t ui.w.grow.sign}}</span>
+        <span class="hs board-tip" data-hotspot="teeth" aria-hidden="true">{{t ui.w.grow.teeth}}</span>
+        <span class="hs board-tip" data-hotspot="house" aria-hidden="true">{{t ui.w.grow.house}}</span>
+        <span class="hs board-tip" data-hotspot="bowl" aria-hidden="true">{{t ui.w.grow.bowl}}</span>
+        <span class="hs board-tip board-tip--us" data-hotspot="us" aria-hidden="true">{{t ui.w.grow.towerUs}}</span>
+        <span class="hs board-tip board-tip--sec" data-hotspot="sector" aria-hidden="true">{{t ui.w.grow.towerSector}}</span>
+      </div>
+      <div class="slot-hit" data-cursor="drag" aria-hidden="true"></div>
+    </div>
+    <p class="board-legend">{{t ui.w.grow.legend}}</p>
+    <figcaption class="world-cap"><span class="fig-n">FIG. 03</span> <span class="fig-name" id="fig-grow">{{t ui.w.grow.fig}}</span> <span class="fig-hint">{{t ui.w.grow.hint}}</span> <button type="button" class="fig-pause" aria-pressed="false">{{t ui.w.pause}}</button> <span class="fig-mode">{{t ui.w.mode2d}}</span></figcaption>
+  </figure>
+  <article class="tile tile--ctr" data-tile="ctr">
+    <div class="tile-front">
+      <h3 class="tile-k" id="tk-ctr">{{t board.ctr.k}}</h3>
+      <p class="tile-fig"><span class="num" data-to="9.3" data-dec="1">{{t board.ctr.num}}</span></p>
+      <p class="tile-period">{{h board.ctr.period}}</p>
+      <div class="bars" aria-hidden="true">
+        <div class="bar bar--us" style="--v:.93"><span class="bar-l">{{t board.ctr.us}} <b>{{t board.ctr.usV}}</b></span><span class="bar-t"><i></i></span></div>
+        <div class="bar bar--sector" style="--v:.6"><span class="bar-l">{{t board.ctr.sector}} <b>{{t board.ctr.sectorV}}</b></span><span class="bar-t"><i></i></span></div>
+        <div class="bar-axis"><span>{{t board.ctr.ax0}}</span><span>{{t board.ctr.ax10}}</span></div>
+      </div>
+      <table class="sr-only">
+        <caption>{{t board.ctr.tCap}}</caption>
+        <tr><th scope="col">{{t board.ctr.tWho}}</th><th scope="col">{{t board.ctr.tVal}}</th></tr>
+        <tr><th scope="row">{{t board.ctr.tUs}}</th><td>{{t board.ctr.usV}}</td></tr>
+        <tr><th scope="row">{{t board.ctr.sector}}</th><td>{{t board.ctr.sectorV}}</td></tr>
+      </table>
+      <p class="tile-line">{{t board.ctr.range}}</p>
+      <p class="tile-note">{{t board.ctr.note}}</p>
+    </div>
+    <div class="tile-back" id="back-ctr"><p><span class="tile-back-k">{{t board.howK}}</span> {{t board.ctr.back}}</p></div>
+    <button type="button" class="tile-how b-js" aria-expanded="false" aria-controls="back-ctr" aria-describedby="tk-ctr">{{t board.how}}</button>
+  </article>
+
+  <article class="tile tile--leads" data-tile="contacts">
+    <div class="tile-front">
+      <h3 class="tile-k" id="tk-contacts">{{t board.leads.k}}</h3>
+      <p class="tile-fig"><span class="num" data-to="19" data-dec="0">{{t board.leads.num}}</span> <span class="tile-unit">{{t board.leads.unit}}</span></p>
+      <p class="tile-period">{{h board.leads.period}}</p>
+      <p class="tile-line">{{t board.leads.from}}</p>
+      <div class="funnel">
+        <div class="ticks" data-n="43" aria-hidden="true"></div>
+        <p class="ticks-legend b-js" aria-hidden="true">{{t board.leads.legend}}</p>
+        <div class="dots" role="img" aria-label="{{t board.leads.dots}}"><span class="dot" style="--i:0"></span><span class="dot" style="--i:1"></span><span class="dot" style="--i:2"></span><span class="dot" style="--i:3"></span><span class="dot" style="--i:4"></span><span class="dot" style="--i:5"></span><span class="dot" style="--i:6"></span><span class="dot" style="--i:7"></span><span class="dot" style="--i:8"></span><span class="dot" style="--i:9"></span><span class="dot" style="--i:10"></span><span class="dot" style="--i:11"></span><span class="dot" style="--i:12"></span><span class="dot" style="--i:13"></span><span class="dot" style="--i:14"></span><span class="dot" style="--i:15"></span><span class="dot" style="--i:16"></span><span class="dot" style="--i:17"></span><span class="dot" style="--i:18"></span></div>
+      </div>
+      <button type="button" id="board-replay" class="board-btn b-js"><span aria-hidden="true">↻</span> {{t board.leads.replay}}</button>
+    </div>
+    <div class="tile-back" id="back-contacts"><p><span class="tile-back-k">{{t board.howK}}</span> {{t board.leads.back}}</p></div>
+    <button type="button" class="tile-how b-js" aria-expanded="false" aria-controls="back-contacts" aria-describedby="tk-contacts">{{t board.how}}</button>
+  </article>
+
+  <article class="tile tile--clicks" data-tile="clicks">
+    <div class="tile-front">
+      <h3 class="tile-k" id="tk-clicks">{{t board.clicks.k}}</h3>
+      <p class="tile-fig"><span class="num" data-to="703" data-dec="0">{{t board.clicks.num}}</span> <span class="tile-unit">{{t board.clicks.unit}}</span></p>
+      <p class="tile-period">{{h board.clicks.period}}</p>
+    </div>
+    <div class="tile-back" id="back-clicks"><p><span class="tile-back-k">{{t board.howK}}</span> {{t board.clicks.back}}</p></div>
+    <button type="button" class="tile-how b-js" aria-expanded="false" aria-controls="back-clicks" aria-describedby="tk-clicks">{{t board.how}}</button>
+  </article>
+
+  <article class="tile tile--disc" data-tile="discipline">
+    <div class="tile-front">
+      <h3 class="tile-k" id="tk-discipline">{{t board.disc.k}}</h3>
+      <p class="tile-fig"><span class="num" data-to="170" data-dec="0">{{t board.disc.num}}</span> <span class="tile-unit">{{t board.disc.unit}}</span></p>
+      <p class="tile-period">{{t board.disc.line}}</p>
+    </div>
+    <div class="tile-back" id="back-discipline"><p><span class="tile-back-k">{{t board.howK}}</span> {{t board.disc.back}}</p></div>
+    <button type="button" class="tile-how b-js" aria-expanded="false" aria-controls="back-discipline" aria-describedby="tk-discipline">{{t board.how}}</button>
+  </article>
+
+  <article class="tile tile--csp" data-tile="csp">
+    <div class="tile-front">
+      <h3 class="tile-k" id="tk-csp">{{t board.csp.k}}</h3>
+      <ol class="csp-steps">
+        <li><span class="csp-sk">{{t board.csp.s1k}}</span> <span>{{t board.csp.s1}}</span></li>
+        <li><span class="csp-sk">{{t board.csp.s2k}}</span> <span>{{t board.csp.s2}}</span></li>
+        <li><span class="csp-sk">{{t board.csp.s3k}}</span> <span>{{t board.csp.s3}}</span></li>
+        <li><span class="csp-sk">{{t board.csp.s4k}}</span> <span>{{t board.csp.s4}}</span></li>
+      </ol>
+      <p class="csp-tech">{{t board.csp.tech}}</p>
+      <div class="csp-demo">
+        <div class="csp-toggle b-js" role="group" aria-labelledby="tk-csp"><button type="button" aria-pressed="true">{{t board.csp.before}}</button><button type="button" aria-pressed="false">{{t board.csp.after}}</button></div>
+        <div class="csp-track" aria-hidden="true">
+          <span class="csp-node">{{t board.csp.from}}</span><span class="csp-wall"></span><span class="csp-node csp-node--on">{{t board.csp.cm}}</span><span class="csp-node csp-node--on">{{t board.csp.ga}}</span>
+          <span class="csp-run"><i class="csp-packet"></i></span>
+          <span class="csp-state"><span class="csp-s-b">{{t board.csp.wall}}</span><span class="csp-s-a">{{t board.csp.fixed}}</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="tile-back" id="back-csp"><p><span class="tile-back-k">{{t board.howK}}</span> {{t board.csp.back}}</p></div>
+    <button type="button" class="tile-how b-js" aria-expanded="false" aria-controls="back-csp" aria-describedby="tk-csp">{{t board.how}}</button>
+  </article>
+
+  <article class="tile tile--match" data-tile="match">
+    <div class="tile-front">
+      <h3 class="tile-k" id="tk-match">{{t board.match.k}}</h3>
+      <div class="match">
+        <div class="match-p"><span class="match-l">{{t board.match.search}}</span><p class="match-q"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3.5 3.5"/></svg><span data-token="service">{{t board.match.svc}}</span> <span data-token="town">{{t board.match.town}}</span></p></div>
+        <div class="match-p"><span class="match-l">{{t board.match.ad}}</span><p class="match-ad"><span data-token="service">{{t board.match.Svc}}</span> {{t board.match.in}} <span data-token="town">{{t board.match.Town}}</span></p></div>
+        <div class="match-p"><span class="match-l">{{t board.match.page}}</span><p class="match-h1"><span data-token="service">{{t board.match.Svc}}</span> {{t board.match.in}} <span data-token="town">{{t board.match.Town}}</span></p></div>
+      </div>
+      <div class="match-hl b-js" role="group" aria-label="{{t board.match.hl}}"><span class="match-hl-k" aria-hidden="true">{{t board.match.hl}}:</span><button type="button" aria-pressed="false" data-hl="service">{{t board.match.hlSvc}}</button><button type="button" aria-pressed="false" data-hl="town">{{t board.match.hlTown}}</button></div>
+      <p class="tile-cap">{{t board.match.cap}}</p>
+    </div>
+    <div class="tile-back" id="back-match"><p><span class="tile-back-k">{{t board.howK}}</span> {{t board.match.back}}</p></div>
+    <button type="button" class="tile-how b-js" aria-expanded="false" aria-controls="back-match" aria-describedby="tk-match">{{t board.how}}</button>
+  </article>
+</div>

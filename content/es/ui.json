@@ -1,0 +1,120 @@
+{
+  "ui": {
+    "menu": {
+      "open": "Abrir menú",
+      "close": "Cerrar menú"
+    },
+    "copied": "¡copiado!",
+    "copyFail": "no se pudo copiar",
+    "copiedSr": "{text} copiado al portapapeles",
+    "copyFailSr": "No se pudo copiar. La dirección es {text}",
+    "query": {
+      "usedAt": "› {skill} → usado en: {places}",
+      "none": "› {skill} → sin ejemplo enlazado en esta página",
+      "see": "ver →"
+    },
+    "doc": {
+      "on": "Lectura rápida activada. Para salir, usa «Volver a la página completa», arriba."
+    },
+    "cursor": {
+      "drag": "Arrastrar",
+      "open": "Abrir",
+      "play": "Reproducir",
+      "spin": "Girar",
+      "view": "Ver",
+      "inspect": "Inspeccionar",
+      "replay": "Repetir",
+      "drop": "Dejar tu pin",
+      "steer": "Pilotar"
+    },
+    "w": {
+      "pause": "Pausar movimiento",
+      "play": "Reanudar movimiento",
+      "mode3d": "3D · en tiempo real",
+      "mode2d": "2D",
+      "hero": {
+        "fig": "Cinco mundos, un CV",
+        "hint": "pasa el cursor por una lámina · haz clic para ir allí",
+        "hintTouch": "toca una lámina para ir allí",
+        "b0": "01 CONSTRUIR",
+        "b1": "02 DESPLEGAR",
+        "b2": "03 CRECER",
+        "b3": "+ DRON",
+        "b4": "04 DESTINO",
+        "h0": "01 Construir · prácticas Flutter en Accenture",
+        "h1": "02 Desplegar · AWS en el ITB",
+        "h2": "03 Crecer · Google Ads · CTR 9,3 %",
+        "h3": "+ Más allá del código · piloto de dron AESA",
+        "h4": "04 Destino · Barcelona, o en remoto"
+      },
+      "build": {
+        "fig": "El taller de sprints",
+        "hint": "arrastra el móvil · prueba los bugs",
+        "hintTouch": "toca la pantalla · prueba los bugs",
+        "note": "¡gírame! ↻",
+        "getx": {
+          "c": "Controller",
+          "r": "Route",
+          "b": "Binding"
+        },
+        "layers": {
+          "appbar": "AppBar",
+          "listview": "ListView",
+          "row": "Row",
+          "footer": "Footer"
+        },
+        "json": "JSON",
+        "model": "modelo Dart",
+        "apk": "APK",
+        "aab": "AAB"
+      },
+      "deploy": {
+        "fig": "Diorama cloud (proyectos del curso)",
+        "hint": "haz clic en una pieza · arrastra para girar",
+        "hintTouch": "toca una pieza para inspeccionarla",
+        "callouts": {
+          "internet": "internet",
+          "web": "capa web · pública",
+          "app": "capa de app · privada",
+          "data": "capa de datos · privada",
+          "nat": "NAT · actualizaciones del SO",
+          "onprem": "centro de datos local",
+          "region": "eu-west-1 · Irlanda",
+          "asg": "Auto Scaling 2–10",
+          "rds": "RDS Multi-AZ",
+          "dms": "DMS · carga completa + CDC",
+          "cutover": "cambio a AWS · un fin de semana"
+        }
+      },
+      "grow": {
+        "fig": "Cada canica, 10 clics reales",
+        "hint": "arrastra para girar · haz clic en el cuenco para repetir",
+        "hintTouch": "toca para repetir",
+        "towerUs": "CTR 9,3 % · 21 abr – 27 jul 2026",
+        "towerSector": "≈6 % · media del sector de la construcción",
+        "teeth": "más de 170 palabras clave negativas",
+        "legend": "Izquierda: 8–23 oct 2026 · 1 canica = 10 clics · 1 bolita índigo = 1 contacto · Derecha: 21 abr – 27 jul 2026 · los periodos nunca se suman.",
+        "sign": "búsqueda",
+        "house": "página de destino",
+        "bowl": "19 contactos · 8–23 oct 2026"
+      },
+      "drone": {
+        "fig": "Un valle dibujado, sin metraje",
+        "hint": "mueve el cursor para pilotar · haz clic para hacer una foto",
+        "hintTouch": "toca para guiar el dron",
+        "shot": "¡buena toma!",
+        "saved": "GUARDADO",
+        "aesa": "AESA · A1 / A2 / A3",
+        "brand": "ELEVVAVISUALS.COM",
+        "rec": "REC"
+      },
+      "map": {
+        "fig": "El Atlántico Norte",
+        "hint": "deja tu pin ↴",
+        "hintTouch": "toca para dejar tu pin",
+        "tip": "¿tu empresa?",
+        "drop": "deja tu pin ↴"
+      }
+    }
+  }
+}

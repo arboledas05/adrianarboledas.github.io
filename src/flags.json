@@ -1,0 +1,14 @@
+{
+  "cloudlab": true,
+  "board": true,
+  "bugphone": true,
+  "stage": true,
+  "stagePhone": true,
+  "worlds": { "hero": true, "build": true, "deploy": true, "grow": true, "drone": true, "map": true, "dronePip": false },
+  "lenis": true,
+  "cursor": true,
+  "adspend": false,
+  "learn": true,
+  "nexaStatus": "inProgress",
+  "liveTags": { "reformasmopri.com": true, "servicempro.com": true, "elevvavisuals.com": true }
+}

@@ -1,0 +1,92 @@
+{
+  "board": {
+    "how": "Com?",
+    "back": "Torna",
+    "howK": "Com?",
+    "ctr": {
+      "k": "Taxa de clics (CTR)",
+      "num": "9,3 %",
+      "period": "<time datetime=\"2026-04-21\">21 abr.</time> – <time datetime=\"2026-07-27\">27 jul. 2026</time>",
+      "us": "Aquesta campanya",
+      "usV": "9,3 %",
+      "sector": "Mitjana del sector de la construcció",
+      "sectorV": "≈6 %",
+      "ax0": "0 %",
+      "ax10": "10 %",
+      "range": "Interval habitual al compte: ≈8,5–10 %",
+      "note": "per sobre de la mitjana del sector",
+      "tCap": "Taxa de clics: aquesta campanya davant la mitjana del sector de la construcció",
+      "tWho": "Campanya",
+      "tVal": "Taxa de clics",
+      "tUs": "Aquesta campanya, 21 abr. – 27 jul. 2026",
+      "back": "Anuncis de cerca adaptables · paraules clau de concordança exacta i de frase · més de 170 paraules clau negatives · pàgines de destinació que encaixen amb cada anunci",
+      "readout": "CTR 9,3 % · 21 abr. – 27 jul. 2026"
+    },
+    "clicks": {
+      "k": "Clics",
+      "num": "703",
+      "unit": "clics",
+      "period": "<time datetime=\"2026-04-21\">21 abr.</time> – <time datetime=\"2026-07-27\">27 jul. 2026</time>",
+      "back": "Segmentació per ubicació: un radi al voltant de Mollet més els municipis propers · revisió setmanal dels termes de cerca",
+      "readout": "703 clics · 21 abr. – 27 jul. 2026"
+    },
+    "leads": {
+      "k": "Contactes",
+      "num": "19",
+      "unit": "sol·licituds de contacte",
+      "period": "<time datetime=\"2026-10-08\">8</time>–<time datetime=\"2026-10-23\">23 oct. 2026</time> · període de mesura net",
+      "from": "a partir de 430 clics",
+      "dots": "19 contactes",
+      "replay": "Repeteix 8–23 oct.",
+      "legend": "1 marca = 10 clics",
+      "back": "Mesurat amb el seguiment de conversions de Google Ads, GA4 i Consent Mode v2",
+      "readout": "19 contactes de 430 clics · 8–23 oct. 2026"
+    },
+    "disc": {
+      "k": "Disciplina",
+      "num": "170+",
+      "unit": "paraules clau negatives",
+      "line": "revisió setmanal dels termes de cerca",
+      "back": "Cada setmana llegeixo els termes de cerca reals i bloquejo els que no encaixen",
+      "readout": "més de 170 paraules clau negatives"
+    },
+    "csp": {
+      "k": "Incidència: conversions perdudes",
+      "s1k": "Símptoma",
+      "s1": "Google Ads registrava moltes menys conversions que els contactes que arribaven de debò (set. 2026: 4 conversions registrades davant d'uns 20 contactes reals)",
+      "s2k": "Causa",
+      "s2": "la Content-Security-Policy del web bloquejava el seguiment",
+      "s3k": "Solució",
+      "s3": "vaig afegir a la política el hash i els orígens que hi faltaven; el seguiment va passar a Consent Mode v2",
+      "s4k": "Resultat",
+      "s4": "comprovat en producció: les peticions de conversió passen",
+      "tech": "Ho vaig veure a DevTools: a script-src hi faltaven el hash SHA-256 de l'script en línia i googletagmanager.com; després, a connect-src hi faltaven els endpoints de conversió de Google (pagead2.googlesyndication.com, www.google.com, ad.doubleclick.net).",
+      "before": "Abans",
+      "after": "Després",
+      "from": "Formulari",
+      "wall": "bloquejat per la Content-Security-Policy",
+      "fixed": "política corregida: el seguiment passa",
+      "cm": "Consent Mode v2",
+      "ga": "Google Ads",
+      "back": "Vaig rastrejar les conversions perdudes fins a la Content-Security-Policy del web, vaig canviar la política perquè el seguiment pogués funcionar i vaig comprovar que les conversions es tornaven a registrar.",
+      "readout": "Incidència: la CSP bloquejava les conversions · resolta"
+    },
+    "match": {
+      "k": "Coherència del missatge",
+      "search": "Cerca",
+      "ad": "Títol de l'anunci",
+      "page": "Pàgina de destinació",
+      "svc": "[servei]",
+      "town": "[municipi]",
+      "Svc": "[Servei]",
+      "Town": "[Municipi]",
+      "in": "a",
+      "hl": "Ressalta",
+      "hlSvc": "servei",
+      "hlTown": "municipi",
+      "cap": "El patró darrere de cada anunci (il·lustratiu, no és un anunci real)",
+      "back": "Cada anunci porta a una pàgina de destinació que hi encaixa, així la persona arriba al que buscava. El web té pàgines de destinació per servei i per municipi.",
+      "readout": "Coherència: cerca → anunci → pàgina de destinació"
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "lab": {
+    "kicker": "Cloud Lab · mis dos proyectos del curso",
+    "hint": "Selecciona una parte del diagrama para inspeccionarla o ejecuta una acción.",
+    "tabs": "Proyectos del curso",
+    "tNexa": "NexaRetail",
+    "tNexaS": "red de tres capas",
+    "tLd": "Logística Directa",
+    "tLdS": "plan de migración",
+    "insp": "Inspector",
+    "inspIdle": "Selecciona una parte del diagrama para ver qué hace.",
+    "cons": "Consola",
+    "consIdle": "Ejecuta una acción: cada paso aparece aquí.",
+    "acts": "Acciones",
+    "factsH": "En resumen",
+    "nexa": {
+      "h": "NexaRetail · una red de tres capas de alta disponibilidad en AWS",
+      "chip": "Proyecto del curso · módulo 5163 · en pareja",
+      "stProg": "nov 2026",
+      "stDone": "nov 2026",
+      "tool": "Hecha en la consola de AWS (AWS Management Console), como pide el enunciado; el extra opcional de la pareja es una plantilla de CloudFormation (infraestructura como código), escrita por mi compañero.",
+      "toolDone": "Hecha en la consola de AWS (AWS Management Console), como pide el enunciado; el extra opcional de la pareja es una plantilla de CloudFormation (infraestructura como código), escrita por mi compañero.",
+      "part": "<b>Mi parte:</b> la defensa del diseño (9 preguntas del caso sobre seguridad, mantenimiento, auditoría y coste) y una demo de monitorización y auditoría en mi propio AWS Learner Lab con CloudTrail, CloudWatch, AWS Config y VPC Reachability Analyzer.",
+      "svgT": "Diagrama de red de NexaRetail",
+      "svgD": "Una VPC en AWS con una capa web en una subred pública, una capa de aplicación y una capa de datos en subredes privadas, grupos de seguridad entre las capas y una NAT para las actualizaciones del sistema operativo, solo de salida.",
+      "internet": "Internet",
+      "updates": "Actualizaciones",
+      "pub": "subred pública",
+      "priv": "subred privada",
+      "web": "Capa web",
+      "app": "Capa de app",
+      "data": "Capa de datos",
+      "nat": "NAT",
+      "out": "solo de salida",
+      "nInternet": "Internet",
+      "nUpdates": "Servidores de actualizaciones del sistema operativo",
+      "nVpc": "VPC, la red privada",
+      "nWeb": "Capa web, subred pública",
+      "nApp": "Capa de aplicación, subred privada",
+      "nData": "Capa de datos, subred privada",
+      "nNat": "NAT",
+      "nSgWeb": "Grupo de seguridad de la capa web",
+      "nSgApp": "Grupo de seguridad de la capa de aplicación",
+      "nSgData": "Grupo de seguridad de la capa de datos",
+      "aReq": "Enviar una petición de cliente",
+      "aUpd": "Lanzar las actualizaciones del SO",
+      "aBlk": "Intentar acceder a la base de datos desde internet",
+      "note": "privado = sin entrada desde internet",
+      "desc": [
+        "Los clientes llegan a la capa web desde internet, a través de su grupo de seguridad. La capa web está en una subred pública.",
+        "La capa web llama a la capa de aplicación, y esta consulta la capa de datos. Las dos están en subredes privadas.",
+        "Delante de cada capa hay un grupo de seguridad que controla qué capa puede hablar con cuál.",
+        "Una NAT permite que las capas privadas descarguen actualizaciones del SO, solo de salida. Desde internet no se puede llegar a ellas."
+      ],
+      "facts": [
+        "Una VPC (10.20.0.0/16) con tres capas (web, aplicación y datos) repartidas en dos zonas de disponibilidad",
+        "Dos subredes por capa: públicas para la web, privadas para la aplicación y los datos (una por zona de disponibilidad; el diagrama está simplificado)",
+        "Un grupo de seguridad por capa decide qué capa puede hablar con cuál, y todos los recursos llevan etiquetas",
+        "Una NAT, para que las capas privadas solo salgan a internet para actualizar el SO"
+      ]
+    },
+    "ld": {
+      "h": "Logística Directa S.A. · un plan de migración a AWS",
+      "chip": "Proyecto del curso · módulo 5160 · en pareja · diseñado y presentado en clase (exposición de 10 minutos, 16 diapositivas)",
+      "case": "Un plan para la empresa de un caso práctico: todos los costes son estimaciones.",
+      "part": "<b>Mi parte:</b> coautor del plan escrito; en la exposición presenté el problema, el contexto y las conclusiones (coste y amortización).",
+      "svgT": "Diagrama de la migración de Logística Directa",
+      "svgD": "Un centro de datos local conectado a AWS en eu-west-1 (Irlanda) con un modelo híbrido; EC2 Auto Scaling de 2 a 10 instancias; RDS Multi-AZ, con una base de datos principal y otra en espera; AWS DMS copia los datos; el cambio se hace en un fin de semana.",
+      "op1": "Centro de datos",
+      "op2": "local",
+      "opS": "caso práctico",
+      "hyb": "modelo híbrido",
+      "region": "AWS eu-west-1 · Irlanda",
+      "asg": "EC2 Auto Scaling",
+      "asgS": "mín. 2 · máx. 10",
+      "rds": "RDS Multi-AZ",
+      "pri": "principal",
+      "stb": "en espera",
+      "dms": "AWS DMS",
+      "cut1": "cambio a AWS",
+      "cut2": "en un fin de semana",
+      "nOp": "Centro de datos local",
+      "nHyb": "Modelo híbrido",
+      "nRegion": "Región de AWS eu-west-1, Irlanda",
+      "nAsg": "Grupo de EC2 Auto Scaling",
+      "nPri": "Base de datos principal de RDS",
+      "nStb": "Base de datos en espera de RDS",
+      "nDms": "AWS DMS",
+      "nCut": "Cambio en un fin de semana",
+      "asgL": "Demanda (ilustrativa)",
+      "asgR": "{n} de 10 instancias · mín. 2 · máx. 10",
+      "asgV": "{n} de 10 instancias",
+      "less": "Menos instancias",
+      "more": "Más instancias",
+      "aMig": "Migrar los datos",
+      "aCost": "Coste anual",
+      "costT": "Coste anual (previsto)",
+      "costOp": "Local",
+      "costOpV": "≈150.000 € / año",
+      "costAws": "En AWS",
+      "costAwsV": "≈72.000 € / año",
+      "payback": "amortización en ≈6 meses (prevista)",
+      "plan": "plan de 12 semanas · 5 fases",
+      "phases": "Plan de 12 semanas en 5 fases",
+      "note": "2 → 10 instancias",
+      "desc": [
+        "El centro de datos local de la empresa de un caso práctico se conecta a AWS con un modelo híbrido.",
+        "En AWS, en la región eu-west-1 (Irlanda), EC2 Auto Scaling funciona con entre 2 y 10 instancias.",
+        "La base de datos pasa a RDS Multi-AZ, con una principal y otra en espera.",
+        "AWS DMS copia unos 1,6 TB (carga completa y después CDC) y el cambio se hace en un fin de semana."
+      ],
+      "facts": [
+        "Plan para migrar a AWS el centro de datos local de la empresa de un caso práctico",
+        "Región eu-west-1 (Irlanda) · modelo híbrido",
+        "EC2 Auto Scaling de 2 a 10 instancias · RDS Multi-AZ",
+        "AWS DMS (carga completa + CDC) para ≈1,6 TB · cambio en un fin de semana",
+        "Coste anual ≈150.000 € → ≈72.000 € (previsto) · amortización en ≈6 meses (prevista)",
+        "Plan de 12 semanas en 5 fases"
+      ],
+      "phaseN": "Fase {n}",
+      "weeks": "12 semanas"
+    },
+    "i": {
+      "internet": "De aquí llegan las peticiones de los clientes.",
+      "updates": "Servidores fuera de la VPC que ofrecen las actualizaciones del sistema operativo.",
+      "vpc": "La red privada que contiene las tres capas.",
+      "web": "Capa web, en una subred pública: la parte a la que llegan los clientes.",
+      "app": "Capa de aplicación, en una subred privada: no se puede llegar a ella desde internet.",
+      "data": "Capa de datos, en una subred privada: no se puede llegar a ella desde internet.",
+      "nat": "Permite que las capas privadas descarguen actualizaciones del SO, solo de salida.",
+      "sg": "Cortafuegos que controlan qué capa puede hablar con cuál.",
+      "op": "El centro de datos actual de la empresa del caso práctico, el punto de partida del plan.",
+      "hyb": "Modelo híbrido: el entorno local y AWS, conectados y funcionando juntos.",
+      "region": "La región de AWS elegida en el plan: eu-west-1, en Irlanda.",
+      "asg": "Añade o quita instancias EC2 según la demanda: nunca menos de 2 ni más de 10.",
+      "pri": "RDS Multi-AZ: la base de datos principal.",
+      "stb": "RDS Multi-AZ: una copia en espera que toma el relevo si falla la principal.",
+      "dms": "Copia los datos a AWS: una carga completa de ≈1,6 TB y después los cambios continuos (CDC).",
+      "cut": "El paso final a AWS, previsto en un fin de semana."
+    },
+    "c": {
+      "req1": "→ la petición llega a la capa web (subred pública)",
+      "req2": "→ la capa web llama a la capa de aplicación (subred privada)",
+      "req3": "→ la capa de aplicación consulta la capa de datos (subred privada)",
+      "req4": "← la respuesta vuelve al cliente",
+      "upd1": "→ la capa de aplicación sale por la NAT para actualizar el SO (la de datos hace lo mismo)",
+      "upd2": "✓ solo de salida: por aquí no puede entrar nada",
+      "blk": "✕ bloqueado: la capa de datos es privada (no hay entrada desde internet) y su grupo de seguridad es una segunda barrera",
+      "mig1": "AWS DMS · carga completa: ≈1,6 TB",
+      "mig2": "AWS DMS · CDC: se replican los cambios continuos",
+      "mig3": "✓ cambio en un fin de semana",
+      "cost1": "≈150.000 € / año en local → ≈72.000 € / año en AWS (previsto)",
+      "cost2": "amortización en ≈6 meses (prevista) · plan de 12 semanas · 5 fases"
+    },
+    "mods": {
+      "h": "Módulos del curso",
+      "cap": "Dónde aparece cada módulo en los proyectos del curso",
+      "aria": "Resalta un módulo en el diagrama"
+    },
+    "m": {
+      "5160": {
+        "id": "5160",
+        "name": "Fundamentos y configuración inicial de servicios en la nube",
+        "cap": "5160 · Fundamentos y configuración inicial de servicios en la nube",
+        "parts": [
+          "lab-region",
+          "lab-vpc"
+        ]
+      },
+      "5161": {
+        "id": "5161",
+        "name": "Administración de recursos de computación en la nube",
+        "cap": "5161 · Administración de recursos de computación en la nube",
+        "parts": [
+          "lab-web",
+          "lab-app",
+          "lab-asg"
+        ]
+      },
+      "5162": {
+        "id": "5162",
+        "name": "Administración de bases de datos y almacenamiento en la nube",
+        "cap": "5162 · Administración de bases de datos y almacenamiento en la nube",
+        "parts": [
+          "lab-data",
+          "lab-rds-primary",
+          "lab-rds-standby"
+        ]
+      },
+      "5163": {
+        "id": "5163",
+        "name": "Administración de redes en la nube",
+        "cap": "5163 · Administración de redes en la nube",
+        "parts": [
+          "lab-vpc",
+          "lab-nat",
+          "lab-sg-web",
+          "lab-sg-app",
+          "lab-sg-data"
+        ]
+      },
+      "5164": {
+        "id": "5164",
+        "name": "Despliegue de servicios administrados en la nube",
+        "cap": "5164 · Despliegue de servicios administrados en la nube",
+        "parts": [
+          "lab-dms",
+          "lab-rds-standby"
+        ]
+      }
+    },
+    "partsH": "Piezas del diagrama",
+    "parts": {
+      "lab-internet": "Internet",
+      "lab-updates": "Servidores de actualizaciones del sistema operativo",
+      "lab-vpc": "VPC, la red privada",
+      "lab-web": "Capa web, subred pública",
+      "lab-app": "Capa de aplicación, subred privada",
+      "lab-data": "Capa de datos, subred privada",
+      "lab-nat": "NAT",
+      "lab-sg-web": "Grupo de seguridad de la capa web",
+      "lab-sg-app": "Grupo de seguridad de la capa de aplicación",
+      "lab-sg-data": "Grupo de seguridad de la capa de datos",
+      "lab-onprem": "Centro de datos local",
+      "lab-hybrid": "Modelo híbrido",
+      "lab-region": "Región de AWS eu-west-1, Irlanda",
+      "lab-asg": "Grupo de EC2 Auto Scaling",
+      "lab-rds-primary": "Base de datos principal de RDS",
+      "lab-rds-standby": "Base de datos en espera de RDS",
+      "lab-dms": "AWS DMS",
+      "lab-cutover": "Cambio en un fin de semana"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "board": {
+    "how": "¿Cómo?",
+    "back": "Volver",
+    "howK": "¿Cómo?",
+    "ctr": {
+      "k": "Tasa de clics (CTR)",
+      "num": "9,3 %",
+      "period": "<time datetime=\"2026-04-21\">21 abr</time> – <time datetime=\"2026-07-27\">27 jul 2026</time>",
+      "us": "Esta campaña",
+      "usV": "9,3 %",
+      "sector": "Media del sector de la construcción",
+      "sectorV": "≈6 %",
+      "ax0": "0 %",
+      "ax10": "10 %",
+      "range": "Rango habitual en la cuenta: ≈8,5–10 %",
+      "note": "por encima de la media del sector",
+      "tCap": "Tasa de clics: esta campaña frente a la media del sector de la construcción",
+      "tWho": "Campaña",
+      "tVal": "Tasa de clics",
+      "tUs": "Esta campaña, 21 abr – 27 jul 2026",
+      "back": "Anuncios de búsqueda adaptables · palabras clave de concordancia exacta y de frase · más de 170 palabras clave negativas · páginas de destino que encajan con cada anuncio",
+      "readout": "CTR 9,3 % · 21 abr – 27 jul 2026"
+    },
+    "clicks": {
+      "k": "Clics",
+      "num": "703",
+      "unit": "clics",
+      "period": "<time datetime=\"2026-04-21\">21 abr</time> – <time datetime=\"2026-07-27\">27 jul 2026</time>",
+      "back": "Segmentación por ubicación: un radio alrededor de Mollet más los municipios cercanos · revisión semanal de los términos de búsqueda",
+      "readout": "703 clics · 21 abr – 27 jul 2026"
+    },
+    "leads": {
+      "k": "Contactos",
+      "num": "19",
+      "unit": "solicitudes de contacto",
+      "period": "<time datetime=\"2026-10-08\">8</time>–<time datetime=\"2026-10-23\">23 oct 2026</time> · periodo de medición limpio",
+      "from": "a partir de 430 clics",
+      "dots": "19 contactos",
+      "replay": "Repetir 8–23 oct",
+      "legend": "1 marca = 10 clics",
+      "back": "Medido con el seguimiento de conversiones de Google Ads, GA4 y Consent Mode v2",
+      "readout": "19 contactos de 430 clics · 8–23 oct 2026"
+    },
+    "disc": {
+      "k": "Disciplina",
+      "num": "+170",
+      "unit": "palabras clave negativas",
+      "line": "revisión semanal de los términos de búsqueda",
+      "back": "Cada semana leo los términos de búsqueda reales y bloqueo los que no encajan",
+      "readout": "más de 170 palabras clave negativas"
+    },
+    "csp": {
+      "k": "Incidencia: conversiones perdidas",
+      "s1k": "Síntoma",
+      "s1": "Google Ads registraba muchas menos conversiones que los contactos que llegaban de verdad (sept 2026: 4 conversiones registradas frente a unos 20 contactos reales)",
+      "s2k": "Causa",
+      "s2": "la Content-Security-Policy de la web bloqueaba el seguimiento",
+      "s3k": "Solución",
+      "s3": "añadí a la política el hash y los orígenes que faltaban; el seguimiento pasó a Consent Mode v2",
+      "s4k": "Resultado",
+      "s4": "comprobado en producción: las peticiones de conversión pasan",
+      "tech": "Lo vi en DevTools: a script-src le faltaban el hash SHA-256 del script en línea y googletagmanager.com; después, a connect-src le faltaban los endpoints de conversión de Google (pagead2.googlesyndication.com, www.google.com, ad.doubleclick.net).",
+      "before": "Antes",
+      "after": "Después",
+      "from": "Formulario",
+      "wall": "bloqueado por la Content-Security-Policy",
+      "fixed": "política corregida: el seguimiento pasa",
+      "cm": "Consent Mode v2",
+      "ga": "Google Ads",
+      "back": "Seguí el rastro de las conversiones perdidas hasta dar con la Content-Security-Policy de la web, cambié la política para que el seguimiento funcionara y comprobé que las conversiones volvían a registrarse.",
+      "readout": "Incidencia: la CSP bloqueaba las conversiones · resuelta"
+    },
+    "match": {
+      "k": "Coherencia del mensaje",
+      "search": "Búsqueda",
+      "ad": "Título del anuncio",
+      "page": "Página de destino",
+      "svc": "[servicio]",
+      "town": "[municipio]",
+      "Svc": "[Servicio]",
+      "Town": "[Municipio]",
+      "in": "en",
+      "hl": "Resaltar",
+      "hlSvc": "servicio",
+      "hlTown": "municipio",
+      "cap": "El patrón detrás de cada anuncio (ilustrativo, no es un anuncio real)",
+      "back": "Cada anuncio lleva a una página de destino que encaja con él, así la persona aterriza en lo que buscaba. La web tiene páginas de destino por servicio y por municipio.",
+      "readout": "Búsqueda → anuncio → página de destino"
+    }
+  }
+}

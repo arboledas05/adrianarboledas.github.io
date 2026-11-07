@@ -1,0 +1,93 @@
+{
+  "board": {
+    "_src": "FACTS §3.1 + ADDENDUM §1: only the allowed ads figures (9.3 % CTR and 703 clicks 21 Apr – 27 Jul 2026; ≈8.5–10 % typical CTR vs ≈6 % sector; 19 leads and 430 clicks 8–23 Oct 2026; 170+ negative keywords). No euro figure about the ads, no baseline, no derived ratio. The turnover sentence lives once in about.body (B1), never here.",
+    "how": "How?",
+    "back": "Back",
+    "howK": "How?",
+    "ctr": {
+      "k": "Click-through rate",
+      "num": "9.3%",
+      "period": "<time datetime=\"2026-04-21\">21 Apr</time> – <time datetime=\"2026-07-27\">27 Jul 2026</time>",
+      "us": "This campaign",
+      "usV": "9.3%",
+      "sector": "Construction sector average",
+      "sectorV": "≈6%",
+      "ax0": "0%",
+      "ax10": "10%",
+      "range": "Typical range in the account: ≈8.5–10%",
+      "note": "above the sector average",
+      "tCap": "Click-through rate: this campaign compared with the construction-sector average",
+      "tWho": "Campaign",
+      "tVal": "Click-through rate",
+      "tUs": "This campaign, 21 Apr – 27 Jul 2026",
+      "back": "Responsive search ads · exact- and phrase-match keywords · 170+ negative keywords · landing pages that match each ad",
+      "readout": "CTR 9.3% · 21 Apr – 27 Jul 2026"
+    },
+    "clicks": {
+      "k": "Clicks",
+      "num": "703",
+      "unit": "clicks",
+      "period": "<time datetime=\"2026-04-21\">21 Apr</time> – <time datetime=\"2026-07-27\">27 Jul 2026</time>",
+      "back": "Location targeting: a radius around Mollet plus nearby towns · weekly search-term reviews",
+      "readout": "703 clicks · 21 Apr – 27 Jul 2026"
+    },
+    "leads": {
+      "k": "Leads",
+      "num": "19",
+      "unit": "contact requests",
+      "period": "<time datetime=\"2026-10-08\">8</time>–<time datetime=\"2026-10-23\">23 Oct 2026</time> · clean measurement period",
+      "from": "from 430 clicks",
+      "dots": "19 leads",
+      "replay": "Replay 8–23 Oct",
+      "legend": "1 tick = 10 clicks",
+      "back": "Measured with Google Ads conversion tracking, GA4 and Consent Mode v2",
+      "readout": "19 contacts from 430 clicks · 8–23 Oct 2026"
+    },
+    "disc": {
+      "k": "Discipline",
+      "num": "170+",
+      "unit": "negative keywords",
+      "line": "weekly search-term reviews",
+      "back": "Every week I read the real search terms and block the ones that don't fit",
+      "readout": "170+ negative keywords"
+    },
+    "csp": {
+      "k": "Incident: missing conversions",
+      "s1k": "Symptom",
+      "s1": "Google Ads recorded far fewer conversions than the leads that really arrived (Sep 2026: 4 conversions recorded vs about 20 real leads)",
+      "s2k": "Root cause",
+      "s2": "the site's Content-Security-Policy blocked the tracking",
+      "s3k": "Fix",
+      "s3": "added the missing hash and origins to the policy; tracking moved to Consent Mode v2",
+      "s4k": "Result",
+      "s4": "verified in production: the conversion requests go through",
+      "tech": "Found in DevTools: script-src lacked the inline script's SHA-256 hash and googletagmanager.com; later, connect-src lacked Google's conversion endpoints (pagead2.googlesyndication.com, www.google.com, ad.doubleclick.net).",
+      "before": "Before",
+      "after": "After",
+      "from": "Lead form",
+      "wall": "blocked by Content-Security-Policy",
+      "fixed": "policy fixed: the tracking gets through",
+      "cm": "Consent Mode v2",
+      "ga": "Google Ads",
+      "back": "I traced the missing conversions to the site's Content-Security-Policy, changed the policy so the tracking could run, and checked that conversions were recorded again.",
+      "readout": "Incident: conversions blocked by the CSP · fixed"
+    },
+    "match": {
+      "k": "Message match",
+      "search": "Search",
+      "ad": "Ad headline",
+      "page": "Landing page",
+      "svc": "[service]",
+      "town": "[town]",
+      "Svc": "[Service]",
+      "Town": "[Town]",
+      "in": "in",
+      "hl": "Highlight",
+      "hlSvc": "service",
+      "hlTown": "town",
+      "cap": "The pattern behind each ad (illustrative, not a real ad)",
+      "back": "Each ad leads to a landing page that matches it, so people land on what they searched for. The site has landing pages per service and per town.",
+      "readout": "Message match: search → ad → landing page"
+    }
+  }
+}

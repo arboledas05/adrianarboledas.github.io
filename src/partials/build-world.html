@@ -1,0 +1,48 @@
+<div class="build-world" data-beats="build">
+  <article class="card card--feature bw-card" id="build-accenture" data-evidence="accenture" data-evidence-name="{{t skills.ev.accenture}}">
+    <h3>{{t build.acc.h3}}</h3>
+    <p class="feature-tags"><span class="pill">{{t build.acc.pill}}</span></p>
+    <p class="meta">{{t build.acc.meta}}</p>
+    <p class="lead">{{t build.acc.lead}}</p>
+    <p class="bw-team">{{if build.acc.teamH}}<b class="bw-k">{{t build.acc.teamH}}</b> {{/if}}{{t build.acc.team}}</p>
+    {{if build.acc.sprintsH}}<h4 class="bw-log-h" id="sprints-h">{{t build.acc.sprintsH}}</h4>{{/if}}
+    <ol class="sprints"{{if build.acc.sprintsH}} aria-labelledby="sprints-h"{{/if}}>
+      {{each build.acc.sprints}}<li id="sprint-{{@index}}" data-beat="{{@index}}"><b>{{t .k}}</b> <span>{{t .d}}</span></li>
+      {{/each}}
+    </ol>
+    <ul class="chips" aria-label="{{t build.acc.chipsAria}}">
+      {{each build.acc.chips}}<li class="chip">{{t .}}</li>
+      {{/each}}
+    </ul>
+  </article>
+  <div class="bw-stage bugphone" data-module="bugphone">
+    <figure class="world" data-world="build"{{if ui.w.build.fig}} aria-labelledby="fig-build"{{/if}}>
+      <div class="world-slot" data-world-slot="build" style="--ar:5/6">
+        <div class="slot-fallback">{{> bugphone}}</div>
+        <div class="slot-ui">
+          <span class="hs bw-chip" data-hotspot="station" aria-hidden="true">{{t bug.st0}}</span>
+          <span class="hs bw-layer" data-hotspot="appbar" aria-hidden="true">{{t ui.w.build.layers.appbar}}</span>
+          <span class="hs bw-layer" data-hotspot="listview" aria-hidden="true">{{t ui.w.build.layers.listview}}</span>
+          <span class="hs bw-layer" data-hotspot="row" aria-hidden="true">{{t ui.w.build.layers.row}}</span>
+          <span class="hs bw-layer" data-hotspot="footer" aria-hidden="true">{{t ui.w.build.layers.footer}}</span>
+        </div>
+        <div class="slot-hit" data-cursor="spin" aria-hidden="true"></div>
+      </div>
+      <p class="bp-title">{{t bug.title}}</p>
+      <div class="bp-toggles" role="group" aria-label="{{t bug.group}}">
+        <button type="button" class="bp-tog" aria-pressed="false" data-bug="rotate"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M13.5 8A5.5 5.5 0 1 1 11 3.4"/><path d="M11.5 1v3h-3"/></svg><span class="bp-tl">{{t bug.rotate}}</span></button>
+        <button type="button" class="bp-tog" aria-pressed="false" data-bug="keyboard"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><rect x="1" y="4" width="14" height="9" rx="2"/><path d="M4 7h1M7.5 7h1M11 7h1M4.5 10h7"/></svg><span class="bp-tl">{{t bug.keyboard}}</span></button>
+        <button type="button" class="bp-tog" aria-pressed="false" data-bug="overflow"><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1.5v13M4.5 4.5 8 1.5l3.5 3M4.5 11.5 8 14.5l3.5-3"/></svg><span class="bp-tl">{{t bug.overflow}}</span></button>
+      </div>
+      <p class="bp-caption" aria-live="polite">{{t bug.idle}}</p>
+      <ul class="bp-static">
+        <li>{{t bug.cRotate}}</li>
+        <li>{{t bug.cKeyboard}}</li>
+        <li>{{t bug.cOverflow}}</li>
+      </ul>
+      <p class="bp-note">{{t bug.note}}</p>
+      {{if ui.w.build.note}}<p class="bw-spin" aria-hidden="true">{{t ui.w.build.note}}</p>{{/if}}
+      <figcaption class="world-cap"><span class="fig-n">FIG. 01</span> {{if ui.w.build.fig}}<span class="fig-name" id="fig-build">{{t ui.w.build.fig}}</span> {{/if}}{{if ui.w.build.hint}}<span class="fig-hint">{{t ui.w.build.hint}}</span> {{/if}}<button type="button" class="fig-pause" aria-pressed="false">{{t ui.w.pause}}</button> <span class="fig-mode">{{t ui.w.mode2d}}</span></figcaption>
+    </figure>
+  </div>
+</div>

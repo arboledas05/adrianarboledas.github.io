@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<meta name="robots" content="noindex">
+<title>OG card</title>
+<!-- tools/og.html (B3): the Open Graph card, rendered at 1200×630 by tools/stills.mjs → img/og-<lang>.jpg. Reads ?lang=es|ca|en.
+     The World Deck poster (img/worlds/hero-d-<lang>.webp) with his cut-out in front, name, "Build · Deploy · Grow". Light theme, no planet. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Caveat:wght@600&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=block">
+<style>
+:root{--paper:#F4F1EA;--card:#fff;--ink:#17150F;--ink-2:#5B574E;--ink-3:#6E695F;--indigo:#3A2BE0;--lilac:#C7B8FF;--peach:#FFCCA3;--line:rgba(23,21,15,.13)}
+*{box-sizing:border-box;margin:0}
+html,body{width:1200px;height:630px;overflow:hidden;background:var(--paper)}
+body{position:relative;font-family:'Inter Tight',system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.wash{position:absolute;inset:0;
+  background:
+    radial-gradient(560px 420px at 930px 300px,rgba(199,184,255,.5),transparent 70%),
+    radial-gradient(420px 300px at 1140px 640px,rgba(255,204,163,.42),transparent 70%),
+    radial-gradient(380px 300px at 620px -40px,rgba(199,184,255,.3),transparent 70%)}
+.grid{position:absolute;inset:0;
+  background-image:linear-gradient(rgba(58,43,224,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(58,43,224,.06) 1px,transparent 1px);
+  background-size:24px 24px;
+  -webkit-mask-image:linear-gradient(90deg,#000 0,#000 45%,transparent 70%);mask-image:linear-gradient(90deg,#000 0,#000 45%,transparent 70%)}
+.stage{position:absolute;right:36px;bottom:-96px;width:600px;height:648px}
+.deck{position:absolute;inset:0;width:100%;height:100%}
+/* paper floor between the deck and him (same idea as the live hero's slot ::after): no blade colour shows through his torso */
+.stage::after{content:'';position:absolute;left:-60px;right:-36px;bottom:0;height:50%;z-index:1;pointer-events:none;background:linear-gradient(to top,#F4F1EA 46%,rgba(244,241,234,0));-webkit-mask-image:linear-gradient(90deg,transparent,#000 60px);mask-image:linear-gradient(90deg,transparent,#000 60px)} /* reaches the card's right edge: no hard seam on the peach wash */
+.me{position:absolute;z-index:2;left:14%;bottom:0;width:66%;filter:drop-shadow(-2px -2px 3px rgba(91,71,255,.26)) drop-shadow(0 18px 24px rgba(58,43,224,.08)); /* same frame + soft rim as the live hero (hero.css) */
+  -webkit-mask-image:linear-gradient(#000 66%,transparent 86%),linear-gradient(90deg,transparent,#000 10%,#000 92%,transparent);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(#000 66%,transparent 86%),linear-gradient(90deg,transparent,#000 10%,#000 92%,transparent);mask-composite:intersect}
+.copy{position:absolute;left:72px;top:68px;width:560px}
+.eyebrow{display:flex;align-items:center;gap:14px;font:600 15px/1 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--indigo)}
+.eyebrow::before{content:'';width:28px;height:2px;background:currentColor}
+h1{margin-top:26px;font:800 108px/.9 'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-.045em;font-variation-settings:'opsz' 96}
+h1 span{display:block}
+:lang(es) .hand,:lang(ca) .hand{font-size:50px} /* the longer ES/CA verbs stay on one line */
+.hand{margin-top:20px;font:600 60px/1 'Caveat',cursive;white-space:nowrap;color:var(--indigo);transform:rotate(-2deg);transform-origin:0 50%}
+.mono{margin-top:24px;font:400 20px/1.45 'JetBrains Mono',ui-monospace,monospace;color:var(--ink-2)}
+.chips{display:flex;gap:10px;margin-top:20px;padding:0}
+.chips li{list-style:none;padding:8px 14px;border-radius:999px;background:var(--card);box-shadow:0 1px 2px rgba(23,21,15,.04),0 10px 24px -14px rgba(23,21,15,.25);font:600 16px/1 'JetBrains Mono',ui-monospace,monospace;color:var(--ink)}
+.url{position:absolute;left:72px;bottom:40px;font:400 15px/1 'JetBrains Mono',ui-monospace,monospace;color:var(--ink-3)}
+.url b{color:var(--indigo);font-weight:600}
+</style>
+</head>
+<body>
+<div class="wash"></div><div class="grid"></div>
+<div class="stage">
+  <img class="deck" id="deck" src="../img/worlds/hero-d-es.webp" width="1000" height="1080" alt="">
+  <img class="me" id="me" src="../img/adrian-cutout-760.webp" width="760" height="649" alt="">
+</div>
+<div class="copy">
+  <p class="eyebrow" id="eyebrow"></p>
+  <h1><span>Adrián</span><span>Arboledas</span></h1>
+  <p class="hand">Build · Deploy · Grow</p>
+  <p class="mono" id="line"></p>
+  <ul class="chips" id="chips"></ul>
+</div>
+<p class="url"><b>CV</b> · arboledas05.github.io/adrianarboledas.github.io</p>
+<script>
+const T = {
+  en: { hand: 'Build · Deploy · Grow', eyebrow: 'Web CV', line: ['Software developer · Barcelona', 'Flutter · Cloud (AWS) at ITB · Google Ads'], chips: ['Flutter', 'AWS', 'Google Ads', 'English C1'] },
+  es: { hand: 'Construir · Desplegar · Crecer', eyebrow: 'CV web', line: ['Desarrollador de software · Barcelona', 'Flutter · Cloud (AWS) en el ITB · Google Ads'], chips: ['Flutter', 'AWS', 'Google Ads', 'Inglés C1'] },
+  ca: { hand: 'Construir · Desplegar · Créixer', eyebrow: 'CV web', line: ['Desenvolupador de programari · Barcelona', "Flutter · Cloud (AWS) a l'ITB · Google Ads"], chips: ['Flutter', 'AWS', 'Google Ads', 'Anglès C1'] }
+};
+const lang = (new URLSearchParams(location.search).get('lang') || 'en').toLowerCase();
+const d = T[lang] || T.en;
+document.documentElement.lang = T[lang] ? lang : 'en';
+document.getElementById('deck').src = '../img/worlds/hero-d-' + (T[lang] ? lang : 'en') + '.webp'; /* the blade labels are baked per language */
+document.getElementById('eyebrow').textContent = d.eyebrow;
+document.querySelector('.hand').textContent = d.hand;
+document.getElementById('line').innerHTML = d.line.map((l) => l.replace(/&/g, '&amp;').replace(/</g, '&lt;')).join('<br>');
+document.getElementById('chips').innerHTML = d.chips.map((c) => '<li>' + c + '</li>').join('');
+const imgs = [...document.querySelectorAll('img')];
+Promise.all([document.fonts.ready, ...imgs.map((i) => i.decode().catch(() => {}))]).then(() => requestAnimationFrame(() => { window.__ogReady = true; }));
+setTimeout(() => { window.__ogReady = true; }, 8000);
+</script>
+</body>
+</html>

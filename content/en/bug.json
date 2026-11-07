@@ -1,0 +1,25 @@
+{
+  "bug": {
+    "_src": "FACTS §3.3 (Accenture internship: UX bugs in production on Android and iOS: landscape layouts, sticky footers, overflows, keyboard, scrolling). The client app is not shown; the bank is never named.",
+    "title": "Bug classes I fixed in production",
+    "alt": "Wireframe of a phone screen (illustration)",
+    "group": "Show a bug class and its fix",
+    "rotate": "Rotate",
+    "keyboard": "Keyboard",
+    "overflow": "Long content",
+    "cRotate": "Landscape: the layout reflows instead of breaking",
+    "cKeyboard": "Keyboard open: the sticky footer stays above it",
+    "cOverflow": "More content than fits: it scrolls instead of overflowing",
+    "idle": "Pick a bug class to see the fix.",
+    "note": "Illustration only: not the client's real app.",
+    "st0": "GetX",
+    "st1": "Components",
+    "st2": "Responsive",
+    "st3": "REST → Dart",
+    "st4": "Refactor",
+    "st5": "Financing flow",
+    "st6": "Release",
+    "stripe": "Flutter's overflow warning",
+    "stripeFix": "fixed: it fits"
+  }
+}

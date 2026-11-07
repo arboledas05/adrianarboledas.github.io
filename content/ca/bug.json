@@ -1,0 +1,24 @@
+{
+  "bug": {
+    "title": "Tipus d'error que vaig corregir en producció",
+    "alt": "Esquema de la pantalla d'un mòbil (il·lustració)",
+    "group": "Mostra un tipus d'error i com es resol",
+    "rotate": "Gira",
+    "keyboard": "Teclat",
+    "overflow": "Contingut llarg",
+    "cRotate": "En horitzontal: el disseny es recol·loca en lloc de trencar-se",
+    "cKeyboard": "Amb el teclat obert: el peu fix queda per sobre",
+    "cOverflow": "Amb molt de contingut: es desplaça en lloc de desbordar-se",
+    "idle": "Tria un tipus d'error per veure'n la solució.",
+    "note": "Només és una il·lustració: no és l'app real del client.",
+    "st0": "GetX",
+    "st1": "Components",
+    "st2": "Responsive",
+    "st3": "REST → Dart",
+    "st4": "Refactor",
+    "st5": "Flux de finançament",
+    "st6": "Release",
+    "stripe": "l'avís de desbordament de Flutter",
+    "stripeFix": "corregit: ja hi cap"
+  }
+}

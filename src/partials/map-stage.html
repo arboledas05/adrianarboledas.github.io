@@ -1,0 +1,21 @@
+<figure class="world world--map" data-world="map" aria-labelledby="fig-map">
+<div class="world-slot" data-world-slot="map" style="--ar:2.1/1">
+<div class="slot-fallback map-fallback">{{> gen-map-svg}}</div>
+<div class="slot-ui map-ui">
+<div class="map-plane">{{> gen-map-pins}}</div>
+<span class="map-hint" aria-hidden="true">{{t ui.w.map.hint}}</span>
+<div class="pin-card" id="pin-card" role="status" aria-live="polite"></div>
+</div>
+<div class="slot-hit" data-cursor="drop" aria-hidden="true"></div>
+</div>
+<figcaption class="world-cap"><span class="fig-n">FIG. 05</span> <span class="fig-name" id="fig-map">{{t ui.w.map.fig}}</span> <span class="fig-hint">{{t ui.w.map.hint}}</span> <button type="button" class="fig-pause" aria-pressed="false">{{t ui.w.pause}}</button> <span class="fig-mode">{{t ui.w.mode2d}}</span></figcaption>
+</figure>
+<script>(function(f){if(!f||f.__pins)return;f.__pins=1;var d=document,c=f.querySelector('.pin-card'),pl=d.getElementById('places'),cur=null,sh=null;
+function row(b,on){pl=pl||d.getElementById('places');var li=b&&pl&&pl.querySelector('[data-place="'+b.getAttribute('data-pin')+'"]');if(li)li.classList.toggle('is-on',on)}
+function show(b){if(sh===b)return;if(sh){row(sh,false);sh.classList.remove('is-shown')}sh=b;c.textContent='';c.classList.toggle('is-open',!!b);if(!b)return;row(b,true);b.classList.add('is-shown');var s=d.createElement('strong');s.textContent=b.getAttribute('data-name');c.append(s,' · '+b.getAttribute('data-line'))}
+function pick(b){if(cur)cur.setAttribute('aria-pressed','false');cur=b&&b!==cur?b:null;if(cur)cur.setAttribute('aria-pressed','true');show(cur)}
+f.querySelectorAll('.pin').forEach(function(b){b.addEventListener('click',function(){pick(b)});['pointerenter','focus'].forEach(function(e){b.addEventListener(e,function(){show(b)})});['pointerleave','blur'].forEach(function(e){b.addEventListener(e,function(){show(cur)})})});
+f.addEventListener('keydown',function(e){if(e.key==='Escape'&&cur){var b=cur;pick(null);b.focus()}});
+f.querySelectorAll('.map-tip').forEach(function(a){a.addEventListener('click',function(){setTimeout(function(){var w=d.getElementById('write-me')||d.querySelector('#contact a[href^="mailto:"]');if(w)w.focus({preventScroll:true})},900)})});
+if(d.documentElement.classList.contains('rm')||!('IntersectionObserver' in window))return;f.classList.add('is-armed');
+var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){f.classList.add('is-drawn');io.disconnect();f.querySelectorAll('.mp-rev animate').forEach(function(a,i){try{a.beginElementAt(i*.35)}catch(e){a.parentNode.style.strokeDashoffset='0'}})} },{threshold:.35});io.observe(f)})(document.currentScript&&document.currentScript.previousElementSibling)</script>

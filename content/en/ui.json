@@ -1,0 +1,154 @@
+{
+  "_same": [
+    "ui.cursor.play",
+    "ui.w.mode3d",
+    "ui.w.mode2d",
+    "ui.w.build.getx.*",
+    "ui.w.build.layers.*",
+    "ui.w.build.json",
+    "ui.w.build.apk",
+    "ui.w.build.aab",
+    "ui.w.drone.aesa",
+    "ui.w.drone.brand",
+    "ui.w.drone.rec",
+    "ui.w.grow.house",
+    "ui.w.deploy.callouts.internet",
+    "ui.w.deploy.callouts.asg",
+    "ui.w.deploy.callouts.rds",
+    "bug.st0",
+    "bug.st2",
+    "bug.st3",
+    "bug.st4",
+    "bug.st6",
+    "lab.m.*.parts.*",
+    "lab.m.*.id",
+    "board.csp.cm",
+    "board.csp.ga",
+    "lab.tNexa",
+    "lab.tLd",
+    "lab.insp",
+    "lab.nexa.internet",
+    "lab.nexa.nInternet",
+    "lab.ld.asg",
+    "lab.ld.rds",
+    "lab.parts.lab-internet"
+  ],
+  "ui": {
+    "menu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    },
+    "copied": "copied!",
+    "copyFail": "copy failed",
+    "copiedSr": "{text} copied to the clipboard",
+    "copyFailSr": "Could not copy. The address is {text}",
+    "query": {
+      "usedAt": "› {skill} → used in: {places}",
+      "none": "› {skill} → no linked example on this page",
+      "see": "see →"
+    },
+    "doc": {
+      "on": "Document view on. To leave it, use \"Back to the full page\" at the top."
+    },
+    "cursor": {
+      "drag": "Drag",
+      "open": "Open",
+      "play": "Play",
+      "spin": "Spin",
+      "view": "View",
+      "inspect": "Inspect",
+      "replay": "Replay",
+      "drop": "Drop a pin",
+      "steer": "Steer"
+    },
+    "w": {
+      "pause": "Pause motion",
+      "play": "Play motion",
+      "mode3d": "3D · live",
+      "mode2d": "2D",
+      "hero": {
+        "fig": "Five worlds, one CV",
+        "hint": "hover a blade · click to jump there",
+        "hintTouch": "tap a blade to jump there",
+        "b0": "01 BUILD",
+        "b1": "02 DEPLOY",
+        "b2": "03 GROW",
+        "b3": "+ DRONE",
+        "b4": "04 NEXT STOP",
+        "h0": "01 Build · Flutter intern at Accenture",
+        "h1": "02 Deploy · AWS at ITB",
+        "h2": "03 Grow · Google Ads · CTR 9.3%",
+        "h3": "+ Beyond code · AESA drone pilot",
+        "h4": "04 Next stop · Barcelona, or remote"
+      },
+      "build": {
+        "fig": "The sprint bench",
+        "hint": "drag the phone · try the bugs",
+        "hintTouch": "tap the screen · try the bugs",
+        "note": "spin me ↻",
+        "getx": {
+          "c": "Controller",
+          "r": "Route",
+          "b": "Binding"
+        },
+        "layers": {
+          "appbar": "AppBar",
+          "listview": "ListView",
+          "row": "Row",
+          "footer": "Footer"
+        },
+        "json": "JSON",
+        "model": "Dart model",
+        "apk": "APK",
+        "aab": "AAB"
+      },
+      "deploy": {
+        "fig": "Cloud diorama (course projects)",
+        "hint": "click a part · drag to turn",
+        "hintTouch": "tap a part to inspect",
+        "callouts": {
+          "internet": "internet",
+          "web": "web · public",
+          "app": "app · private",
+          "data": "data · private",
+          "nat": "NAT · OS updates",
+          "onprem": "on-premises",
+          "region": "eu-west-1 · Ireland",
+          "asg": "Auto Scaling 2–10",
+          "rds": "RDS Multi-AZ",
+          "dms": "DMS · full load + CDC",
+          "cutover": "cutover · one weekend"
+        }
+      },
+      "grow": {
+        "fig": "Every marble is 10 real clicks",
+        "hint": "drag to turn · click the bowl to replay",
+        "hintTouch": "tap to replay",
+        "towerUs": "CTR 9.3% · 21 Apr – 27 Jul 2026",
+        "towerSector": "≈6% · construction-sector average",
+        "teeth": "170+ negative keywords",
+        "legend": "Left: 8–23 Oct 2026 · 1 marble = 10 clicks · 1 bead = 1 contact · Right: 21 Apr – 27 Jul 2026 · the periods are never combined.",
+        "sign": "search",
+        "house": "landing page",
+        "bowl": "19 contacts · 8–23 Oct 2026"
+      },
+      "drone": {
+        "fig": "A drawn valley, no footage",
+        "hint": "move to steer · click for a shot",
+        "hintTouch": "tap to steer the drone",
+        "shot": "nice shot.",
+        "saved": "SAVED",
+        "aesa": "AESA · A1 / A2 / A3",
+        "brand": "ELEVVAVISUALS.COM",
+        "rec": "REC"
+      },
+      "map": {
+        "fig": "The North Atlantic",
+        "hint": "drop your pin ↴",
+        "hintTouch": "tap to drop your pin",
+        "tip": "your company?",
+        "drop": "drop your pin ↴"
+      }
+    }
+  }
+}
