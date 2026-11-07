@@ -23,7 +23,9 @@
   /* while the 3D bench runs, a short run-out after the card keeps the stage pinned until the last sprint is read */
   html:is(.gl,.gl-pre) .build-world::after{content:'';grid-area:2/1;height:min(24vh,220px)}
 }
-@media (min-width:821px) and (max-height:759px){html.js .bw-stage{position:static}}
+/* 7-nov-2026: the stage (~510–560 px) fits from 600 px tall, so it stays pinned beside the sprint log; below that it scrolls */
+@media (min-width:821px) and (max-height:759px){html.js .bw-stage{top:calc(var(--nav-h) + 10px)}}
+@media (min-width:821px) and (max-height:599px){html.js .bw-stage{position:static}}
 
 /* ---------- the Accenture card: team row + sprint log (line language: build = solid) ---------- */
 .bw-team{margin:1rem 0 0;font-size:var(--fs-small);line-height:1.55;color:var(--ink-2)}

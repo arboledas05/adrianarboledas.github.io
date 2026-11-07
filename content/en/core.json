@@ -328,18 +328,6 @@
         "shot2": "img/work/servicempro-1280.webp",
         "illus": "remodel",
         "alt": "Home page of servicempro.com"
-      },
-      {
-        "id": "elevva",
-        "title": "elevvavisuals.com",
-        "desc": "My own aerial-video brand (AESA A1/A2/A3 drone pilot)",
-        "href": "https://elevvavisuals.com/",
-        "linkLabel": "Visit site ↗",
-        "live": "elevvavisuals.com",
-        "shot": "",
-        "shot2": "",
-        "illus": "drone",
-        "alt": "Illustration: a drone viewfinder over a drawn valley"
       }
     ],
     "cap": "Website I built",
@@ -475,7 +463,7 @@
         ],
         "bullets": [
           {
-            "text": "Multilingual, SEO-optimised websites: servicempro.com (a luxury remodelling company in Texas, USA) and elevvavisuals.com (my aerial-video brand)"
+            "text": "Multilingual, SEO-optimised websites: servicempro.com (a luxury remodelling company in Texas, USA) and the site for my aerial-video brand"
           },
           {
             "text": "Astro, React, TypeScript, Tailwind CSS, GSAP, Three.js and Lenis, with a focus on performance"
@@ -1007,7 +995,7 @@
   "drone": {
     "eyebrow": "Beyond code",
     "h2": "Off the keyboard, <em>I fly.</em>",
-    "body": "Drone pilot certified by AESA, the Spanish Aviation Safety Agency, in categories A1, A2 and A3. I film aerial video under my own brand, ElevvaVisuals, and I built its website.",
+    "body": "Drone pilot certified by AESA, the Spanish Aviation Safety Agency, in categories A1, A2 and A3. I film aerial video under my own brand, ElevvaVisuals.",
     "link": "https://elevvavisuals.com/",
     "linkLabel": "elevvavisuals.com ↗",
     "live": "LIVE",

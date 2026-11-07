@@ -313,18 +313,6 @@
         "shot2": "img/work/servicempro-1280.webp",
         "illus": "remodel",
         "alt": "Página de inicio de servicempro.com"
-      },
-      {
-        "id": "elevva",
-        "title": "elevvavisuals.com",
-        "desc": "Mi propia marca de vídeo aéreo (piloto de dron AESA A1/A2/A3)",
-        "href": "https://elevvavisuals.com/",
-        "linkLabel": "Ver la web ↗",
-        "live": "elevvavisuals.com",
-        "shot": "",
-        "shot2": "",
-        "illus": "drone",
-        "alt": "Ilustración: el visor de un dron sobre un valle dibujado"
       }
     ],
     "cap": "Web que he hecho",
@@ -460,7 +448,7 @@
         ],
         "bullets": [
           {
-            "text": "Webs multilingües optimizadas para SEO: servicempro.com (empresa de reformas de lujo en Texas, EE. UU.) y elevvavisuals.com (mi marca de vídeo aéreo)"
+            "text": "Webs multilingües optimizadas para SEO: servicempro.com (empresa de reformas de lujo en Texas, EE. UU.) y la de mi marca de vídeo aéreo"
           },
           {
             "text": "Astro, React, TypeScript, Tailwind CSS, GSAP, Three.js y Lenis, cuidando el rendimiento"
@@ -992,7 +980,7 @@
   "drone": {
     "eyebrow": "Más allá del código",
     "h2": "Lejos del teclado, <em>vuelo.</em>",
-    "body": "Piloto de dron certificado por AESA, la Agencia Estatal de Seguridad Aérea, en las categorías A1, A2 y A3. Grabo vídeo aéreo con mi propia marca, ElevvaVisuals, y he hecho su web.",
+    "body": "Piloto de dron certificado por AESA, la Agencia Estatal de Seguridad Aérea, en las categorías A1, A2 y A3. Grabo vídeo aéreo con mi propia marca, ElevvaVisuals.",
     "link": "https://elevvavisuals.com/",
     "linkLabel": "elevvavisuals.com ↗",
     "live": "LIVE",

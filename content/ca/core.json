@@ -313,18 +313,6 @@
         "shot2": "img/work/servicempro-1280.webp",
         "illus": "remodel",
         "alt": "Pàgina d'inici de servicempro.com"
-      },
-      {
-        "id": "elevva",
-        "title": "elevvavisuals.com",
-        "desc": "La meva pròpia marca de vídeo aeri (pilot de dron certificat per AESA, A1/A2/A3)",
-        "href": "https://elevvavisuals.com/",
-        "linkLabel": "Visita el web ↗",
-        "live": "elevvavisuals.com",
-        "shot": "",
-        "shot2": "",
-        "illus": "drone",
-        "alt": "Il·lustració: el visor d'un dron sobre una vall dibuixada"
       }
     ],
     "cap": "Web que he fet",
@@ -460,7 +448,7 @@
         ],
         "bullets": [
           {
-            "text": "Webs multilingües optimitzats per a SEO: servicempro.com (empresa de reformes de luxe a Texas, EUA) i elevvavisuals.com (la meva marca de vídeo aeri)"
+            "text": "Webs multilingües optimitzats per a SEO: servicempro.com (empresa de reformes de luxe a Texas, EUA) i el de la meva marca de vídeo aeri"
           },
           {
             "text": "Astro, React, TypeScript, Tailwind CSS, GSAP, Three.js i Lenis, amb cura del rendiment"
@@ -992,7 +980,7 @@
   "drone": {
     "eyebrow": "Més enllà del codi",
     "h2": "Lluny del teclat, <em>volo.</em>",
-    "body": "Pilot de dron certificat per AESA, l'Agència Estatal de Seguretat Aèria, en les categories A1, A2 i A3. Gravo vídeo aeri amb la meva pròpia marca, ElevvaVisuals, i n'he fet el web.",
+    "body": "Pilot de dron certificat per AESA, l'Agència Estatal de Seguretat Aèria, en les categories A1, A2 i A3. Gravo vídeo aeri amb la meva pròpia marca, ElevvaVisuals.",
     "link": "https://elevvavisuals.com/",
     "linkLabel": "elevvavisuals.com ↗",
     "live": "LIVE",
