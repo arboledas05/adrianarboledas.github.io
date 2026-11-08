@@ -40,8 +40,10 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 // (envSteps: the first PMREM in idle slices), w-map.js 14 → 15 (the land extruded in batches, one idle slice each).
 // Total unchanged.
 // 7-nov-2026: app.css 109 → 110 KB raw (gzip stays 25): the "now" chip fits whole on short laptop screens, the incident tile leads 03 on phones, doc/no-js button width, CSP before-state fix (~0.35 KB).
+// 8-nov-2026: board.js 7 → 8 (readable, hand-authored source): Replay brings the live 3D figure into view once (~0.75 KB);
+// site.js 27.5 → 28: the phone sprint log opens from one button (~0.6 KB).
 export const JS_BUDGET_KB = {
-  'core.js': 5, 'main.js': 4, 'site.js': 27.5, 'bugphone.js': 3.5, 'cloudlab.js': 15, 'board.js': 7,
+  'core.js': 5, 'main.js': 4, 'site.js': 28, 'bugphone.js': 3.5, 'cloudlab.js': 15, 'board.js': 8,
   'stage.js': 16, 'kit.js': 12, 'w-build.js': 20, 'w-drone.js': 15, 'w-map.js': 15,
 };
 export const WORLD_BUDGET_KB = 14; // each assets/js/w-*.js
@@ -49,7 +51,12 @@ export const JS_TOTAL_KB = 165;
 export const HTML_BUDGET = { raw: 146, gz: 39 };
 // 8-nov-2026: app.css 110 → 111 KB raw, gzip 25 → 26: the Cloud Lab stage becomes a sticky column beside its controls on laptops
 // (controls under the stage below 1024 px) and the hero poster gets tap targets for its blades and bead (~0.75 KB).
-export const CSS_BUDGET = { raw: 111, gz: 26 };
+// 8-nov-2026: app.css 111 → 112 KB raw (gzip stays 26): glance contact row, chapter heads on their figure, CV header buttons, phone
+// sprint log toggle, board order + phone pair, tap targets and phone micro-text (~1.9 KB, offset by the retired caret, card numerals and
+// four dead rules: .hs-lead, .hs.is-dim, .hud-card, #drone .drone-link).
+// 8-nov-2026 (batch B): app.css 112 → 113 KB raw (gzip stays 26): the glance card gets a 3-path router (Flutter / web / cloud)
+// with a one-row phone variant (~0.9 KB).
+export const CSS_BUDGET = { raw: 113, gz: 26 };
 export const RETIRED_JS = ['planet.js', 'bg.js'];
 export const budgetOf = (name) => JS_BUDGET_KB[name] ?? (/^w-[\w-]+\.js$/.test(name) ? WORLD_BUDGET_KB : null);
 

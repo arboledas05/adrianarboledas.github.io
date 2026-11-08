@@ -15,15 +15,12 @@
 
 /* hotspots positioned by stage.js: .hs-on pins them to the slot origin, stage writes translate3d + visibility */
 .hs-on{left:0!important;top:0!important;right:auto!important;bottom:auto!important}
-.hs{position:absolute;left:0;top:0;display:inline-flex;align-items:center;gap:6px;max-width:min(340px,86vw);padding:4px 10px 4px 8px;border:1px solid var(--line);border-radius:var(--r-pill);background:rgba(255,255,255,.94);box-shadow:0 6px 16px -10px rgba(23,21,15,.3);color:var(--ink);font:500 11px/1.35 var(--f-mono);white-space:nowrap;translate:-50% calc(-100% - 10px);pointer-events:none;transition:opacity .2s}
+.hs{position:absolute;left:0;top:0;display:inline-flex;align-items:center;gap:6px;max-width:min(340px,86vw);padding:4px 10px 4px 8px;border:1px solid var(--line);border-radius:var(--r-pill);background:#fffffff0;box-shadow:0 6px 16px -10px #17150f4c;color:var(--ink);font:500 11px/1.35 var(--f-mono);white-space:nowrap;translate:-50% calc(-100% - 10px);pointer-events:none;transition:opacity .2s}
 .hs::before{content:'';flex:none;width:6px;height:6px;border-radius:1.5px;background:var(--w-accent,var(--indigo))}
-.hs .hs-lead{position:absolute;left:50%;top:100%;width:1px;height:10px;overflow:visible;stroke:var(--ink-3);stroke-width:1}
-.hs.is-dim{opacity:.35}
 .world-slot:not(.is-live) .hs{visibility:hidden}
 /* a focusable pin outside the frame (stage.js .hs-off): kept in the tab order at the slot edge, visible only while focused */
 .hs-off:not(:focus-visible){opacity:0!important;pointer-events:none!important}
-/* HUD-safe text card (text that sits over a figure) */
-.hud-card{max-width:36ch;padding:clamp(14px,2vw,20px);border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.93);box-shadow:var(--sh-card);color:var(--ink)}
+/* 8-nov-2026: .hs-lead, .hs.is-dim and .hud-card retired (no markup or script uses them any more) */
 
 /* figcaption bar: FIG. 0n · name · hint · pause · mode ('3D · live' / '2D') */
 .world-cap{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .9rem;margin-top:10px;font:500 .72rem/1.5 var(--f-mono);color:var(--ink-3)}
@@ -34,7 +31,7 @@
 .fig-pause,.fig-mode{display:none}
 /* pause = one page-wide switch (site.js): 3D and the 2D loops, so it shows whenever motion can run */
 html.js:not(.rm) .fig-pause,:is(.gl,.gl-pre) .fig-mode{display:inline-flex}
-.fig-pause{align-items:center;gap:.45rem;min-height:32px;padding:.2rem .7rem;border:1px solid var(--line);border-radius:var(--r-pill);background:rgba(255,255,255,.7);font:600 .7rem/1 var(--f-mono);color:var(--ink-2)}
+.fig-pause{align-items:center;gap:.45rem;min-height:32px;padding:.2rem .7rem;border:1px solid var(--line);border-radius:var(--r-pill);background:#ffffffb3;font:600 .7rem/1 var(--f-mono);color:var(--ink-2)}
 .fig-pause::before{content:'';width:8px;height:9px;border-inline:2.5px solid currentColor;box-sizing:border-box}
 .fig-pause[aria-pressed=true]{border-color:var(--w-accent,var(--indigo));color:var(--w-accent,var(--indigo))}
 .fig-pause[aria-pressed=true]::before{width:0;height:0;border:0;border-left:8px solid currentColor;border-block:5px solid transparent}

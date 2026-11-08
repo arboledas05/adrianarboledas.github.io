@@ -7,6 +7,7 @@
 //
 // Template syntax (see SPEC modules → tools/build.mjs):
 //   {{t key.path}}  escaped text          {{h key.path}}  whitelisted HTML from the dictionary
+//   {{url key.path}} the string URL-encoded (encodeURIComponent), for a query value such as a mailto subject
 //   {{json key}}    JSON for an attribute {{> name}}      partial src/partials/name.html (nestable)
 //   {{if cond}}…{{else}}…{{/if}}   cond = flag | !flag | flag path (worlds.hero) | ns:key (live:domain,
 //                                   nexaStatus:delivered, file:path or file:.field → that repo file exists)
@@ -343,6 +344,7 @@ function makeRenderer(lang) {
         return esc(str(key, scope, more.length ? parseArgs(more.join(' '), scope) : null));
       }
       case 'h': return checkHtml(str(rest, scope), rest);
+      case 'url': return esc(encodeURIComponent(str(rest, scope))); /* 8-nov-2026: a dictionary string inside a URL (the mailto subject) */
       case 'json': {
         const v = lookup(rest, scope);
         if (v === undefined) soft(`[${lang}] missing key "${rest}" for {{json}}`);

@@ -1,11 +1,10 @@
 /* board.css (B3 → B4): Campaign Board, apricot pieces + the 03 Grow world figure (its slot collapses unless the 3D is live). Every tile shows its period. */
 .board{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px;margin-top:var(--s6)}
-.tile{display:grid;grid-template-rows:1fr auto;min-width:0;padding:clamp(16px,2vw,26px);border:1px solid var(--line);border-radius:var(--r-card);background:var(--card);box-shadow:var(--sh-card)}
+.tile{display:grid;grid-template-rows:auto auto;align-content:start;align-self:start;min-width:0;padding:clamp(16px,2vw,26px);border:1px solid var(--line);border-radius:var(--r-card);background:var(--card);box-shadow:var(--sh-card)}
 .tile--ctr{grid-area:span 2/span 5}
 .tile--leads{grid-area:span 2/span 4}
 .tile--clicks,.tile--disc{grid-column:span 3}
-.tile--csp,.tile--match{grid-column:span 6}
-.tile--match{align-self:start}
+.tile--csp,.tile--match{grid-column:1/-1} /* 8-nov-2026: the production incident leads 03 (first in the DOM), full width; the message match closes it */
 @media (max-width:1099px){.board{grid-template-columns:1fr 1fr}.board>.tile{grid-area:auto}.board>:is(.tile--csp,.tile--match){grid-column:1/-1}}
 .board>.board-world{grid-column:1/-1}
 #board .board-stage{height:0;aspect-ratio:auto}
@@ -25,7 +24,7 @@ html:not(.gl,.gl-pre) .board-world :is(.board-legend,.world-cap){display:none}
 #board .board-tip[data-hotspot=bowl]{translate:-50% 12px} /* hangs below the bowl, on the empty plinth, never over the run */
 @media (max-width:820px){#board .board-tip:is(.board-tip--us,.board-tip--sec){padding:2px 8px;font-size:.66rem;translate:-50% calc(-100% - 6px)}#board .board-tip .hs-x{display:none}} /* phones: just the value, sitting on its own tower (the dates are in the legend under the figure) */
 @media (max-width:820px){#board .board-tip.board-tip--us{translate:-50% calc(-100% - 14px)}}
-@media (max-width:820px){.board{grid-template-columns:1fr}.board>.board-world{order:-2}.board>.tile--csp{order:-1}}
+@media (max-width:820px){.board{grid-template-columns:1fr}.board>.board-world{order:-2}}
 .tile>*{min-width:0}
 .tile-k,.tile-back-k{display:block;margin:0;font:600 var(--fs-eyebrow)/1.4 var(--f-mono);letter-spacing:var(--track-eyebrow);text-transform:uppercase;color:var(--acc-grow,var(--ink-3))}
 .tile.is-evidence{--ev-dur:1.2s}
@@ -60,8 +59,8 @@ html:not(.gl,.gl-pre) .board-world :is(.board-legend,.world-cap){display:none}
 @keyframes tk-in{to{transform:translateY(30px) scaleY(.4);opacity:0}}
 @keyframes tk-out{to{transform:translateY(12px);opacity:.12}}
 @keyframes dot-pop{from{transform:scale(0)}}
-.tile-how,.board-btn,.match-hl button,.csp-toggle{min-height:44px;padding:8px 16px;border:1px solid var(--line);border-radius:99px;background:var(--paper-2);font:600 var(--fs-mono)/1 var(--f-mono);color:var(--indigo-deep);cursor:pointer}
-.tile-how,.board-btn{justify-self:start;margin-top:14px}
+.tile-how,.board-btn,.match-hl button,.csp-toggle,.sprints-more{min-height:44px;padding:8px 16px;border:1px solid var(--line);border-radius:99px;background:var(--paper-2);font:600 var(--fs-mono)/1 var(--f-mono);color:var(--indigo-deep);cursor:pointer}
+.tile-how,.board-btn{justify-self:start;margin-top:1rem}
 :is(.tile-how,.board-btn,.match-hl button):hover{background:#FCEFE2}
 .tile-how[aria-expanded=true]{background:var(--indigo);color:#fff}
 .tile-back{margin-top:14px;padding-top:12px;border-top:1px dotted var(--line)}
@@ -78,7 +77,7 @@ html.js .board:not(.mod-failed) :is(.tile:not(.is-flipped) .tile-back,.is-flippe
 .csp-demo{display:grid;gap:12px;margin-top:16px}
 .csp-toggle{justify-self:start;display:flex;padding:3px}
 .csp-toggle{cursor:auto}
-.csp-toggle button{display:flex;align-items:center;padding:0 14px;border:0;border-radius:99px;background:none;font:inherit;color:var(--ink-2);cursor:pointer}
+.csp-toggle button{display:flex;align-items:center;min-height:44px;padding:0 14px;border:0;border-radius:99px;background:none;font:inherit;color:var(--ink-2);cursor:pointer}
 .csp-toggle button:first-child[aria-pressed=true]{background:var(--peach);color:var(--ink)}
 .csp-toggle button:last-child[aria-pressed=true]{background:var(--indigo);color:#fff}
 .csp-track{--wall:calc(33.3% - 8px);position:relative;display:grid;grid-template-columns:1fr 14px 1fr 1fr;align-items:center;gap:8px;padding-bottom:26px;font:500 .7rem/1.25 var(--f-mono);color:var(--ink-2)}

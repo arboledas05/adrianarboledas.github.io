@@ -1,15 +1,15 @@
 {
   "bug": {
-    "title": "Tipos de bug que corregí en producción",
+    "title": "Tipos de error que corregí en producción",
     "alt": "Esquema de la pantalla de un móvil (ilustración)",
-    "group": "Muestra un tipo de bug y su solución",
+    "group": "Muestra un tipo de error y su solución",
     "rotate": "Girar",
     "keyboard": "Teclado",
     "overflow": "Contenido largo",
     "cRotate": "En horizontal: el diseño se recoloca en vez de romperse",
     "cKeyboard": "Con el teclado abierto: el footer fijo queda por encima",
     "cOverflow": "Con mucho contenido: se desplaza en vez de desbordarse",
-    "idle": "Elige un tipo de bug para ver la solución.",
+    "idle": "Elige un tipo de error para ver la solución.",
     "note": "Solo es una ilustración: no es la app real del cliente.",
     "st0": "GetX",
     "st1": "Componentes",

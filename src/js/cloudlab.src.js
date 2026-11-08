@@ -20,6 +20,9 @@ export function init(root, ctx) {
   const LINES = { request: ['req1', 'req2', 'req3', 'req4'], updates: ['upd1', 'upd2'], blocked: ['blk'], migrate: ['mig1', 'mig2', 'mig3'], cost: ['cost1', 'cost2'] };
   const MODS = { 5160: ['lab-region', 'lab-vpc'], 5161: ['lab-web', 'lab-app', 'lab-asg'], 5162: ['lab-data', 'lab-rds-primary', 'lab-rds-standby'], 5163: ['lab-vpc', 'lab-nat', 'lab-sg-web', 'lab-sg-app', 'lab-sg-data'], 5164: ['lab-dms', 'lab-rds-standby'] };
   root.querySelectorAll('.lab-mod[data-parts]').forEach((b) => { MODS[b.dataset.module] = b.dataset.parts.split(' '); }); // the chip row carries the map; the built-in copy is the fallback
+  // 8-nov-2026: the phone chip row fades at its right edge until it is scrolled to the end (one passive listener, a class flip)
+  const mrow = root.querySelector('.lab-mods-row');
+  if (mrow) { const edge = () => mrow.classList.toggle('is-fade', mrow.scrollLeft + mrow.clientWidth < mrow.scrollWidth - 4); mrow.addEventListener('scroll', edge, { passive: true, signal: ac.signal }); edge(); }
   const geo = new Map();
   let run = 0, act = null, dead = false, quiet = false, stopLeg = null, rt = 0, pinned = null, preview = null, live3d = false;
 

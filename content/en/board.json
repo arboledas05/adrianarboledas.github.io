@@ -41,7 +41,7 @@
       "replay": "Replay 8–23 Oct",
       "legend": "1 tick = 10 clicks",
       "back": "Measured with Google Ads conversion tracking, GA4 and Consent Mode v2",
-      "readout": "19 contacts from 430 clicks · 8–23 Oct 2026"
+      "readout": "19 leads from 430 clicks · 8–23 Oct 2026"
     },
     "disc": {
       "k": "Discipline",
@@ -52,7 +52,7 @@
       "readout": "170+ negative keywords"
     },
     "csp": {
-      "k": "Incident: missing conversions",
+      "k": "Production bug: lost conversions",
       "s1k": "Symptom",
       "s1": "Google Ads recorded far fewer conversions than the leads that really arrived (Sep 2026: 4 conversions recorded vs about 20 real leads)",
       "s2k": "Root cause",

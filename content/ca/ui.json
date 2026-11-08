@@ -71,7 +71,7 @@
       "deploy": {
         "fig": "Diorama cloud (projectes del curs)",
         "hint": "fes clic en una peça · arrossega per girar",
-        "hintTouch": "toca una peça",
+        "hintTouch": "toca una peça per inspeccionar-la",
         "callouts": {
           "internet": "internet",
           "web": "web · pública",

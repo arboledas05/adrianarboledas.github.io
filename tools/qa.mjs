@@ -297,7 +297,7 @@ try {
   if (MODES.has('nojs')) for (const [lang, vp] of [['en', [390, 844]], ['en', [1440, 900]], ['es', [360, 740]], ['ca', [1366, 768]]]) if (want(lang, vp)) await runWorlds(lang, vp, { tag: 'nojs', nojs: true, query: '' });
   if (MODES.has('doc')) for (const [lang, vp] of [['en', [1366, 768]], ['en', [390, 844]], ['es', [1440, 900]], ['ca', [360, 740]]]) if (want(lang, vp)) await runDoc(lang, vp);
   if (MODES.has('nocdn')) for (const vp of [[1440, 900], [390, 844]]) if (want('en', vp)) await runNoCdn('en', vp);
-  if (MODES.has('jumps')) for (const [lang, vp, link, target] of [['en', [1440, 900], '#nav .nav-links a[href="#europe"]', '#europe'], ['en', [1440, 900], '#nav .nav-links a[href="#contact"]', '#contact'], ['en', [390, 844], '.hero a[href="#contact"]', '#contact'], ['es', [390, 844], '#glance a[href="#europe"]', '#europe']]) if (want(lang, vp)) await runJump(lang, vp, link, target);
+  if (MODES.has('jumps')) for (const [lang, vp, link, target] of [['en', [1440, 900], '#nav .nav-links a[href="#europe"]', '#europe'], ['en', [1440, 900], '#nav .nav-links a[href="#contact"]', '#contact'], ['en', [390, 844], '.hero a[href="#contact"]', '#contact'], ['es', [390, 844], '#glance a[href="#europe"]', '#europe'], /* 8-nov-2026: the glance 3-path router */ ...['#build-accenture', '#sites-h', '#lab'].flatMap((t) => [['es', [1494, 700], `.glance-paths a[href="${t}"]`, t], ['en', [390, 844], `.glance-paths a[href="${t}"]`, t]])]) if (want(lang, vp)) await runJump(lang, vp, link, target);
   if (MODES.has('print')) for (const lang of Object.keys(LANGS)) if (!ONLY || ONLY.includes(lang) || ONLY.includes('print')) await runPrint(lang);
 } finally {
   await cdp.close();

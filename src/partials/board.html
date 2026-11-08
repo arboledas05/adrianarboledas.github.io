@@ -15,6 +15,29 @@
     <p class="board-legend">{{t ui.w.grow.legend}}</p>
     <figcaption class="world-cap"><span class="fig-n">FIG. 03</span> <span class="fig-name" id="fig-grow">{{t ui.w.grow.fig}}</span> <span class="fig-hint">{{t ui.w.grow.hint}}</span> <button type="button" class="fig-pause" aria-pressed="false">{{t ui.w.pause}}</button> <span class="fig-mode">{{t ui.w.mode2d}}</span></figcaption>
   </figure>
+  <article class="tile tile--csp" data-tile="csp">
+    <div class="tile-front">
+      <h3 class="tile-k" id="tk-csp">{{t board.csp.k}}</h3>
+      <ol class="csp-steps">
+        <li><span class="csp-sk">{{t board.csp.s1k}}</span> <span>{{t board.csp.s1}}</span></li>
+        <li><span class="csp-sk">{{t board.csp.s2k}}</span> <span>{{t board.csp.s2}}</span></li>
+        <li><span class="csp-sk">{{t board.csp.s3k}}</span> <span>{{t board.csp.s3}}</span></li>
+        <li><span class="csp-sk">{{t board.csp.s4k}}</span> <span>{{t board.csp.s4}}</span></li>
+      </ol>
+      <p class="csp-tech">{{t board.csp.tech}}</p>
+      <div class="csp-demo">
+        <div class="csp-toggle b-js" role="group" aria-labelledby="tk-csp"><button type="button" aria-pressed="true">{{t board.csp.before}}</button><button type="button" aria-pressed="false">{{t board.csp.after}}</button></div>
+        <div class="csp-track" aria-hidden="true">
+          <span class="csp-node">{{t board.csp.from}}</span><span class="csp-wall"></span><span class="csp-node csp-node--on">{{t board.csp.cm}}</span><span class="csp-node csp-node--on">{{t board.csp.ga}}</span>
+          <span class="csp-run"><i class="csp-packet"></i></span>
+          <span class="csp-state"><span class="csp-s-b">{{t board.csp.wall}}</span><span class="csp-s-a">{{t board.csp.fixed}}</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="tile-back" id="back-csp"><p><span class="tile-back-k">{{t board.howK}}</span> {{t board.csp.back}}</p></div>
+    <button type="button" class="tile-how b-js" aria-expanded="false" aria-controls="back-csp" aria-describedby="tk-csp">{{t board.how}}</button>
+  </article>
+
   <article class="tile tile--ctr" data-tile="ctr">
     <div class="tile-front">
       <h3 class="tile-k" id="tk-ctr">{{t board.ctr.k}}</h3>
@@ -73,29 +96,6 @@
     </div>
     <div class="tile-back" id="back-discipline"><p><span class="tile-back-k">{{t board.howK}}</span> {{t board.disc.back}}</p></div>
     <button type="button" class="tile-how b-js" aria-expanded="false" aria-controls="back-discipline" aria-describedby="tk-discipline">{{t board.how}}</button>
-  </article>
-
-  <article class="tile tile--csp" data-tile="csp">
-    <div class="tile-front">
-      <h3 class="tile-k" id="tk-csp">{{t board.csp.k}}</h3>
-      <ol class="csp-steps">
-        <li><span class="csp-sk">{{t board.csp.s1k}}</span> <span>{{t board.csp.s1}}</span></li>
-        <li><span class="csp-sk">{{t board.csp.s2k}}</span> <span>{{t board.csp.s2}}</span></li>
-        <li><span class="csp-sk">{{t board.csp.s3k}}</span> <span>{{t board.csp.s3}}</span></li>
-        <li><span class="csp-sk">{{t board.csp.s4k}}</span> <span>{{t board.csp.s4}}</span></li>
-      </ol>
-      <p class="csp-tech">{{t board.csp.tech}}</p>
-      <div class="csp-demo">
-        <div class="csp-toggle b-js" role="group" aria-labelledby="tk-csp"><button type="button" aria-pressed="true">{{t board.csp.before}}</button><button type="button" aria-pressed="false">{{t board.csp.after}}</button></div>
-        <div class="csp-track" aria-hidden="true">
-          <span class="csp-node">{{t board.csp.from}}</span><span class="csp-wall"></span><span class="csp-node csp-node--on">{{t board.csp.cm}}</span><span class="csp-node csp-node--on">{{t board.csp.ga}}</span>
-          <span class="csp-run"><i class="csp-packet"></i></span>
-          <span class="csp-state"><span class="csp-s-b">{{t board.csp.wall}}</span><span class="csp-s-a">{{t board.csp.fixed}}</span></span>
-        </div>
-      </div>
-    </div>
-    <div class="tile-back" id="back-csp"><p><span class="tile-back-k">{{t board.howK}}</span> {{t board.csp.back}}</p></div>
-    <button type="button" class="tile-how b-js" aria-expanded="false" aria-controls="back-csp" aria-describedby="tk-csp">{{t board.how}}</button>
   </article>
 
   <article class="tile tile--match" data-tile="match">

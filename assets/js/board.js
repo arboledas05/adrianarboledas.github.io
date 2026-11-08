@@ -83,7 +83,16 @@ export function init(root, ctx) {
     clearTimeout(rT);
     rT = later(() => lead.classList.remove('is-replay'), DUR + 400);
   }
-  on(root.querySelector('#board-replay'), 'click', replay);
+  // 8-nov-2026: Replay (the button, not 3D taps) brings an off-screen 3D figure in once; one rect read per press
+  function reveal() {
+    const s = document.querySelector('#grow .world-slot');
+    if (!s || !html.classList.contains('gl') || !s.scrollIntoView) return;
+    const r = s.getBoundingClientRect(), top = 80, vh = innerHeight || 1;
+    if (!r.height || (Math.min(r.bottom, vh) - Math.max(r.top, top)) / Math.min(r.height, vh - top) >= 0.6) return;
+    try { s.scrollIntoView({ block: r.height > vh - top ? 'start' : 'nearest', behavior: rm() ? 'auto' : 'smooth' }); } catch (e) { return; }
+    return true;
+  }
+  on(root.querySelector('#board-replay'), 'click', () => { if (reveal() && !rm()) later(replay, 650); else replay(); });
 
   // CSP incident: Before / After, two buttons in a group (the pressed one is the state shown)
   const ct = root.querySelector('.csp-toggle'), csp = ct && ct.closest('.tile');

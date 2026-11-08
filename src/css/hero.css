@@ -17,17 +17,17 @@
    Rim light: one soft directional light from the upper left (a feathered indigo kiss on his left/top contour, never a
    crisp offset edge: fixed CSS px read as a lilac stroke at phone scale) + a long, faint fall shadow under him. */
 .hero-visual .world-slot::after{content:'';position:absolute;inset:auto 0 0;height:26%;z-index:2;pointer-events:none;
-  background:radial-gradient(ellipse 50% 100% at 50% 100%,var(--paper) 42%,rgba(244,241,234,0))} /* feathered: no box edge on the aurora */
+  background:radial-gradient(ellipse 50% 100% at 50% 100%,var(--paper) 42%,#f4f1ea00)} /* feathered: no box edge on the aurora */
 .hero-portrait{position:absolute;z-index:3;left:14%;bottom:0;width:66%;pointer-events:none;
   transform:translate3d(calc(var(--hx,0)*-10px),calc(var(--hy,0)*-6px),0)}
 .hero-portrait img{display:block;width:100%;height:auto;
-  filter:drop-shadow(-2px -2px 3px rgba(91,71,255,.26)) drop-shadow(0 18px 24px rgba(58,43,224,.08));
+  filter:drop-shadow(-2px -2px 3px #5b47ff42) drop-shadow(0 18px 24px #3a2be014);
   /* the photo's shoulders touch its left/right borders: fade the sides and the foot so no straight edge (or rim) shows */
   -webkit-mask-image:linear-gradient(#000 80%,transparent 98%),linear-gradient(90deg,transparent,#000 10%,#000 92%,transparent);-webkit-mask-composite:source-in;
   mask-image:linear-gradient(#000 80%,transparent 98%),linear-gradient(90deg,transparent,#000 10%,#000 92%,transparent);mask-composite:intersect}
 /* a neutral contact shadow, not an indigo glow */
 .hero-portrait::after{content:'';position:absolute;z-index:-1;left:10%;right:6%;bottom:-2%;height:7%;border-radius:50%;
-  background:radial-gradient(closest-side,rgba(23,21,15,.1),rgba(23,21,15,0))}
+  background:radial-gradient(closest-side,#17150f1a,#17150f00)}
 @supports (animation-timeline:scroll()){
   html:not(.rm) .hero-portrait{animation:hero-exit linear both;animation-timeline:scroll(root);animation-range:0 100vh}
 }
@@ -35,7 +35,7 @@
 
 /* the bead (2D twin of the 3D bead): perched on the Build blade, a small hop every 6 s; the live deck has its own */
 .hero-bead{position:absolute;z-index:3;left:12%;top:35.2%;width:4.6%;aspect-ratio:1;margin:-2.3% 0 0 -2.3%;border-radius:50%;pointer-events:none;
-  background:radial-gradient(circle at 34% 30%,#9C90FF 0,#5B47FF 26%,#3A2BE0 58%,#2A1FC0 100%);box-shadow:0 6px 10px -4px rgba(42,31,192,.55)}
+  background:radial-gradient(circle at 34% 30%,#9C90FF 0,#5B47FF 26%,#3A2BE0 58%,#2A1FC0 100%);box-shadow:0 6px 10px -4px #2a1fc08c}
 html.js:not(.rm) .hero-bead{animation:hero-hop 6s var(--ease-out) 1.4s infinite}
 .hero-visual .world-slot.is-live .hero-bead{visibility:hidden;animation:none}
 @keyframes hero-hop{0%,84%,100%{transform:none}87%{transform:scale(1.15,.8)}92%{transform:translateY(-110%)}96%{transform:scale(1.1,.88)}}
@@ -54,6 +54,7 @@ html.js:not(.rm) .hero-bead{animation:hero-hop 6s var(--ease-out) 1.4s infinite}
 /* the two right-hand blades: the pill grows leftwards from its anchor, so a long label never leaves the viewport (1024–1280) */
 .hero-visual .hs:is([data-hotspot=drone],[data-hotspot=europe]){translate:calc(-100% + 18px) calc(-100% - 10px)}
 .hero-visual .world-cap{margin-top:6px}
+@media (min-width:821px) and (max-height:760px){.hero-visual .fig-hint{display:none}} /* 8-nov-2026: short laptops: the hint line sat alone at the top of the next screen */
 
 /* the eyebrow is the first line a reader sees: never a one-word orphan ("… CODE TO / CLOUD"). Tighter tracking keeps it on
    one line wherever the column allows; balance splits it evenly where it does not (ES/CA are longer) */
@@ -68,7 +69,7 @@ html.js:not(.rm) .hero-bead{animation:hero-hop 6s var(--ease-out) 1.4s infinite}
   .hero-visual .world-slot{height:100%;width:auto}
   .hero-visual .world-cap,.hero-visual .slot-ui,.hero-visual .slot-hit{display:none}
   .hero-portrait{left:21%;width:60%;bottom:-2%} /* smaller and seated lower: his head sits under the blade-label band */
-  .hero-portrait img{filter:drop-shadow(-1px -1px 2px rgba(91,71,255,.22))}
+  .hero-portrait img{filter:drop-shadow(-1px -1px 2px #5b47ff38)}
   html.js:not(.rm) .hero-visual .slot-fallback img{animation:hero-float 7s ease-in-out infinite}
   .hero-grid .hero-copy::before{height:28px}
   .hero-copy>*{order:5}

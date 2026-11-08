@@ -111,7 +111,17 @@ export async function init(root, ctx) {
   if (!bc) return;
   if (!w.ro && window.ResizeObserver) { w.ro = new ResizeObserver(() => beats(w)); w.ro.observe(bc); offs.push(() => w.ro.disconnect()); }
   const top = bc.getBoundingClientRect().top;
-  w.bo = [...bc.querySelectorAll('[data-beat]')].sort((a, b) => a.dataset.beat - b.dataset.beat).map((li) => { const r = li.getBoundingClientRect(); return [r.top - top, r.height]; });
+  const bo = [...bc.querySelectorAll('[data-beat]')].sort((a, b) => a.dataset.beat - b.dataset.beat).map((li) => { const r = li.getBoundingClientRect(); return [r.top - top, r.height]; });
+  /* 8-nov-2026: a collapsed anchor (the phone sprint log shows only its first and last period) has no box: spread it evenly
+     between its visible neighbours, so the beats keep rising with the card's progress instead of jumping */
+  for (let i = 0; i < bo.length; i++) {
+   if (bo[i][1]) continue;
+   let j = i; while (j < bo.length && !bo[j][1]) j++;
+   const a = i ? bo[i - 1][0] : j < bo.length ? bo[j][0] : 0, b = j < bo.length ? bo[j][0] : a;
+   for (let k = i; k < j; k++) bo[k] = [a + ((b - a) * (k - i + 1)) / (j - i + 1), 0];
+   i = j;
+  }
+  w.bo = bo;
  }
  function beatAt(w, vh) {
   const B = w.bo, line = vh * .55 - w.bt;

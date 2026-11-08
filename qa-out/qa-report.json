@@ -1,0 +1,1311 @@
+{
+ "when": "2026-11-08T17:14:31.441Z",
+ "wmode": "all",
+ "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+ "runs": [
+  {
+   "name": "worlds_en_360x740",
+   "lang": "en",
+   "vp": "360x740",
+   "mode": "worlds",
+   "url": "http://127.0.0.1:14181/en.html?w=all",
+   "shots": [
+    "worlds_en_360x740_00-hero.jpg",
+    "worlds_en_360x740_01-build.jpg",
+    "worlds_en_360x740_02-deploy.jpg",
+    "worlds_en_360x740_03-grow.jpg",
+    "worlds_en_360x740_04-drone.jpg",
+    "worlds_en_360x740_05-map.jpg",
+    "worlds_en_360x740_06-contact.jpg"
+   ],
+   "worlds": {
+    "build": {
+     "state": "live",
+     "waitMs": 257,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 2.4
+     },
+     "programsLinked": 4,
+     "tier": "gl-q1"
+    },
+    "deploy": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.3,
+      "drawsPerFrame": 8.9
+     },
+     "programsLinked": 5,
+     "tier": "gl-q1"
+    },
+    "grow": {
+     "state": "live",
+     "waitMs": 0,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 7.6
+     },
+     "programsLinked": 3,
+     "tier": "gl-q1"
+    },
+    "drone": {
+     "state": "live",
+     "waitMs": 260,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 2.2
+     },
+     "programsLinked": 9,
+     "tier": "gl-q1"
+    },
+    "map": {
+     "state": "live",
+     "waitMs": 0,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.3,
+      "drawsPerFrame": 2.6
+     },
+     "programsLinked": 0,
+     "tier": "gl-q1"
+    }
+   },
+   "errors": [],
+   "probe": {
+    "overflowX": 0,
+    "htmlClass": "js gl-pre aa-ready gl gl-q1 past-hero aurora-off",
+    "world": null,
+    "canvases": 1,
+    "stageParent": "slot:map",
+    "qa": {
+     "ctx": 1,
+     "kinds": [
+      "webgl2#stage"
+     ],
+     "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+     "links": 24
+    },
+    "stacking": [],
+    "slots": {
+     "hero": {
+      "cls": "",
+      "h": 229,
+      "w": 212,
+      "mode": "2D"
+     },
+     "build": {
+      "cls": "",
+      "h": 324,
+      "w": 322,
+      "mode": "2D"
+     },
+     "deploy": {
+      "cls": "lab-stage",
+      "h": 215,
+      "w": 322,
+      "mode": "2D"
+     },
+     "grow": {
+      "cls": "board-stage",
+      "h": 331,
+      "w": 331,
+      "mode": "2D"
+     },
+     "drone": {
+      "cls": "is-warm",
+      "h": 405,
+      "w": 324,
+      "mode": "3D · live"
+     },
+     "map": {
+      "cls": "is-warm is-live",
+      "h": 243,
+      "w": 324,
+      "mode": "3D · live"
+     }
+    },
+    "docH": 24252
+   },
+   "warnings": [],
+   "seconds": 26
+  },
+  {
+   "name": "worlds_en_390x844",
+   "lang": "en",
+   "vp": "390x844",
+   "mode": "worlds",
+   "url": "http://127.0.0.1:14181/en.html?w=all",
+   "shots": [
+    "worlds_en_390x844_00-hero.jpg",
+    "worlds_en_390x844_01-build.jpg",
+    "worlds_en_390x844_02-deploy.jpg",
+    "worlds_en_390x844_03-grow.jpg",
+    "worlds_en_390x844_04-drone.jpg",
+    "worlds_en_390x844_05-map.jpg",
+    "worlds_en_390x844_06-contact.jpg"
+   ],
+   "worlds": {
+    "build": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 2.4
+     },
+     "programsLinked": 4,
+     "tier": "gl-q1"
+    },
+    "deploy": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 8.9
+     },
+     "programsLinked": 5,
+     "tier": "gl-q1"
+    },
+    "grow": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.3,
+      "drawsPerFrame": 7.6
+     },
+     "programsLinked": 3,
+     "tier": "gl-q1"
+    },
+    "drone": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.3,
+      "drawsPerFrame": 2.2
+     },
+     "programsLinked": 9,
+     "tier": "gl-q1"
+    },
+    "map": {
+     "state": "live",
+     "waitMs": 0,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.3,
+      "drawsPerFrame": 2.6
+     },
+     "programsLinked": 0,
+     "tier": "gl-q1"
+    }
+   },
+   "errors": [],
+   "probe": {
+    "overflowX": 0,
+    "htmlClass": "js gl-pre aa-ready gl gl-q1 past-hero aurora-off",
+    "world": null,
+    "canvases": 1,
+    "stageParent": "slot:map",
+    "qa": {
+     "ctx": 1,
+     "kinds": [
+      "webgl2#stage"
+     ],
+     "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+     "links": 24
+    },
+    "stacking": [],
+    "slots": {
+     "hero": {
+      "cls": "",
+      "h": 304,
+      "w": 281,
+      "mode": "2D"
+     },
+     "build": {
+      "cls": "",
+      "h": 369,
+      "w": 349,
+      "mode": "2D"
+     },
+     "deploy": {
+      "cls": "lab-stage",
+      "h": 233,
+      "w": 349,
+      "mode": "2D"
+     },
+     "grow": {
+      "cls": "board-stage",
+      "h": 359,
+      "w": 359,
+      "mode": "2D"
+     },
+     "drone": {
+      "cls": "is-warm",
+      "h": 439,
+      "w": 351,
+      "mode": "3D · live"
+     },
+     "map": {
+      "cls": "is-warm is-live",
+      "h": 263,
+      "w": 351,
+      "mode": "3D · live"
+     }
+    },
+    "docH": 23711
+   },
+   "warnings": [],
+   "seconds": 25
+  },
+  {
+   "name": "worlds_en_768x1024",
+   "lang": "en",
+   "vp": "768x1024",
+   "mode": "worlds",
+   "url": "http://127.0.0.1:14181/en.html?w=all",
+   "shots": [
+    "worlds_en_768x1024_00-hero.jpg",
+    "worlds_en_768x1024_01-build.jpg",
+    "worlds_en_768x1024_02-deploy.jpg",
+    "worlds_en_768x1024_03-grow.jpg",
+    "worlds_en_768x1024_04-drone.jpg",
+    "worlds_en_768x1024_05-map.jpg",
+    "worlds_en_768x1024_06-contact.jpg"
+   ],
+   "worlds": {
+    "build": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 2.4
+     },
+     "programsLinked": 4,
+     "tier": "gl-q1"
+    },
+    "deploy": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.3,
+      "drawsPerFrame": 8.9
+     },
+     "programsLinked": 5,
+     "tier": "gl-q1"
+    },
+    "grow": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.2,
+      "max": 7.3,
+      "drawsPerFrame": 7.6
+     },
+     "programsLinked": 0,
+     "tier": "gl-q1"
+    },
+    "drone": {
+     "state": "live",
+     "waitMs": 4,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 2.4
+     },
+     "programsLinked": 9,
+     "tier": "gl-q1"
+    },
+    "map": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 2.6
+     },
+     "programsLinked": 0,
+     "tier": "gl-q1"
+    }
+   },
+   "errors": [],
+   "probe": {
+    "overflowX": 0,
+    "htmlClass": "js gl-pre aa-ready gl gl-q1 past-hero",
+    "world": null,
+    "canvases": 1,
+    "stageParent": "slot:map",
+    "qa": {
+     "ctx": 1,
+     "kinds": [
+      "webgl2#stage"
+     ],
+     "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+     "links": 21
+    },
+    "stacking": [],
+    "slots": {
+     "hero": {
+      "cls": "",
+      "h": 410,
+      "w": 379,
+      "mode": "2D"
+     },
+     "build": {
+      "cls": "",
+      "h": 449,
+      "w": 689,
+      "mode": "2D"
+     },
+     "deploy": {
+      "cls": "lab-stage",
+      "h": 459,
+      "w": 689,
+      "mode": "2D"
+     },
+     "grow": {
+      "cls": "board-stage",
+      "h": 460,
+      "w": 460,
+      "mode": "2D"
+     },
+     "drone": {
+      "cls": "is-warm",
+      "h": 432,
+      "w": 691,
+      "mode": "3D · live"
+     },
+     "map": {
+      "cls": "is-warm is-live",
+      "h": 518,
+      "w": 691,
+      "mode": "3D · live"
+     }
+    },
+    "docH": 19457
+   },
+   "warnings": [],
+   "seconds": 25
+  },
+  {
+   "name": "worlds_en_834x1112",
+   "lang": "en",
+   "vp": "834x1112",
+   "mode": "worlds",
+   "url": "http://127.0.0.1:14181/en.html?w=all",
+   "shots": [
+    "worlds_en_834x1112_00-hero.jpg",
+    "worlds_en_834x1112_01-build.jpg",
+    "worlds_en_834x1112_02-deploy.jpg",
+    "worlds_en_834x1112_03-grow.jpg",
+    "worlds_en_834x1112_04-drone.jpg",
+    "worlds_en_834x1112_05-map.jpg",
+    "worlds_en_834x1112_06-contact.jpg"
+   ],
+   "worlds": {
+    "hero": {
+     "state": "live",
+     "waitMs": 4,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 10
+     }
+    },
+    "build": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 6.5
+     },
+     "programsLinked": 0,
+     "tier": "gl-q3"
+    },
+    "deploy": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.1,
+      "drawsPerFrame": 27
+     },
+     "programsLinked": 5,
+     "tier": "gl-q3"
+    },
+    "grow": {
+     "state": "live",
+     "waitMs": 0,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.3,
+      "drawsPerFrame": 19.8
+     },
+     "programsLinked": 0,
+     "tier": "gl-q3"
+    },
+    "drone": {
+     "state": "live",
+     "waitMs": 261,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 6
+     },
+     "programsLinked": 6,
+     "tier": "gl-q3"
+    },
+    "map": {
+     "state": "live",
+     "waitMs": 0,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 8
+     },
+     "programsLinked": 0,
+     "tier": "gl-q3"
+    }
+   },
+   "errors": [],
+   "probe": {
+    "overflowX": 0,
+    "htmlClass": "js gl-pre cur aa-ready gl gl-q3 lenis lenis-scrolling past-hero",
+    "world": null,
+    "canvases": 1,
+    "stageParent": "body",
+    "qa": {
+     "ctx": 1,
+     "kinds": [
+      "webgl2#stage"
+     ],
+     "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+     "links": 19
+    },
+    "stacking": [],
+    "slots": {
+     "hero": {
+      "cls": "is-warm is-live",
+      "h": 370,
+      "w": 343,
+      "mode": "3D · live"
+     },
+     "build": {
+      "cls": "is-warm is-live",
+      "h": 334,
+      "w": 330,
+      "mode": "3D · live"
+     },
+     "deploy": {
+      "cls": "lab-stage is-warm is-live",
+      "h": 378,
+      "w": 709,
+      "mode": "3D · live"
+     },
+     "grow": {
+      "cls": "board-stage is-warm is-live",
+      "h": 375,
+      "w": 751,
+      "mode": "3D · live"
+     },
+     "drone": {
+      "cls": "is-warm is-live",
+      "h": 422,
+      "w": 751,
+      "mode": "3D · live"
+     },
+     "map": {
+      "cls": "is-warm is-live",
+      "h": 357,
+      "w": 751,
+      "mode": "3D · live"
+     }
+    },
+    "docH": 18780
+   },
+   "warnings": [],
+   "seconds": 28
+  },
+  {
+   "name": "worlds_en_1366x768",
+   "lang": "en",
+   "vp": "1366x768",
+   "mode": "worlds",
+   "url": "http://127.0.0.1:14181/en.html?w=all",
+   "shots": [
+    "worlds_en_1366x768_00-hero.jpg",
+    "worlds_en_1366x768_01-build.jpg",
+    "worlds_en_1366x768_02-deploy.jpg",
+    "worlds_en_1366x768_03-grow.jpg",
+    "worlds_en_1366x768_04-drone.jpg",
+    "worlds_en_1366x768_05-map.jpg",
+    "worlds_en_1366x768_06-contact.jpg"
+   ],
+   "worlds": {
+    "hero": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.1,
+      "drawsPerFrame": 10
+     }
+    },
+    "build": {
+     "state": "live",
+     "waitMs": 0,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 6.5
+     },
+     "programsLinked": 0,
+     "tier": "gl-q3"
+    },
+    "deploy": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.1,
+      "drawsPerFrame": 26.9
+     },
+     "programsLinked": 5,
+     "tier": "gl-q3"
+    },
+    "grow": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 216,
+      "avg": 7,
+      "p95": 7.1,
+      "max": 14,
+      "drawsPerFrame": 19.8
+     },
+     "programsLinked": 0,
+     "tier": "gl-q3"
+    },
+    "drone": {
+     "state": "live",
+     "waitMs": 522,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 6
+     },
+     "programsLinked": 6,
+     "tier": "gl-q3"
+    },
+    "map": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 8
+     },
+     "programsLinked": 0,
+     "tier": "gl-q3"
+    }
+   },
+   "errors": [],
+   "probe": {
+    "overflowX": 0,
+    "htmlClass": "js gl-pre cur aa-ready gl gl-q3 lenis lenis-scrolling past-hero",
+    "world": null,
+    "canvases": 1,
+    "stageParent": "body",
+    "qa": {
+     "ctx": 1,
+     "kinds": [
+      "webgl2#stage"
+     ],
+     "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+     "links": 19
+    },
+    "stacking": [],
+    "slots": {
+     "hero": {
+      "cls": "is-warm is-live",
+      "h": 656,
+      "w": 607,
+      "mode": "3D · live"
+     },
+     "build": {
+      "cls": "is-warm is-live",
+      "h": 400,
+      "w": 540,
+      "mode": "3D · live"
+     },
+     "deploy": {
+      "cls": "lab-stage is-warm is-live",
+      "h": 365,
+      "w": 684,
+      "mode": "3D · live"
+     },
+     "grow": {
+      "cls": "board-stage is-warm is-live",
+      "h": 615,
+      "w": 1229,
+      "mode": "3D · live"
+     },
+     "drone": {
+      "cls": "is-warm is-live",
+      "h": 599,
+      "w": 1229,
+      "mode": "3D · live"
+     },
+     "map": {
+      "cls": "is-warm is-live",
+      "h": 553,
+      "w": 1229,
+      "mode": "3D · live"
+     }
+    },
+    "docH": 15970
+   },
+   "warnings": [],
+   "seconds": 28
+  },
+  {
+   "name": "worlds_en_1440x900",
+   "lang": "en",
+   "vp": "1440x900",
+   "mode": "worlds",
+   "url": "http://127.0.0.1:14181/en.html?w=all",
+   "shots": [
+    "worlds_en_1440x900_00-hero.jpg",
+    "worlds_en_1440x900_01-build.jpg",
+    "worlds_en_1440x900_02-deploy.jpg",
+    "worlds_en_1440x900_03-grow.jpg",
+    "worlds_en_1440x900_04-drone.jpg",
+    "worlds_en_1440x900_05-map.jpg",
+    "worlds_en_1440x900_06-contact.jpg"
+   ],
+   "worlds": {
+    "hero": {
+     "state": "live",
+     "waitMs": 2,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 10
+     }
+    },
+    "build": {
+     "state": "live",
+     "waitMs": 0,
+     "frames": {
+      "frames": 215,
+      "avg": 7,
+      "p95": 7.1,
+      "max": 27.8,
+      "drawsPerFrame": 6.5
+     },
+     "programsLinked": 4,
+     "tier": "gl-q3"
+    },
+    "deploy": {
+     "state": "live",
+     "waitMs": 2,
+     "frames": {
+      "frames": 206,
+      "avg": 7.3,
+      "p95": 7.1,
+      "max": 41.6,
+      "drawsPerFrame": 27
+     },
+     "programsLinked": 1,
+     "tier": "gl-q3"
+    },
+    "grow": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 19.9
+     },
+     "programsLinked": 0,
+     "tier": "gl-q3"
+    },
+    "drone": {
+     "state": "live",
+     "waitMs": 257,
+     "frames": {
+      "frames": 215,
+      "avg": 7,
+      "p95": 7.1,
+      "max": 13.9,
+      "drawsPerFrame": 6
+     },
+     "programsLinked": 6,
+     "tier": "gl-q3"
+    },
+    "map": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.1,
+      "drawsPerFrame": 8
+     },
+     "programsLinked": 0,
+     "tier": "gl-q3"
+    }
+   },
+   "errors": [],
+   "probe": {
+    "overflowX": 0,
+    "htmlClass": "js gl-pre cur aa-ready gl gl-q3 lenis lenis-scrolling past-hero",
+    "world": null,
+    "canvases": 1,
+    "stageParent": "body",
+    "qa": {
+     "ctx": 1,
+     "kinds": [
+      "webgl2#stage"
+     ],
+     "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+     "links": 19
+    },
+    "stacking": [],
+    "slots": {
+     "hero": {
+      "cls": "is-warm is-live",
+      "h": 691,
+      "w": 640,
+      "mode": "3D · live"
+     },
+     "build": {
+      "cls": "is-warm is-live",
+      "h": 506,
+      "w": 563,
+      "mode": "3D · live"
+     },
+     "deploy": {
+      "cls": "lab-stage is-warm is-live",
+      "h": 381,
+      "w": 714,
+      "mode": "3D · live"
+     },
+     "grow": {
+      "cls": "board-stage is-warm is-live",
+      "h": 640,
+      "w": 1280,
+      "mode": "3D · live"
+     },
+     "drone": {
+      "cls": "is-warm is-live",
+      "h": 702,
+      "w": 1280,
+      "mode": "3D · live"
+     },
+     "map": {
+      "cls": "is-warm is-live",
+      "h": 610,
+      "w": 1280,
+      "mode": "3D · live"
+     }
+    },
+    "docH": 16399
+   },
+   "warnings": [],
+   "seconds": 28
+  },
+  {
+   "name": "worlds_es_360x740",
+   "lang": "es",
+   "vp": "360x740",
+   "mode": "worlds",
+   "url": "http://127.0.0.1:14181/index.html?w=all",
+   "shots": [
+    "worlds_es_360x740_00-hero.jpg",
+    "worlds_es_360x740_01-build.jpg",
+    "worlds_es_360x740_02-deploy.jpg",
+    "worlds_es_360x740_03-grow.jpg",
+    "worlds_es_360x740_04-drone.jpg",
+    "worlds_es_360x740_05-map.jpg",
+    "worlds_es_360x740_06-contact.jpg"
+   ],
+   "worlds": {
+    "build": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 215,
+      "avg": 7,
+      "p95": 7.1,
+      "max": 20.8,
+      "drawsPerFrame": 2.4
+     },
+     "programsLinked": 4,
+     "tier": "gl-q1"
+    },
+    "deploy": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 9.1
+     },
+     "programsLinked": 5,
+     "tier": "gl-q1"
+    },
+    "grow": {
+     "state": "live",
+     "waitMs": 2,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 7.8
+     },
+     "programsLinked": 3,
+     "tier": "gl-q1"
+    },
+    "drone": {
+     "state": "live",
+     "waitMs": 270,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.3,
+      "drawsPerFrame": 2.2
+     },
+     "programsLinked": 9,
+     "tier": "gl-q1"
+    },
+    "map": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7,
+      "max": 7.1,
+      "drawsPerFrame": 2.6
+     },
+     "programsLinked": 0,
+     "tier": "gl-q1"
+    }
+   },
+   "errors": [],
+   "probe": {
+    "overflowX": 0,
+    "htmlClass": "js gl-pre aa-ready gl gl-q1 past-hero aurora-off",
+    "world": null,
+    "canvases": 1,
+    "stageParent": "slot:map",
+    "qa": {
+     "ctx": 1,
+     "kinds": [
+      "webgl2#stage"
+     ],
+     "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+     "links": 24
+    },
+    "stacking": [],
+    "slots": {
+     "hero": {
+      "cls": "",
+      "h": 229,
+      "w": 212,
+      "mode": "2D"
+     },
+     "build": {
+      "cls": "",
+      "h": 324,
+      "w": 322,
+      "mode": "2D"
+     },
+     "deploy": {
+      "cls": "lab-stage",
+      "h": 215,
+      "w": 322,
+      "mode": "2D"
+     },
+     "grow": {
+      "cls": "board-stage",
+      "h": 331,
+      "w": 331,
+      "mode": "2D"
+     },
+     "drone": {
+      "cls": "is-warm",
+      "h": 405,
+      "w": 324,
+      "mode": "3D · en tiempo real"
+     },
+     "map": {
+      "cls": "is-warm is-live",
+      "h": 243,
+      "w": 324,
+      "mode": "3D · en tiempo real"
+     }
+    },
+    "docH": 25123
+   },
+   "warnings": [],
+   "seconds": 25
+  },
+  {
+   "name": "worlds_es_390x844",
+   "lang": "es",
+   "vp": "390x844",
+   "mode": "worlds",
+   "url": "http://127.0.0.1:14181/index.html?w=all",
+   "shots": [
+    "worlds_es_390x844_00-hero.jpg",
+    "worlds_es_390x844_01-build.jpg",
+    "worlds_es_390x844_02-deploy.jpg",
+    "worlds_es_390x844_03-grow.jpg",
+    "worlds_es_390x844_04-drone.jpg",
+    "worlds_es_390x844_05-map.jpg",
+    "worlds_es_390x844_06-contact.jpg"
+   ],
+   "worlds": {
+    "build": {
+     "state": "live",
+     "waitMs": 259,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.3,
+      "drawsPerFrame": 2.4
+     },
+     "programsLinked": 4,
+     "tier": "gl-q1"
+    },
+    "deploy": {
+     "state": "live",
+     "waitMs": 0,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 8.9
+     },
+     "programsLinked": 5,
+     "tier": "gl-q1"
+    },
+    "grow": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 7.8
+     },
+     "programsLinked": 3,
+     "tier": "gl-q1"
+    },
+    "drone": {
+     "state": "live",
+     "waitMs": 257,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 2.2
+     },
+     "programsLinked": 9,
+     "tier": "gl-q1"
+    },
+    "map": {
+     "state": "live",
+     "waitMs": 0,
+     "frames": {
+      "frames": 218,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.1,
+      "drawsPerFrame": 2.6
+     },
+     "programsLinked": 0,
+     "tier": "gl-q1"
+    }
+   },
+   "errors": [],
+   "probe": {
+    "overflowX": 0,
+    "htmlClass": "js gl-pre aa-ready gl gl-q1 past-hero aurora-off",
+    "world": null,
+    "canvases": 1,
+    "stageParent": "slot:map",
+    "qa": {
+     "ctx": 1,
+     "kinds": [
+      "webgl2#stage"
+     ],
+     "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+     "links": 24
+    },
+    "stacking": [],
+    "slots": {
+     "hero": {
+      "cls": "",
+      "h": 304,
+      "w": 281,
+      "mode": "2D"
+     },
+     "build": {
+      "cls": "",
+      "h": 369,
+      "w": 349,
+      "mode": "2D"
+     },
+     "deploy": {
+      "cls": "lab-stage",
+      "h": 233,
+      "w": 349,
+      "mode": "2D"
+     },
+     "grow": {
+      "cls": "board-stage",
+      "h": 359,
+      "w": 359,
+      "mode": "2D"
+     },
+     "drone": {
+      "cls": "is-warm",
+      "h": 439,
+      "w": 351,
+      "mode": "3D · en tiempo real"
+     },
+     "map": {
+      "cls": "is-warm is-live",
+      "h": 263,
+      "w": 351,
+      "mode": "3D · en tiempo real"
+     }
+    },
+    "docH": 24372
+   },
+   "warnings": [],
+   "seconds": 26
+  },
+  {
+   "name": "worlds_es_768x1024",
+   "lang": "es",
+   "vp": "768x1024",
+   "mode": "worlds",
+   "url": "http://127.0.0.1:14181/index.html?w=all",
+   "shots": [
+    "worlds_es_768x1024_00-hero.jpg",
+    "worlds_es_768x1024_01-build.jpg",
+    "worlds_es_768x1024_02-deploy.jpg",
+    "worlds_es_768x1024_03-grow.jpg",
+    "worlds_es_768x1024_04-drone.jpg",
+    "worlds_es_768x1024_05-map.jpg",
+    "worlds_es_768x1024_06-contact.jpg"
+   ],
+   "worlds": {
+    "build": {
+     "state": "live",
+     "waitMs": 254,
+     "frames": {
+      "frames": 202,
+      "avg": 7.5,
+      "p95": 7.1,
+      "max": 35.1,
+      "drawsPerFrame": 2.5
+     },
+     "programsLinked": 4,
+     "tier": "gl-q1"
+    },
+    "deploy": {
+     "state": "live",
+     "waitMs": 6,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.1,
+      "drawsPerFrame": 8.9
+     },
+     "programsLinked": 5,
+     "tier": "gl-q1"
+    },
+    "grow": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.1,
+      "drawsPerFrame": 7.8
+     },
+     "programsLinked": 0,
+     "tier": "gl-q1"
+    },
+    "drone": {
+     "state": "live",
+     "waitMs": 264,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.2,
+      "drawsPerFrame": 2.4
+     },
+     "programsLinked": 9,
+     "tier": "gl-q1"
+    },
+    "map": {
+     "state": "live",
+     "waitMs": 1,
+     "frames": {
+      "frames": 217,
+      "avg": 6.9,
+      "p95": 7.1,
+      "max": 7.1,
+      "drawsPerFrame": 2.6
+     },
+     "programsLinked": 0,
+     "tier": "gl-q1"
+    }
+   },
+   "errors": [],
+   "probe": {
+    "overflowX": 0,
+    "htmlClass": "js gl-pre aa-ready gl gl-q1 past-hero",
+    "world": null,
+    "canvases": 1,
+    "stageParent": "slot:map",
+    "qa": {
+     "ctx": 1,
+     "kinds": [
+      "webgl2#stage"
+     ],
+     "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+     "links": 21
+    },
+    "stacking": [],
+    "slots": {
+     "hero": {
+      "cls": "",
+      "h": 410,
+      "w": 379,
+      "mode": "2D"
+     },
+     "build": {
+      "cls": "",
+      "h": 449,
+      "w": 689,
+      "mode": "2D"
+     },
+     "deploy": {
+      "cls": "lab-stage",
+      "h": 459,
+      "w": 689,
+      "mode": "2D"
+     },
+     "grow": {
+      "cls": "board-stage",
+      "h": 460,
+      "w": 460,
+      "mode": "2D"
+     },
+     "drone": {
+      "cls": "is-warm",
+      "h": 432,
+      "w": 691,
+      "mode": "3D · en tiempo real"
+     },
+     "map": {
+      "cls": "is-warm is-live",
+      "h": 518,
+      "w": 691,
+      "mode": "3D · en tiempo real"
+     }
+    },
+    "docH": 19695
+   },
+   "warnings": [],
+   "seconds": 26
+  }
+ ],
+ "print": [],
+ "errors": []
+}

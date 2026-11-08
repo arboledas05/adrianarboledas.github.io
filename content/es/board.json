@@ -44,14 +44,14 @@
     },
     "disc": {
       "k": "Disciplina",
-      "num": "+170",
+      "num": "170+",
       "unit": "palabras clave negativas",
       "line": "revisión semanal de los términos de búsqueda",
       "back": "Cada semana leo los términos de búsqueda reales y bloqueo los que no encajan",
       "readout": "más de 170 palabras clave negativas"
     },
     "csp": {
-      "k": "Incidencia: conversiones perdidas",
+      "k": "Incidencia en producción: conversiones perdidas",
       "s1k": "Síntoma",
       "s1": "Google Ads registraba muchas menos conversiones que los contactos que llegaban de verdad (sept 2026: 4 conversiones registradas frente a unos 20 contactos reales)",
       "s2k": "Causa",
@@ -86,7 +86,7 @@
       "hlTown": "municipio",
       "cap": "El patrón detrás de cada anuncio (ilustrativo, no es un anuncio real)",
       "back": "Cada anuncio lleva a una página de destino que encaja con él, así la persona aterriza en lo que buscaba. La web tiene páginas de destino por servicio y por municipio.",
-      "readout": "Búsqueda → anuncio → página de destino"
+      "readout": "Coherencia del mensaje: búsqueda → anuncio → página de destino"
     }
   }
 }

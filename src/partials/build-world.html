@@ -6,10 +6,11 @@
     <p class="lead">{{t build.acc.lead}}</p>
     <p class="bw-team">{{if build.acc.teamH}}<b class="bw-k">{{t build.acc.teamH}}</b> {{/if}}{{t build.acc.team}}</p>
     {{if build.acc.sprintsH}}<h4 class="bw-log-h" id="sprints-h">{{t build.acc.sprintsH}}</h4>{{/if}}
-    <ol class="sprints"{{if build.acc.sprintsH}} aria-labelledby="sprints-h"{{/if}}>
+    <ol class="sprints" id="sprints-list"{{if build.acc.sprintsH}} aria-labelledby="sprints-h"{{/if}}>
       {{each build.acc.sprints}}<li id="sprint-{{@index}}" data-beat="{{@index}}"><b>{{t .k}}</b> <span>{{t .d}}</span></li>
       {{/each}}
     </ol>
+    <button type="button" class="sprints-more" aria-expanded="false" aria-controls="sprints-list" data-more="{{t build.acc.sprintsMore}}" data-less="{{t build.acc.sprintsLess}}">{{t build.acc.sprintsMore}}</button>
     <ul class="chips" aria-label="{{t build.acc.chipsAria}}">
       {{each build.acc.chips}}<li class="chip">{{t .}}</li>
       {{/each}}

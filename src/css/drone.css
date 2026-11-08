@@ -9,11 +9,9 @@
 #drone .drone-card .h2{margin:0 0 12px;font-size:clamp(1.9rem,3.4vw,2.7rem)}
 #drone .drone-card .h2 em{color:#B4470C}
 #drone .drone-body{margin:0 0 12px}
-#drone .drone-link{margin:0;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-#drone .drone-link a{color:#B4470C;font-weight:600;text-underline-offset:3px}
 .dv-fallback{position:absolute;inset:0;container-type:size;overflow:hidden}
 .dv-svg{position:absolute;display:block;max-width:none;height:auto;aspect-ratio:16/10;width:max(100cqw,160cqh);left:calc(50cqw - var(--dv-f,.5) * max(100cqw,160cqh));top:calc(50cqh - max(100cqw,160cqh) * .3125)}
-.dv-bands path{stroke:rgba(23,21,15,.18);stroke-width:1.3;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.dv-bands path{stroke:#17150f2e;stroke-width:1.3;stroke-linejoin:round;vector-effect:non-scaling-stroke}
 .dv-river{fill:none;stroke:#7CC6E8;stroke-width:24;stroke-linecap:round;stroke-linejoin:round}
 .dv-river-hi{fill:none;stroke:#BFE6F6;stroke-width:3;stroke-dasharray:14 22;stroke-linecap:round;animation:dv-flow 3.2s linear infinite}
 .world-slot.is-live .dv-river-hi,.world-slot.is-live .dv-rotor,.world-slot.is-live .dv-hover{animation:none}
@@ -22,16 +20,16 @@
 .dv-pad{fill:#ECE7DC;stroke:#fff;stroke-width:5}
 .dv-h{fill:none;stroke:#fff;stroke-width:7;stroke-linecap:round}
 .dv-bead{fill:var(--indigo,#3A2BE0);stroke:#fff;stroke-width:2.5}
-.dv-home{fill:#fff;stroke:rgba(23,21,15,.35);stroke-width:2}
+.dv-home{fill:#fff;stroke:#17150f59;stroke-width:2}
 .dv-rev{fill:none;stroke:#fff;stroke-width:22;stroke-dasharray:1 1;stroke-dashoffset:calc(1 - clamp(0, (var(--p, 1) - .18) * 2.4, 1))}
 .dv-path{fill:none;stroke:#fff;stroke-width:4.5;stroke-linecap:round;stroke-dasharray:18 11 2 11}
-.dv-path-s{fill:none;stroke:rgba(23,21,15,.22);stroke-width:4.5;stroke-linecap:round;stroke-dasharray:18 11 2 11;transform:translate(6px,12px)}
-.dv-dshadow{fill:rgba(40,52,30,.2)}
+.dv-path-s{fill:none;stroke:#17150f38;stroke-width:4.5;stroke-linecap:round;stroke-dasharray:18 11 2 11;transform:translate(6px,12px)}
+.dv-dshadow{fill:#28341e33}
 .dv-arm{fill:none;stroke:#F7F5F0;stroke-width:8;stroke-linecap:round}
-.dv-body{fill:#F7F5F0;stroke:rgba(23,21,15,.25);stroke-width:1.5}
+.dv-body{fill:#F7F5F0;stroke:#17150f40;stroke-width:1.5}
 .dv-stripe{fill:#FF8F6B}
 .dv-gimbal{fill:#2B2B33;stroke:var(--indigo,#3A2BE0);stroke-width:3}
-.dv-rotor ellipse{fill:rgba(255,255,255,.42);stroke:rgba(255,255,255,.9);stroke-width:1.5}
+.dv-rotor ellipse{fill:#ffffff6b;stroke:#ffffffe6;stroke-width:1.5}
 .dv-rotor path{fill:none;stroke:#2B2B33;stroke-width:3.5;stroke-linecap:round}
 .dv-rotor{transform-box:fill-box;transform-origin:center}
 .dv-hover{transform-box:view-box}
@@ -42,10 +40,10 @@ html:not(.rm) .dv-hover{animation:dv-bob 2.6s var(--ease-inout,ease-in-out) infi
 @keyframes dv-flow{to{stroke-dashoffset:-72}}
 html.rm .dv-river-hi{animation:none}
 html.motion-off :is(.dv-rotor,.dv-hover,.dv-river-hi,.hud-rec i){animation-play-state:paused}
-.drone-hud{position:absolute;inset:0;pointer-events:none;color:#fff;font:600 11px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;--hs:drop-shadow(0 1px 0 rgba(23,21,15,.35));--hl:0 0 3px rgba(23,21,15,.7),0 1px 1px rgba(23,21,15,.55)}
+.drone-hud{position:absolute;inset:0;pointer-events:none;color:#fff;font:600 11px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;--hs:drop-shadow(0 1px 0 #17150f59);--hl:0 0 3px #17150fb2,0 1px 1px #17150f8c}
 .drone-hud::before,.drone-hud::after{content:'';position:absolute;left:0;right:0;pointer-events:none}
-.drone-hud::before{top:0;height:84px;background:linear-gradient(rgba(23,21,15,.24),rgba(23,21,15,0))}
-.drone-hud::after{bottom:0;height:130px;background:linear-gradient(rgba(23,21,15,0),rgba(23,21,15,.4));border-radius:0 0 var(--r-card,18px) var(--r-card,18px)}
+.drone-hud::before{top:0;height:84px;background:linear-gradient(#17150f3d,#17150f00)}
+.drone-hud::after{bottom:0;height:130px;background:linear-gradient(#17150f00,#17150f66);border-radius:0 0 var(--r-card,18px) var(--r-card,18px)}
 .drone-hud>span{position:absolute;display:block;z-index:1}
 .hud-grid{inset:0;opacity:.25;background:linear-gradient(90deg,transparent calc(33.333% - 1px),#fff calc(33.333% - 1px),#fff 33.333%,transparent 33.333%,transparent calc(66.666% - 1px),#fff calc(66.666% - 1px),#fff 66.666%,transparent 66.666%),linear-gradient(0deg,transparent calc(33.333% - 1px),#fff calc(33.333% - 1px),#fff 33.333%,transparent 33.333%,transparent calc(66.666% - 1px),#fff calc(66.666% - 1px),#fff 66.666%,transparent 66.666%)}
 .hud-c{width:clamp(18px,3.2vw,34px);aspect-ratio:1;border:0 solid #fff;filter:var(--hs);transition:transform 120ms var(--ease-out,ease-out)}
@@ -60,14 +58,14 @@ html.motion-off :is(.dv-rotor,.dv-hover,.dv-river-hi,.hud-rec i){animation-play-
 .hud-ladder{right:22px;top:28%;bottom:28%;width:12px;background:repeating-linear-gradient(180deg,#fff 0 2px,transparent 2px 14%);-webkit-mask:linear-gradient(90deg,transparent 0 40%,#000 40%);mask:linear-gradient(90deg,transparent 0 40%,#000 40%);filter:var(--hs);opacity:.85}
 .drone-hud>.hud-top{top:22px;left:clamp(40px,6vw,64px);right:clamp(40px,6vw,64px);display:flex;align-items:center;justify-content:space-between;gap:12px;text-shadow:var(--hl)}
 .hud-rec{display:inline-flex;align-items:center;gap:7px;min-width:7.5em}
-.hud-rec i{width:9px;height:9px;border-radius:50%;background:#FF4D4D;box-shadow:0 0 0 1px rgba(23,21,15,.18)}
+.hud-rec i{width:9px;height:9px;border-radius:50%;background:#FF4D4D;box-shadow:0 0 0 1px #17150f2e}
 html:not(.rm) .hud-rec i{animation:hud-blink 1s steps(1) infinite}
 .hud-rec b{font-weight:600}
 .hud-saved{display:none}
 .drone-hud.is-saved .hud-rec i{animation:none;border-radius:1px}
 .drone-hud.is-saved .hud-rec-t{display:none}
 .drone-hud.is-saved .hud-saved{display:inline}
-.hud-compass{position:relative;width:min(36%,260px);height:2.1em;overflow:hidden;white-space:nowrap;border-radius:999px;background:rgba(23,21,15,.34);box-shadow:inset 0 0 0 1px rgba(255,255,255,.22);-webkit-mask:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);mask:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
+.hud-compass{position:relative;width:min(36%,260px);height:2.1em;overflow:hidden;white-space:nowrap;border-radius:999px;background:#17150f57;box-shadow:inset 0 0 0 1px #ffffff38;-webkit-mask:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);mask:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
 .hud-compass::after{content:'';position:absolute;left:50%;bottom:0;width:2px;height:5px;margin-left:-1px;background:#FF8F6B}
 .hud-tape{position:absolute;left:50%;top:.52em;font-weight:700;transform:translateX(calc(-50% - var(--yaw,0) * 3.6em))}
 .hud-bat{display:inline-flex;gap:2px;padding:2px;border:1.5px solid #fff;border-radius:3px;filter:var(--hs)}
@@ -76,7 +74,7 @@ html:not(.rm) .hud-rec i{animation:hud-blink 1s steps(1) infinite}
 .drone-hud[data-bat="4"] .hud-bat i:nth-child(n+5),.drone-hud[data-bat="3"] .hud-bat i:nth-child(n+4),.drone-hud[data-bat="2"] .hud-bat i:nth-child(n+3),.drone-hud[data-bat="1"] .hud-bat i:nth-child(n+2){opacity:.2}
 .drone-hud>.hud-bottom{right:clamp(40px,6vw,64px);bottom:24px;display:flex;flex-direction:column;align-items:flex-end;gap:9px;line-height:1.35;text-align:right;text-shadow:var(--hl)}
 .hud-brand{display:flex;flex-direction:column;gap:6px}
-.hud-shot{left:50%;top:calc(50% + 26px);font:400 1.2rem/1 var(--f-hand);letter-spacing:0;text-transform:none;color:#fff;text-shadow:0 1px 0 rgba(23,21,15,.35);opacity:0;transform:translate(-50%,6px) rotate(-3deg);transition:opacity .24s,transform .24s var(--ease-back,ease-out)}
+.hud-shot{left:50%;top:calc(50% + 26px);font:400 1.2rem/1 var(--f-hand);letter-spacing:0;text-transform:none;color:#fff;text-shadow:0 1px 0 #17150f59;opacity:0;transform:translate(-50%,6px) rotate(-3deg);transition:opacity .24s,transform .24s var(--ease-back,ease-out)}
 .hud-flash{inset:0;background:#fff;opacity:0;transition:opacity .3s}
 .drone-hud.is-shot .hud-shot{opacity:1;transform:translate(-50%,0) rotate(-3deg)}
 .drone-hud.is-flash .hud-flash{opacity:.75;transition:none}

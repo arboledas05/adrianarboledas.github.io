@@ -123,9 +123,14 @@ export function init(d, ctx) {
   };
   later(chk, 200);
  }
+ // 8-nov-2026: phone sprint log: first + last period, one button opens all 7 (CSS hides only while .is-clip)
+ const spr = $('.sprints'), spb = $('.sprints-more');
+ const sprOpen = (o) => { spr.classList.toggle('is-open', o); spb.setAttribute('aria-expanded', String(o)); spb.textContent = spb.dataset[o ? 'less' : 'more']; };
+ if (spr && spb) { spr.classList.add('is-clip'); on(spb, 'click', () => sprOpen(!spr.classList.contains('is-open'))); if (/^#sprint-/.test(location.hash)) sprOpen(true); }
  function goTo(h) {
   const el = d.getElementById(h.slice(1));
   if (!el) return false;
+  if (spr && spb && spr.contains(el) && !spr.classList.contains('is-open')) sprOpen(true);
   jump(el, 0, ++aim);
   if (!el.matches('a[href],button,input,select,textarea,summary,[tabindex]')) el.setAttribute('tabindex', '-1');
   try { el.focus({ preventScroll: true }); } catch (e) {}
@@ -457,7 +462,7 @@ export function init(d, ctx) {
    names.includes(n) || names.push(n);
   }
   const skill = chip.getAttribute('data-skill') || [...chip.childNodes].filter((x) => x.nodeType === 3).map((x) => x.textContent).join('').trim() || chip.textContent.trim();
-  tg.forEach((x) => flash(x, 2400));
+  tg.forEach((x) => { const m = x.closest("details.tl-more"); if (m) m.open = true; flash(x, 2400); }); // 8-nov-2026: evidence inside a closed «More» opens it
   if (qOut) {
    qOut.textContent = names.length ? t('ui.query.usedAt', { skill, places: list(names) }) : t('ui.query.none', { skill });
    const f = tg[0], id = f && (f.id || (f.closest('[id]') || {}).id);
