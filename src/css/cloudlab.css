@@ -175,6 +175,21 @@ html:not(.js) .lab-scene+.lab-scene{margin-top:28px}
 .lab-facts li{position:relative;padding-left:20px}
 .lab-facts li::before{content:"";position:absolute;left:0;top:.75em;width:11px;border-top:2px dashed var(--indigo)}
 @media (min-width:700px) and (max-width:1399px){.lab-facts--4{grid-template-columns:1fr 1fr}}
+/* 8-nov-2026: the model and its controls on one screen. Laptops: the stage is a sticky column (the bugphone precedent;
+   sticky makes a stacking context, so it is lifted to the slot-ui layer) and the open panel reads beside it: actions,
+   inspector and console next to the turntable. Narrower: the controls come straight under the stage (visual order only;
+   DOM and focus order are unchanged; with .mod-failed both panels simply stack in the column). Pure layout: stage.js reads the slot rect every frame, nothing else moves */
+@media (min-width:1024px){
+  .js #lab{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(320px,1fr);column-gap:clamp(20px,2.4vw,32px);align-items:start}
+  .js #lab>:is(.lab-top,.lab-mods){grid-column:1/-1}
+  .js #lab>.lab-world{grid-column:1;grid-row:3}
+  .js #lab>.lab-panel{grid-column:2;margin-top:16px}
+  .js #lab :is(.lab-ctl,.lab-facts,.lab-facts--4){grid-template-columns:1fr}
+  .js #lab .lab-note:not(.lab-note--down){max-width:21%;font-size:clamp(12px,.86vw,15px)}
+  .js #lab .lab-co{padding:3px 8px 3px 6px;gap:5px;font-size:10px}.js #lab .lab-co[data-hotspot=lab-asg]{translate:-12px calc(-100% - 18px)}.js #lab .lab-co[data-hotspot=lab-asg]::after{left:12px}.js #lab .lab-co[data-hotspot=lab-rds-primary]{translate:-50% calc(-100% - 30px)}.js #lab .lab-co[data-hotspot=lab-rds-primary]::after{height:30px} /* the smaller stage: compact pills, Auto Scaling opens right and RDS sits a row higher (clear of each other and of the region) */
+}
+@media (min-width:1024px) and (min-height:560px){.js #lab>.lab-world{position:sticky;top:calc(var(--nav-h) + 24px);z-index:var(--z-slotui,3)}}
+@media (max-width:1023px){.js #lab .lab-panel:not([hidden]){display:flex;flex-direction:column}.js #lab .lab-ctl{order:-1;margin-bottom:18px}}
 html:not(.js) .lab-js,.mod-failed .lab-js{display:none!important}
 html.js .lab:not(.is-live,.mod-failed) :is(#lab-ld,[data-scene=ld]){display:none}
 @media (prefers-reduced-motion:reduce){.lab *,.lab ::before{transition-duration:0s!important;transition-delay:0s!important;animation:none!important}}

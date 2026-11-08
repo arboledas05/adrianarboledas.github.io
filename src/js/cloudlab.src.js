@@ -136,9 +136,18 @@ export function init(root, ctx) {
     }
     emit('select', { c: el.dataset.c });
   }
+  /* stacked layouts (< 1024 px): a tap on a part answers in the inspector under the actions; if that box is below the
+     fold, bring it up once (nearest: no move when it already shows). Laptops keep it beside the sticky stage */
+  const wide = matchMedia('(min-width: 1024px)');
+  function seeInsp(p) {
+    const box = !wide.matches && p && p.querySelector('.lab-inspector');
+    if (!box || !box.scrollIntoView) return;
+    const r = box.getBoundingClientRect();
+    if (r.height && r.bottom > (innerHeight || 0) - 72) try { box.parentElement.scrollIntoView({ block: 'nearest', behavior: rm() ? 'auto' : 'smooth' }); } catch (e) {}
+  }
   on(root, 'click', (e) => {
     const g = e.target.closest('.lab-svg [data-c]');
-    if (g) return inspect(g);
+    if (g) { inspect(g); return seeInsp(panelOf(g)); }
     const b = e.target.closest('.lab-pb'); // keyboard / screen-reader path while the 3D is live
     if (b) inspect(comp(current(), b.dataset.part));
   });
@@ -262,6 +271,14 @@ export function init(root, ctx) {
     quiet = false;
     if (act) { emit('run', { action: act, state: 'cancel' }); act = null; }
   }
+  /* 8-nov-2026: an action (or a step) pressed while the stage is mostly out of view brings it in once, so the run is
+     seen; the controls sit right under or beside it (CSS), so they stay on screen. One rect read per press, never per frame */
+  function reveal() {
+    if (!slot || !slot.scrollIntoView) return;
+    const r = slot.getBoundingClientRect(), top = 80, vh = innerHeight || 1;
+    if (!r.height || (Math.min(r.bottom, vh) - Math.max(r.top, top)) / Math.min(r.height, vh - top) >= .6) return;
+    try { slot.scrollIntoView({ block: r.height > vh - top ? 'start' : 'nearest', behavior: rm() ? 'auto' : 'smooth' }); } catch (e) {}
+  }
   async function go(btn) {
     const p = panelOf(btn), name = btn.dataset.action;
     if (!p || !ACT[name]) return;
@@ -274,7 +291,7 @@ export function init(root, ctx) {
     await ACT[name](p);
     if (tok === run) { btn.classList.remove('is-run'); quiet = false; act = null; emit('run', { action: name, state: 'end' }); }
   }
-  $$('.lab-act').forEach((b) => on(b, 'click', () => go(b)));
+  $$('.lab-act').forEach((b) => on(b, 'click', () => { reveal(); go(b); }));
 
   /* ---------- Auto Scaling demand (illustrative): range on desktop, − / + stepper on phones */
   const rng = root.querySelector('#lab-asg'), out = root.querySelector('#lab-asg-out');
@@ -292,6 +309,7 @@ export function init(root, ctx) {
   on(rng, 'input', () => asg(+rng.value));
   $$('.lab-step').forEach((b) => on(b, 'click', () => {
     if (out) out.setAttribute('aria-live', 'polite');
+    reveal();
     asg(+rng.value + +b.dataset.step);
   }));
 
@@ -302,7 +320,7 @@ export function init(root, ctx) {
     if (d.tab) { const i = panels.findIndex((p) => p && key(p) === d.tab); if (i >= 0) select(i); }
     if (d.inspect) {
       const p = panels.find((x) => x && scene(x).querySelector(`[data-c="${d.inspect}"]`));
-      if (p) { show(p); inspect(comp(p, d.inspect)); }
+      if (p) { show(p); inspect(comp(p, d.inspect)); seeInsp(p); }
     }
     if (d.action) { const b = root.querySelector(`.lab-act[data-action="${d.action}"]`); if (b) { show(panelOf(b)); go(b); } }
     if ('module' in d) {

@@ -47,7 +47,9 @@ export const JS_BUDGET_KB = {
 export const WORLD_BUDGET_KB = 14; // each assets/js/w-*.js
 export const JS_TOTAL_KB = 165;
 export const HTML_BUDGET = { raw: 146, gz: 39 };
-export const CSS_BUDGET = { raw: 110, gz: 25 };
+// 8-nov-2026: app.css 110 → 111 KB raw, gzip 25 → 26: the Cloud Lab stage becomes a sticky column beside its controls on laptops
+// (controls under the stage below 1024 px) and the hero poster gets tap targets for its blades and bead (~0.75 KB).
+export const CSS_BUDGET = { raw: 111, gz: 26 };
 export const RETIRED_JS = ['planet.js', 'bg.js'];
 export const budgetOf = (name) => JS_BUDGET_KB[name] ?? (/^w-[\w-]+\.js$/.test(name) ? WORLD_BUDGET_KB : null);
 

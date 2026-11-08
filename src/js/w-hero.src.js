@@ -158,12 +158,14 @@ export async function create(THREE, kit, ctx, slot, opt = {}) {
   BL.forEach(([id], i) => { const el = slot.querySelector(`.slot-ui [data-hotspot="${id}"]`); if (el) hotspots.push({ el, anchor: minis[i], offset: V(0, .55, 0) }); });
 
   /* pointer: read on the slot itself (y-up NDC); raycast at most once per frame, only after the pointer moved */
-  const Pt = { x: 0, y: 0, in: false, moved: false, click: false }, rc = new T.Raycaster();
+  const Pt = { x: 0, y: 0, in: false, moved: false, click: false, tap: false }, rc = new T.Raycaster();
   const ndc = (e) => { const r = slot.getBoundingClientRect(); Pt.x = cl((e.clientX - r.left) / r.width * 2 - 1, -1, 1); Pt.y = cl(1 - (e.clientY - r.top) / r.height * 2, -1, 1); Pt.moved = true; awake = 1; };
   const L = (n, f) => slot.addEventListener(n, f, { passive: true, signal: ac.signal });
   L('pointermove', (e) => { ndc(e); Pt.in = true; });
   L('pointerleave', () => { Pt.in = false; Pt.moved = true; awake = 1; });
-  L('click', (e) => { ndc(e); Pt.click = true; });
+  /* a touch/pen tap fires no pointermove and its pointerleave lands before the click: the click itself puts the pointer
+     in for that one raycast, then a tap lets go again (no stuck pill or parallax) */
+  L('click', (e) => { ndc(e); Pt.in = true; Pt.click = true; Pt.tap = e.pointerType !== 'mouse'; });
 
   let hov = -1, ext = -1, hop = 0, hops = 0, puff = 0, puffT = 9, t = 0, it = 0, hx = 0, hy = 0, wx = 9, wy = 9, p0 = .5, awake = 1, cursor = ''; /* '' = no pill until a blade is under the pointer (null would fall back to the slot's "open") */
   offs.push(bus.on('aa:glance-hover', (d) => { ext = d && d.id ? BL.findIndex((b) => b[0] === d.id) : -1; awake = 1; }));
@@ -192,6 +194,7 @@ export async function create(THREE, kit, ctx, slot, opt = {}) {
         if (Pt.click) { if (hb) { hop = 0; hops = 2; } else if (h >= 0) bus.emit('aa:goto', { hash: '#' + BL[h][0] }); }
       }
       Pt.click = false;
+      if (Pt.tap) { Pt.tap = false; Pt.in = false; Pt.moved = true; }
       if (h !== hov) {
         hov = h; if (h >= 0) blades[h].userData.sig = 0;
         bus.emit('aa:world-hover', { id: h >= 0 ? BL[h][0] : null });
