@@ -54,14 +54,13 @@
     "csp": {
       "k": "Production bug: lost conversions",
       "s1k": "Symptom",
-      "s1": "Google Ads recorded far fewer conversions than the leads that really arrived (Sep 2026: 4 conversions recorded vs about 20 real leads)",
+      "s1": "Google Ads recorded far fewer conversions than real leads (Sep 2026: 4 vs about 20)",
       "s2k": "Root cause",
       "s2": "the site's Content-Security-Policy blocked the tracking",
       "s3k": "Fix",
       "s3": "added the missing hash and origins to the policy; tracking moved to Consent Mode v2",
       "s4k": "Result",
-      "s4": "verified in production: the conversion requests go through",
-      "tech": "Found in DevTools: script-src lacked the inline script's SHA-256 hash and googletagmanager.com; later, connect-src lacked Google's conversion endpoints (pagead2.googlesyndication.com, www.google.com, ad.doubleclick.net).",
+      "s4": "verified in production: the conversion requests go through",
       "before": "Before",
       "after": "After",
       "from": "Lead form",
@@ -69,7 +68,7 @@
       "fixed": "policy fixed: the tracking gets through",
       "cm": "Consent Mode v2",
       "ga": "Google Ads",
-      "back": "I traced the missing conversions to the site's Content-Security-Policy, changed the policy so the tracking could run, and checked that conversions were recorded again.",
+      "back": "Found in DevTools: script-src lacked the inline script's SHA-256 hash and googletagmanager.com; later, connect-src lacked Google's conversion endpoints (pagead2.googlesyndication.com, www.google.com, ad.doubleclick.net).",
       "readout": "Incident: conversions blocked by the CSP · fixed"
     },
     "match": {
@@ -85,7 +84,7 @@
       "hl": "Highlight",
       "hlSvc": "service",
       "hlTown": "town",
-      "cap": "The pattern behind each ad (illustrative, not a real ad)",
+      "cap": "Illustrative pattern, not a real ad",
       "back": "Each ad leads to a landing page that matches it, so people land on what they searched for. The site has landing pages per service and per town.",
       "readout": "Message match: search → ad → landing page"
     }

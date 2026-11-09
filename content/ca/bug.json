@@ -9,7 +9,7 @@
     "cRotate": "En horitzontal: el disseny es recol·loca en lloc de trencar-se",
     "cKeyboard": "Amb el teclat obert: el peu fix queda per sobre",
     "cOverflow": "Amb molt de contingut: es desplaça en lloc de desbordar-se",
-    "idle": "Tria un tipus d'error per veure'n la solució.",
+    "idle": "Tria un error i mira'n la solució.",
     "note": "Només és una il·lustració: no és l'app real del client.",
     "st0": "GetX",
     "st1": "Components",

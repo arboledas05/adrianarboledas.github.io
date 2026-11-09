@@ -1,16 +1,16 @@
 {
   "lab": {
-    "kicker": "Cloud Lab · mis dos proyectos del curso",
-    "hint": "Selecciona una parte del diagrama para inspeccionarla o ejecuta una acción.",
+    "kicker": "Cloud Lab · mis dos proyectos en pareja",
+    "hint": "Elige una pieza o lanza una acción.",
     "tabs": "Proyectos del curso",
     "tNexa": "NexaRetail",
     "tNexaS": "red de tres capas",
     "tLd": "Logística Directa",
     "tLdS": "plan de migración",
     "insp": "Inspector",
-    "inspIdle": "Selecciona una parte del diagrama para ver qué hace.",
+    "inspIdle": "Aquí verás qué hace cada pieza.",
     "cons": "Consola",
-    "consIdle": "Ejecuta una acción: cada paso aparece aquí.",
+    "consIdle": "Aquí aparece cada paso.",
     "acts": "Acciones",
     "factsH": "En resumen",
     "nexa": {
@@ -18,9 +18,9 @@
       "chip": "Proyecto del curso · módulo 5163 · en pareja",
       "stProg": "nov 2026",
       "stDone": "nov 2026",
-      "tool": "Hecha en la consola de AWS (AWS Management Console), como pide el enunciado; el extra opcional de la pareja es una plantilla de CloudFormation (infraestructura como código), escrita por mi compañero.",
-      "toolDone": "Hecha en la consola de AWS (AWS Management Console), como pide el enunciado; el extra opcional de la pareja es una plantilla de CloudFormation (infraestructura como código), escrita por mi compañero.",
-      "part": "<b>Mi parte:</b> la defensa del diseño (9 preguntas del caso sobre seguridad, mantenimiento, auditoría y coste) y una demo de monitorización y auditoría en mi propio AWS Learner Lab con CloudTrail, CloudWatch, AWS Config y VPC Reachability Analyzer.",
+      "tool": "Hecha en la consola de AWS, como pide el enunciado; mi compañero añadió una plantilla de CloudFormation como extra.",
+      "toolDone": "Hecha en la consola de AWS, como pide el enunciado; mi compañero añadió una plantilla de CloudFormation como extra.",
+      "part": "<b>Mi parte:</b> defensa del diseño (9 preguntas del caso) y demo de monitorización y auditoría en mi AWS Learner Lab: CloudTrail, CloudWatch, AWS Config, VPC Reachability Analyzer.",
       "svgT": "Diagrama de red de NexaRetail",
       "svgD": "Una VPC en AWS con una capa web en una subred pública, una capa de aplicación y una capa de datos en subredes privadas, grupos de seguridad entre las capas y una NAT para las actualizaciones del sistema operativo, solo de salida.",
       "internet": "Internet",
@@ -53,16 +53,16 @@
         "Una NAT permite que las capas privadas descarguen actualizaciones del SO, solo de salida. Desde internet no se puede llegar a ellas."
       ],
       "facts": [
-        "Una VPC (10.20.0.0/16) con tres capas (web, aplicación y datos) repartidas en dos zonas de disponibilidad",
-        "Dos subredes por capa: públicas para la web, privadas para la aplicación y los datos (una por zona de disponibilidad; el diagrama está simplificado)",
-        "Un grupo de seguridad por capa decide qué capa puede hablar con cuál, y todos los recursos llevan etiquetas",
-        "Una NAT, para que las capas privadas solo salgan a internet para actualizar el SO"
+        "VPC 10.20.0.0/16 con tres capas (web, app, datos) en dos zonas de disponibilidad",
+        "Subredes públicas para la web y privadas para app y datos, una por zona (diagrama simplificado)",
+        "Un grupo de seguridad por capa; todos los recursos etiquetados",
+        "NAT: las capas privadas solo salen para actualizar el SO"
       ]
     },
     "ld": {
       "h": "Logística Directa S.A. · un plan de migración a AWS",
-      "chip": "Proyecto del curso · módulo 5160 · en pareja · diseñado y presentado en clase (exposición de 10 minutos, 16 diapositivas)",
-      "case": "Un plan para la empresa de un caso práctico: todos los costes son estimaciones.",
+      "chip": "Proyecto del curso · módulo 5160 · en pareja · presentado en clase (10 min, 16 diapositivas)",
+      "case": "Caso práctico: todos los costes son estimaciones.",
       "part": "<b>Mi parte:</b> coautor del plan escrito; en la exposición presenté el problema, el contexto y las conclusiones (coste y amortización).",
       "svgT": "Diagrama de la migración de Logística Directa",
       "svgD": "Un centro de datos local conectado a AWS en eu-west-1 (Irlanda) con un modelo híbrido; EC2 Auto Scaling de 2 a 10 instancias; RDS Multi-AZ, con una base de datos principal y otra en espera; AWS DMS copia los datos; el cambio se hace en un fin de semana.",
@@ -154,7 +154,7 @@
     },
     "mods": {
       "h": "Módulos del curso",
-      "cap": "Dónde aparece cada módulo en los proyectos del curso",
+      "cap": "dónde aparece cada uno",
       "aria": "Resalta un módulo en el diagrama"
     },
     "m": {

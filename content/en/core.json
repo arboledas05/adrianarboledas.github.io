@@ -119,10 +119,10 @@
   },
   "hero": {
     "eyebrow": "Junior software developer · Cloud (AWS) · Flutter · Barcelona",
-    "now": "Now · Cloud (AWS) specialisation course · ITB Barcelona · 2026–27 · <b>available <span class=\"nw\">part-time</span>; <span class=\"nw\">full-time</span> from April 2027</b>",
+    "now": "Now · Cloud (AWS) at ITB · <b>available <span class=\"nw\">part-time</span>; <span class=\"nw\">full-time</span> from April 2027</b>",
     "tag": "I <em>build</em><span class=\"ins\">, deploy</span> and <em>grow</em> digital products.",
     "tagFull": "I build, deploy and grow digital products.",
-    "sub": "Flutter developer intern at Accenture for about 8 months, on a banking app in production. Now specialising in cloud (AWS) at ITB Barcelona. Part-time web developer and Google Ads manager for a family-run renovation company.",
+    "sub": "Flutter intern at Accenture (banking app in production) · now cloud (AWS) at ITB · part-time web and Google Ads.",
     "pills": [
       "Accenture · Flutter intern · ≈8 months (≈435 h)",
       "DAM diploma · average grade 7.87/10",
@@ -189,46 +189,46 @@
         "world": "build",
         "num": "01",
         "name": "Build",
-        "line": "Flutter developer intern at Accenture (≈8 months, ≈435 h) · DAM diploma, average grade 7.87/10 · trilingual website with 260+ pages in production"
+        "line": "Flutter intern at Accenture (≈8 months) · DAM diploma 7.87/10 · 260+ page website in production"
       },
       {
         "id": "deploy",
         "world": "deploy",
         "num": "02",
         "name": "Deploy",
-        "line": "Cloud (AWS) specialisation course · ITB · 2026–27 · 2 pair projects: three-tier VPC across 2 Availability Zones + migration plan · AWS Cloud Practitioner exam planned before Apr 2027"
+        "line": "Cloud (AWS) at ITB · 2 pair projects: three-tier VPC and migration plan · Cloud Practitioner exam planned before Apr 2027"
       },
       {
         "id": "grow",
         "world": "grow",
         "num": "03",
         "name": "Grow",
-        "line": "Web and Google Ads for a renovation company · CTR 9.3% (Apr–Jul 2026) · 19 leads (8–23 Oct 2026) · fixed a CSP bug that blocked conversion tracking"
+        "line": "Google Ads for a renovation company · CTR 9.3% (Apr–Jul 2026) · 19 leads (8–23 Oct 2026) · fixed a CSP block in the tracking"
       },
       {
         "id": "sites-h",
         "world": "",
         "num": "",
         "name": "Code",
-        "line": "github.com/arboledas05 · this site’s code is public: three.js worlds, a multilingual build and QA tooling"
+        "line": "github.com/arboledas05 · this site’s code is public"
       },
       {
         "id": "europe",
         "world": "map",
         "num": "04",
         "name": "Looking for",
-        "line": "Software (Flutter, web) or cloud · Barcelona or remote · part-time now, full-time from April 2027"
+        "line": "Flutter, web or cloud · Barcelona or remote · part-time now, full-time from Apr 2027"
       }
     ]
   },
   "about": {
     "eyebrow": "About me",
     "h2": "From code <em>to production.</em>",
-    "body": "I'm a junior software developer from Mollet del Vallès, near Barcelona. After a Flutter internship of about eight months at Accenture, I'm now taking an official VET specialisation course in cloud (AWS and OpenNebula) at the Institut Tecnològic de Barcelona. I also work part-time for my family's renovation company, where I build and run the website and the Google Ads campaigns; the campaigns have helped increase its turnover. From April 2027, when the course ends, I'll be available full-time for software development (Flutter, web) or cloud infrastructure roles, in Barcelona or remotely.",
+    "body": "After a Flutter internship of about eight months at Accenture, I'm taking an official VET specialisation course in cloud (AWS and OpenNebula) at ITB. Part-time, I run the website and Google Ads for my family's renovation company; the campaigns have helped increase its turnover.",
     "facts": [
       {
         "k": "Based in",
-        "v": "Barcelona (Mollet del Vallès), Spain · CET (UTC+1; UTC+2 in summer)"
+        "v": "Mollet del Vallès (Barcelona), Spain · CET/CEST"
       },
       {
         "k": "Nationality",
@@ -236,27 +236,15 @@
       },
       {
         "k": "Availability",
-        "v": "Part-time (afternoons) now · full-time from April 2027 · my hours overlap with US East Coast mornings · remote OK · relocation negotiable"
+        "v": "Part-time (afternoons) now; full-time from Apr 2027 · remote · relocation negotiable · hours overlap with US East Coast mornings"
       },
       {
         "k": "Languages",
         "v": "Spanish and Catalan (native) · English C1 (Listening C2)"
       },
       {
-        "k": "Studying",
-        "v": "Cloud specialisation course, ITB, 2026–27"
-      },
-      {
-        "k": "Driving",
-        "v": "Licence B, own car"
-      },
-      {
-        "k": "Drone",
-        "v": "AESA pilot certificate, A1/A2/A3"
-      },
-      {
         "k": "Interests",
-        "v": "Drone filming and photography · gym (about 4 years) · AI, web design and animation"
+        "v": "Drone video and photography · gym · AI, web design and animation"
       }
     ]
   },
@@ -266,16 +254,16 @@
     "acc": {
       "h3": "Flutter Developer (internship) · Accenture",
       "pill": "Internship · part of the DAM diploma",
-      "meta": "Barcelona (Sant Gervasi office) · 18 Sep 2025 – 14 May 2026 (≈8 months, ≈435 hours) · internship through Tecnilógica Ecosistemas, S.A.U. (Accenture group)",
-      "lead": "A Flutter app in production for a leading Spanish bank: consumer financing at the point of sale (in-store credit), used by large retail chains and thousands of users.",
+      "meta": "Barcelona · 18 Sep 2025 – 14 May 2026 · ≈8 months, ≈435 h",
+      "lead": "A Flutter app in production for a leading Spanish bank: in-store credit, used by large retail chains and thousands of users.",
       "teamH": "How the team worked",
-      "team": "Scrum with two-week sprints and daily stand-ups · GitLab merge requests, code review and continuous integration · Jira and Confluence · with designers, QA and backend developers",
-      "sprintsH": "Sprint log · Sep 2025 → May 2026",
+      "team": "Scrum (two-week sprints, dailies) · GitLab merge requests, code review and CI · Jira, Confluence",
+      "sprintsH": "Sprint log",
       "sprintsAria": "What I worked on in each period of the internship",
       "sprints": [
         {
           "k": "Sep–Nov 2025",
-          "d": "Onboarding: Flutter SDK, Android Studio, VS Code, GitLab and Jira; learnt the GetX architecture (controllers, routes, bindings); first supervised UI fixes."
+          "d": "Onboarding: Flutter SDK, GitLab and Jira; GetX architecture; first supervised UI fixes."
         },
         {
           "k": "Dec 2025",
@@ -299,10 +287,10 @@
         },
         {
           "k": "May 2026",
-          "d": "Android APK / AAB distribution builds with Firebase App Distribution; final usability checks; closing documentation."
+          "d": "APK / AAB builds with Firebase App Distribution; final checks and closing documentation."
         }
       ],
-      "sprintsMore": "See all 7 periods (Sep 2025 → May 2026)",
+      "sprintsMore": "Sprint log (7 periods)",
       "sprintsLess": "Show fewer",
       "bullets": [
         "Dart with GetX state management; REST API integration (authentication, error handling)",
@@ -333,7 +321,7 @@
       {
         "id": "reno",
         "title": "Renovation company",
-        "desc": "Trilingual Astro site · 260+ pages · landing pages per service and per town",
+        "desc": "Astro · ES/CA/EN · 260+ pages · landing pages per service and town",
         "href": "https://reformasmopri.com/",
         "linkLabel": "Visit site ↗",
         "live": "reformasmopri.com",
@@ -345,7 +333,7 @@
       {
         "id": "servicempro",
         "title": "servicempro.com",
-        "desc": "Luxury remodelling company in Texas, USA · multilingual site",
+        "desc": "Luxury remodelling in Texas (USA) · multilingual site",
         "href": "https://servicempro.com/",
         "linkLabel": "Visit site ↗",
         "live": "servicempro.com",
@@ -357,7 +345,7 @@
       {
         "id": "cv",
         "title": "This online CV",
-        "desc": "Six three.js scenes in one WebGL context · ES/CA/EN build from JSON · automated headless-Chrome QA",
+        "desc": "Six three.js worlds in one WebGL context · ES/CA/EN build · automated QA",
         "href": "https://github.com/arboledas05/adrianarboledas.github.io",
         "linkLabel": "View the code ↗",
         "live": "github.com/arboledas05",
@@ -369,25 +357,25 @@
     ],
     "cap": "Website I built",
     "live": "LIVE",
-    "stack": "Built with Astro, React, Tailwind CSS, TypeScript, GSAP, Three.js and Lenis · multilingual, SEO, performance."
+    "stack": "Built with Astro, React, TypeScript, Tailwind CSS, GSAP, Three.js and Lenis."
   },
   "deploy": {
     "eyebrow": "02 — Deploy",
     "h2": "Now I'm learning to <em>run them in the cloud.</em>",
     "course": {
       "h3": "Higher VET Specialisation Course in Cloud Resources and Services",
-      "sub": "Curs d'especialització en Recursos i Serveis al Núvol · official VET qualification, EQF level 5 · 41 ECTS · 700 hours",
-      "meta": "Institut Tecnològic de Barcelona (ITB), public institute · Oct 2026 – Apr 2027 · in progress",
-      "line": "Taught with Amazon Web Services (AWS) and OpenNebula, in five official modules (5160–5164): cloud fundamentals, compute, databases and storage, networking and managed services."
+      "sub": "Official higher VET qualification (EQF 5) · 41 ECTS · 700 h",
+      "meta": "Institut Tecnològic de Barcelona (ITB), public · Oct 2026 – Apr 2027",
+      "line": "With AWS and OpenNebula: cloud fundamentals, compute, databases and storage, networking and managed services."
     },
-    "takeaway": "Two pair projects from the course: a migration plan to AWS (designed and presented in class) and a highly available three-tier network on AWS (Nov 2026).",
+    "takeaway": "Two pair projects: an AWS migration plan and a highly available three-tier network.",
     "skillsLink": "All cloud technologies, in Skills →"
   },
   "grow": {
     "eyebrow": "03 — Grow",
     "h2": "Then I <em>grow them</em> with data.",
-    "intro": "Since April 2026, alongside my studies, I've been the web developer and Google Ads manager of a family-run renovation company in the Barcelona area, founded in 1994. It is my current part-time job. Figures from its Google Ads account:",
-    "footnote": "Source: the company's Google Ads account. Each figure shows its period; the periods are never combined.",
+    "intro": "My current job (part-time, since Apr 2026): website and Google Ads for my family's renovation company.",
+    "footnote": "Source: its Google Ads account. Each figure shows its period; they are never combined.",
     "chipsH": "Also for this company:",
     "chips": [
       "Local SEO + Google Business Profile plan",
@@ -416,7 +404,6 @@
         "org": "Family-run renovation company · Barcelona area",
         "date": "Apr 2026 – present",
         "tags": [
-          "Part-time",
           "Alongside my studies"
         ],
         "bullets": [
@@ -424,7 +411,7 @@
             "text": "Built and maintain the company's website (Astro, ES/CA/EN, 260+ pages, landing pages per service and per town) and its tracking"
           },
           {
-            "text": "Run the Google Ads Search campaign (170+ negative keywords, weekly search-term reviews): click-through rate 9.3% vs a construction-sector average of ≈6% (21 Apr – 27 Jul 2026) and 19 leads from 430 clicks (8–23 Oct 2026)"
+            "text": "Run the Google Ads Search campaign (170+ negative keywords, weekly review): CTR 9.3% vs a ≈6% construction-sector average (21 Apr – 27 Jul 2026); 19 leads from 430 clicks (8–23 Oct 2026)"
           }
         ],
         "more": [
@@ -447,13 +434,11 @@
         ],
         "bullets": [
           {
-            "text": "Worked in a Scrum team on a Flutter app in production for a leading Spanish bank (consumer financing at the point of sale), used in-store by large retail chains: Dart, GetX state management and REST APIs with authentication and error handling"
-          },
-          {
-            "text": "Fixed complex UX bugs in production on Android and iOS: landscape layouts, sticky footers, layout overflows, and drawer, keyboard and scrolling behaviour"
+            "text": "Scrum team on a Flutter app in production for a leading Spanish bank (in-store credit for large retail chains): Dart, GetX and REST APIs with authentication and error handling"
           }
         ],
         "more": [
+          "Fixed complex UX bugs in production on Android and iOS: landscape layouts, sticky footers, layout overflows, and drawer, keyboard and scrolling behaviour",
           "Refactored the UI for responsive mobile and tablet layouts (MediaQuery, LayoutBuilder)",
           "≈435 hours; two-week sprints with daily stand-ups",
           "Worked in a GitLab workflow with merge requests, code reviews and continuous integration; Jira and Confluence",
@@ -474,16 +459,14 @@
         ],
         "bullets": [
           {
-            "text": "Two-partner agency project offering GoHighLevel CRM automations to private dental clinics: built pipelines, workflows, appointment reminders and patient reactivation"
-          },
-          {
-            "text": "Led marketing and outreach (Google Ads, Meta Ads, prospecting and demos), including a demo for an orthodontics clinic in Figueres"
+            "text": "Two-partner agency: GoHighLevel CRM automations for dental clinics (pipelines, workflows, appointment reminders, patient reactivation)"
           },
           {
             "text": "Ended in November 2026 without reaching paying clients"
           }
         ],
         "more": [
+          "Led marketing and outreach (Google Ads, Meta Ads, prospecting and demos), including a demo for an orthodontics clinic in Figueres",
           "Also worked on applied AI and the agency's website and brand"
         ],
         "link": "",
@@ -501,7 +484,7 @@
         ],
         "bullets": [
           {
-            "text": "Multilingual, SEO-optimised websites: servicempro.com (a luxury remodelling company in Texas, USA) and the site for my aerial-video brand"
+            "text": "Multilingual SEO websites: servicempro.com (luxury remodelling, Texas) and my aerial-video brand's site"
           },
           {
             "text": "Astro, React, TypeScript, Tailwind CSS, GSAP, Three.js and Lenis, with a focus on performance"
@@ -553,7 +536,7 @@
             "ev": ""
           },
           {
-            "text": "Two pair projects on AWS: a migration plan and a highly available three-tier network (my part: presentation, design defence, monitoring)",
+            "text": "Two pair projects on AWS: a migration plan and a three-tier network (my part: presentation, design defence, monitoring)",
             "ev": "itb-nexa"
           }
         ],
@@ -655,13 +638,13 @@
     "legendReal": "▭ already used (work or studies)",
     "legendLearning": "┅ learning at ITB",
     "learningSr": "learning",
-    "code": "The source code of this site is public: three.js worlds, a multilingual build pipeline and QA tooling.",
-    "codeLink": "See “This online CV” in 01 Build ↑",
+    "code": "Public code:",
+    "codeLink": "“This online CV” in 01 Build ↑",
     "cards": [
       {
         "n": "01",
         "title": "Build",
-        "desc": "Apps and websites: the stack I build with.",
+        "desc": "Apps and websites.",
         "chips": [
           {
             "label": "Flutter",
@@ -752,7 +735,7 @@
       {
         "n": "02",
         "title": "Deploy",
-        "desc": "Cloud: what I'm learning at ITB through course projects. AWS Cloud Practitioner exam planned before April 2027.",
+        "desc": "What I'm learning at ITB. AWS Cloud Practitioner exam planned before April 2027.",
         "chips": [
           {
             "label": "Amazon EC2",
@@ -839,7 +822,7 @@
       {
         "n": "03",
         "title": "Grow",
-        "desc": "Marketing and measurement in real campaigns.",
+        "desc": "Real campaigns, measured.",
         "chips": [
           {
             "label": "Google Ads (Search, responsive search ads, conversion tracking)",
@@ -878,7 +861,7 @@
       {
         "n": "04",
         "title": "Foundations",
-        "desc": "Data, tools, methods and systems.",
+        "desc": "Data, tools and systems.",
         "chips": [
           {
             "label": "SQL",
@@ -955,11 +938,11 @@
     "how": [
       {
         "k": "Teamwork",
-        "v": "a Scrum team during the Accenture internship; pair projects at ITB"
+        "v": "Scrum during the Accenture internship; pair projects at ITB"
       },
       {
         "k": "Communication",
-        "v": "calls and demos with prospective clients (Growlityc); a 10-minute class talk on the AWS migration plan, with a classmate"
+        "v": "demos with prospective clients; a 10-min pair talk on the AWS migration plan"
       },
       {
         "k": "Responsibility",
@@ -971,7 +954,7 @@
       },
       {
         "k": "Problem solving",
-        "v": "found and fixed the CSP bug that blocked conversion tracking; fixed UX bugs in production"
+        "v": "the CSP block on conversion tracking; UX bugs in production"
       },
       {
         "k": "Adaptability & fast learning",
@@ -979,7 +962,7 @@
       },
       {
         "k": "Organisation",
-        "v": "the ITB course alongside a part-time job"
+        "v": "ITB course + part-time job"
       }
     ],
     "langsH": "Languages",
@@ -1036,7 +1019,7 @@
   "drone": {
     "eyebrow": "Beyond code",
     "h2": "Off the keyboard, <em>I fly.</em>",
-    "body": "Drone pilot certified by AESA, the Spanish Aviation Safety Agency, in categories A1, A2 and A3. I film aerial video under my own brand, ElevvaVisuals.",
+    "body": "AESA-certified drone pilot (A1, A2 and A3). I film aerial video under my own brand, ElevvaVisuals.",
     "link": "https://elevvavisuals.com/",
     "linkLabel": "elevvavisuals.com ↗",
     "live": "LIVE",
@@ -1049,28 +1032,28 @@
   "europe": {
     "eyebrow": "04 — Next stop",
     "h2": "Next stop: <em>Barcelona</em>, or remote.",
-    "lead": "I'm looking for a traineeship or a junior role as a software developer (Flutter, web) or in cloud infrastructure. My first choice is Barcelona: on-site, hybrid or remote. I'm also open to remote roles in the rest of Spain, Europe and the Americas, and relocation is negotiable. I work in English (C1), Spanish and Catalan.",
+    "lead": "Internship or junior role in software development (Flutter, web) or cloud. Barcelona first; remote from the rest of Spain, Europe and the Americas (relocation negotiable).",
     "status": "Status: <span class=\"nw\">part-time</span> (afternoons) now · <span class=\"nw\">full-time</span> from April 2027",
     "bringH": "What I bring",
     "bring": [
       "Flutter and web development shipped to production",
-      "Cloud fundamentals on AWS from two course projects",
+      "Cloud groundwork on AWS (two course projects)",
       "Google Ads and analytics with measured results",
-      "Teamwork: a Scrum team during the Accenture internship and pair projects at ITB"
+      "A Scrum team during the Accenture internship and pair projects at ITB"
     ],
     "learnH": "What I want to learn",
-    "learn": "How a professional team builds and maintains apps (Flutter, web) in production, and how it runs cloud services with Infrastructure as Code (for example CloudFormation), keeping them secure and their costs under control.",
+    "learn": "How a professional team keeps apps running in production and manages cloud with Infrastructure as Code, securely and on budget.",
     "placesH": "Places on the map",
     "places": [
       {
         "id": "mollet",
         "name": "Barcelona",
-        "line": "home and first choice for work · ITB, the Accenture internship, my current part-time job"
+        "line": "home and first choice · ITB, the Accenture internship and my current job"
       },
       {
         "id": "ireland",
         "name": "Ireland · eu-west-1",
-        "line": "the AWS region in my migration plan (course project)"
+        "line": "AWS region in my migration plan"
       },
       {
         "id": "texas",
@@ -1079,25 +1062,25 @@
       },
       {
         "id": "eu",
-        "name": "? · Europe",
-        "line": "your company?"
+        "name": "your company? · Europe",
+        "line": "an open pin: leave yours"
       },
       {
         "id": "am",
-        "name": "? · The Americas",
-        "line": "your company?"
+        "name": "your company? · The Americas",
+        "line": "an open pin: leave yours"
       }
     ],
     "pins": {
       "mollet": {
         "label": "Barcelona",
         "name": "Barcelona",
-        "line": "home and first choice for work · ITB, the Accenture internship, my current part-time job"
+        "line": "home and first choice · ITB, the Accenture internship and my current job"
       },
       "ireland": {
         "label": "Ireland",
         "name": "Ireland · eu-west-1",
-        "line": "the AWS region in my migration plan (course project)"
+        "line": "AWS region in my migration plan"
       },
       "texas": {
         "label": "Texas",
@@ -1131,7 +1114,7 @@
   },
   "contact": {
     "h2": "Let's <em>talk.</em>",
-    "sub": "Internship or junior role in software development (Flutter, web) or cloud. Part-time in the afternoons now; full-time from April 2027. Barcelona first (on-site, hybrid or remote); remote from the rest of Spain, Europe and the Americas, with relocation negotiable.",
+    "sub": "Internship or junior role in Flutter, web or cloud. Part-time now; full-time from April 2027.",
     "copy": "Copy",
     "mailSubject": "Opportunity — Adrián Arboledas",
     "copyAria": "Copy the email address",

@@ -56,7 +56,13 @@ export const HTML_BUDGET = { raw: 146, gz: 39 };
 // four dead rules: .hs-lead, .hs.is-dim, .hud-card, #drone .drone-link).
 // 8-nov-2026 (batch B): app.css 112 → 113 KB raw (gzip stays 26): the glance card gets a 3-path router (Flutter / web / cloud)
 // with a one-row phone variant (~0.9 KB).
-export const CSS_BUDGET = { raw: 113, gz: 26 };
+// 8-nov-2026 (mobile batch A): app.css 113 → 114 KB raw (gzip stays 26): phone hero "Portada" (name over the poster sky,
+// bigger cut-out), the 01 Build / 02 Cloud Lab 3D cards docked (sticky) while their text scrolls, quieter phone captions,
+// compact skill chips, phone-only hides of loose text (~2.3 KB, offset by retired phone banner/order rules and dead overrides).
+// 9-nov-2026 (mobile round 2): app.css 114 → 120 KB raw, gzip 26 → 28 (the self-imposed limit blocked the phone second half): 03 Grow
+// docked like 01 / 02, one tidy pause disc on every docked card, swipeable site row, compact record / skills / languages / places,
+// 2-column contact grid, one ↓ CV at a time, whole hero fan, two-line glance rows (offset by trimmed duplicate rules).
+export const CSS_BUDGET = { raw: 120, gz: 28 };
 export const RETIRED_JS = ['planet.js', 'bg.js'];
 export const budgetOf = (name) => JS_BUDGET_KB[name] ?? (/^w-[\w-]+\.js$/.test(name) ? WORLD_BUDGET_KB : null);
 

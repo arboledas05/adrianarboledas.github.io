@@ -67,6 +67,10 @@
   .map-svg,.map-plane{--mp-w:max(100cqw,210cqh);--mp-f:.52}
   /* INT: in 2D (3:2, not warm) the whole North Atlantic is contained, so no pin or tip leaves the slot */
   .world-slot[data-world-slot="map"]:not(.is-warm) :is(.map-svg,.map-plane){--mp-w:min(100cqw,210cqh);--mp-f:.5}
+  /* round 3: the framing offset is a translate, not left/top: warming (contain → cover) and going live (→ the slot) only resize the
+     plane from the slot's corner, so the 351 × 263 px plane never counts as a layout shift (CLS 0.04–0.09 per pass at 390 px) */
+  :is(.map-svg,.map-plane){left:0;top:0;translate:calc(50cqw - var(--mp-w) * var(--mp-f,.5)) calc(50cqh - var(--mp-w) / 4.2)}
+  .world-slot[data-world-slot="map"].is-live .map-plane{translate:none}
   .world-slot[data-world-slot="map"]>.slot-fallback{overflow:hidden;border-radius:inherit}
   .pin-label{font-size:10px;padding:4px 7px;left:32px}
   .pin--texas .pin-label{right:32px}

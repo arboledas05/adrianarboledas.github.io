@@ -12,7 +12,6 @@ html:is(.gl,.gl-pre) #board .board-stage{height:auto;aspect-ratio:var(--ar)} /* 
 #board .board-stage>.slot-fallback{display:none}
 html:is(.gl,.gl-pre) #board .board-stage>.slot-fallback{display:block}
 #board .slot-fallback img{display:block;width:100%;height:100%;object-fit:contain}
-@media (max-width:820px){#board .board-stage{--ar:1/1!important;width:min(92vw,460px);margin-inline:auto}}
 html:not(.gl,.gl-pre) .board-world{margin-bottom:-16px}
 html:not(.gl,.gl-pre) .board-world :is(.board-legend,.world-cap){display:none}
 .board-legend{max-width:none;margin:10px 0 0;font:500 var(--fs-mono)/1.55 var(--f-mono);color:var(--ink-2)}
@@ -22,9 +21,10 @@ html:not(.gl,.gl-pre) .board-world :is(.board-legend,.world-cap){display:none}
 #board .board-tip--us::before{background:#FF6A3D}
 #board .board-tip--sec::before{background:#CFC6BA}
 #board .board-tip[data-hotspot=bowl]{translate:-50% 12px} /* hangs below the bowl, on the empty plinth, never over the run */
-@media (max-width:820px){#board .board-tip:is(.board-tip--us,.board-tip--sec){padding:2px 8px;font-size:.66rem;translate:-50% calc(-100% - 6px)}#board .board-tip .hs-x{display:none}} /* phones: just the value, sitting on its own tower (the dates are in the legend under the figure) */
-@media (max-width:820px){#board .board-tip.board-tip--us{translate:-50% calc(-100% - 14px)}}
-@media (max-width:820px){.board{grid-template-columns:1fr}.board>.board-world{order:-2}}
+@media (max-width:820px){#board .board-stage{--ar:1/1!important;width:min(92vw,460px);margin-inline:auto}#board .board-tip:is(.board-tip--us,.board-tip--sec){padding:2px 8px;font-size:.66rem;translate:-50% calc(-100% - 6px)}#board .board-tip .hs-x{display:none}#board .board-tip.board-tip--us{translate:-50% calc(-100% - 14px)}.board{grid-template-columns:1fr}.board>.board-world{order:-2}} /* phones: just the value, sitting on its own tower (the dates are in the legend under the figure) */
+/* 9-nov-2026 round 2: docked like 01 / 02 (sticky: stage.css .dk): a compact card while the tiles scroll under it; the slot
+   takes the card's height, so the camera widens (w-grow picks its FOV from the aspect) instead of cropping the plinth */
+@media (max-width:820px) and (min-height:521px){html:is(.gl,.gl-pre) #board>.board-world{align-self:start;border:1px solid var(--line);border-radius:var(--r-card);background:var(--w-bg);box-shadow:0 14px 24px -18px #17150f59}html:is(.gl,.gl-pre) #board .board-stage{width:auto;height:var(--dk-h);aspect-ratio:auto;border-radius:inherit;overflow:hidden}}
 .tile>*{min-width:0}
 .tile-k,.tile-back-k{display:block;margin:0;font:600 var(--fs-eyebrow)/1.4 var(--f-mono);letter-spacing:var(--track-eyebrow);text-transform:uppercase;color:var(--acc-grow,var(--ink-3))}
 .tile.is-evidence{--ev-dur:1.2s}
@@ -73,10 +73,8 @@ html.js .board:not(.mod-failed) :is(.tile:not(.is-flipped) .tile-back,.is-flippe
 .csp-steps li{display:grid;grid-template-columns:7rem 1fr;gap:10px;font-size:var(--fs-small)}
 .csp-sk{font-weight:600;text-transform:uppercase}
 @media (max-width:480px){.csp-steps li{grid-template-columns:1fr;gap:0}}
-.csp-tech{margin:12px 0 0;font:500 var(--fs-mono)/1.55 var(--f-mono);color:var(--ink-3);overflow-wrap:anywhere}
 .csp-demo{display:grid;gap:12px;margin-top:16px}
-.csp-toggle{justify-self:start;display:flex;padding:3px}
-.csp-toggle{cursor:auto}
+.csp-toggle{justify-self:start;display:flex;padding:3px;cursor:auto}
 .csp-toggle button{display:flex;align-items:center;min-height:44px;padding:0 14px;border:0;border-radius:99px;background:none;font:inherit;color:var(--ink-2);cursor:pointer}
 .csp-toggle button:first-child[aria-pressed=true]{background:var(--peach);color:var(--ink)}
 .csp-toggle button:last-child[aria-pressed=true]{background:var(--indigo);color:#fff}

@@ -43,15 +43,36 @@ html.js:not(.rm) .fig-pause,:is(.gl,.gl-pre) .fig-mode{display:inline-flex}
 @media (pointer:coarse){.fig-pause{min-height:44px;padding-inline:.9rem}}
 /* phones: a tidy label block, never a ragged wrap: FIG / name beside the pause, then hint | mode */
 @media (max-width:820px){
+ :root{--dk-h:max(250px,44svh)}
  .world-cap{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:.1rem .7rem;font-size:.68rem}
  .world-cap>.fig-n{grid-area:1/1;font-size:.62rem}
  .world-cap>.fig-name{grid-area:2/1;min-width:0;line-height:1.35}
  .world-cap>.fig-pause{grid-area:1/2/3/3}
  .world-cap>.fig-hint{grid-area:3/1;min-width:0;margin-top:.25rem}
  .world-cap>.fig-mode{grid-area:3/2;justify-self:end;margin-top:.25rem;white-space:nowrap}
+ :is(.world--drone,.world--map) :is(.fig-mode,.fig-n){display:none} /* 9-nov-2026: quieter captions; the drone keeps its honest name */
 }
+/* 9-nov-2026 phone "dock": the 3D card of 01 Build, 02 Cloud Lab and 03 Grow (.dk) stays in view (sticky) while its text and
+   controls scroll under it; it follows the nav (top set on the elements, never on :root: that restyled the whole page).
+   ::before (12 px, inside the ≥ 24 px gap above the card) masks the strip between the nav and the stuck card. Landscape
+   phones (≤ 520 px high) keep the plain flow. Every docked card has the same quiet corner: the pause disc (below) only; the
+   mode chip and the 03 legend stay for screen readers (the 3D says it), so the diorama labels are never covered. */
+@media (max-width:820px) and (min-height:521px){
+ :root{--dk-h:clamp(200px,36svh,320px)}
+ .js .bw-stage,:is(.gl,.gl-pre) .dk{--dk-t:10px;position:sticky;top:var(--dk-t);z-index:5;transition:top .45s var(--ease-out)}
+ html:has(.nav:not(.hide)) :is(.bw-stage,.dk){--dk-t:calc(var(--nav-h) + 20px)}
+ .js .bw-stage::before,:is(.gl,.gl-pre) .dk::before{content:'';position:absolute;inset-inline:0;bottom:calc(100% + 1px);height:12px;background:var(--w-bg);pointer-events:none}
+ .js .bw-stage::after,:is(.gl,.gl-pre) .dk::after{content:'';position:absolute;inset-inline:0;top:calc(100% + 1px);height:22px;background:linear-gradient(var(--w-bg),#0000);pointer-events:none} /* round 3: what scrolls under the card fades in, never cut at its edge */
+ :is(.gl,.gl-pre) .dk .world-cap{position:absolute;right:2px;top:2px;z-index:4;margin:0;display:flex}
+ :is(.gl,.gl-pre) .dk :is(.fig-n,.fig-name,.fig-hint){display:none}
+ :is(.gl,.gl-pre) .dk :is(.fig-mode,.board-legend){position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ :is(.sprints li,.bw-card :is(a,button),#lab .lab-panel :is(a,button),#board .tile button){scroll-margin-top:calc(var(--nav-h) + var(--dk-h) + 36px)}
+}
+@media (max-width:820px) and (max-height:700px){:root{--dk-h:clamp(180px,32svh,240px)}}
 /* narrow phones: the pause is an icon button (its text stays the accessible name) */
 @media (max-width:480px){html.js .fig-pause{justify-content:center;width:44px;padding:0;gap:0;font-size:0}}
+/* docked cards (phones): a 32 px paper disc inside the 44 px target, its ring in the world's accent while the 3D runs */
+@media (max-width:820px){html.js :is(.bw-stage,.dk) .fig-pause{width:44px;height:44px;min-height:0;padding:0;gap:0;border:0;border-radius:50%;background:radial-gradient(circle,#fffffff2 0 14.5px,#17150f2e 15px 16px,#0000 16.5px);font-size:0;justify-content:center}html.js :is(.bw-stage,.dk) .is-live~.world-cap .fig-pause{background:radial-gradient(circle,#fffffff2 0 14.5px,var(--w-accent,var(--indigo)) 15px 16.5px,#0000 17px)}}
 /* hints promise an interaction: only while the 3D world is live, and on touch only a touch string (site.js sets [data-touch]) */
 .fig-hint:empty,html:is(.no-js,.rm) .fig-hint,html:not(.gl,.gl-pre) .fig-hint{display:none}
 .world:not(:has(.world-slot.is-live)) .fig-hint{visibility:hidden} /* its line is reserved: going live never reflows the caption */

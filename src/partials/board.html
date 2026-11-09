@@ -1,5 +1,5 @@
 <div id="board" class="board">
-  <figure class="world board-world" data-world="grow" aria-labelledby="fig-grow">
+  <figure class="world board-world dk" data-world="grow" aria-labelledby="fig-grow">
     <div class="world-slot board-stage" data-world-slot="grow" style="--ar:16/8">
       <div class="slot-fallback"><picture><source media="(max-width: 820px)" srcset="{{asset img/worlds/grow-m.webp}}" width="600" height="600"><img src="{{asset img/worlds/grow-d.webp}}" width="1000" height="500" alt="" loading="lazy" decoding="async"></picture></div>
       <div class="slot-ui">
@@ -24,7 +24,6 @@
         <li><span class="csp-sk">{{t board.csp.s3k}}</span> <span>{{t board.csp.s3}}</span></li>
         <li><span class="csp-sk">{{t board.csp.s4k}}</span> <span>{{t board.csp.s4}}</span></li>
       </ol>
-      <p class="csp-tech">{{t board.csp.tech}}</p>
       <div class="csp-demo">
         <div class="csp-toggle b-js" role="group" aria-labelledby="tk-csp"><button type="button" aria-pressed="true">{{t board.csp.before}}</button><button type="button" aria-pressed="false">{{t board.csp.after}}</button></div>
         <div class="csp-track" aria-hidden="true">

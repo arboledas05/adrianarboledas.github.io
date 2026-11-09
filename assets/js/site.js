@@ -462,7 +462,7 @@ export function init(d, ctx) {
    names.includes(n) || names.push(n);
   }
   const skill = chip.getAttribute('data-skill') || [...chip.childNodes].filter((x) => x.nodeType === 3).map((x) => x.textContent).join('').trim() || chip.textContent.trim();
-  tg.forEach((x) => { const m = x.closest("details.tl-more"); if (m) m.open = true; flash(x, 2400); }); // 8-nov-2026: evidence inside a closed «More» opens it
+  tg.forEach((x) => { const it = x.closest('.tl-item'), m = !x.getClientRects().length && it && it.querySelector('details.tl-more'); if (m) m.open = true; flash(x, 2400); }); // evidence hidden by a closed «More» (inside it, or a phone's 2nd+ point) opens it
   if (qOut) {
    qOut.textContent = names.length ? t('ui.query.usedAt', { skill, places: list(names) }) : t('ui.query.none', { skill });
    const f = tg[0], id = f && (f.id || (f.closest('[id]') || {}).id);

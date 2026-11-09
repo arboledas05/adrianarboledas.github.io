@@ -1,16 +1,16 @@
 {
   "lab": {
-    "kicker": "Cloud Lab · els meus dos projectes del curs",
-    "hint": "Selecciona una part del diagrama per inspeccionar-la o executa una acció.",
+    "kicker": "Cloud Lab · els meus dos projectes en parella",
+    "hint": "Tria una peça o llança una acció.",
     "tabs": "Projectes del curs",
     "tNexa": "NexaRetail",
     "tNexaS": "xarxa de tres capes",
     "tLd": "Logística Directa",
     "tLdS": "pla de migració",
     "insp": "Inspector",
-    "inspIdle": "Selecciona una part del diagrama per veure què fa.",
+    "inspIdle": "Aquí veuràs què fa cada peça.",
     "cons": "Consola",
-    "consIdle": "Executa una acció: cada pas apareix aquí.",
+    "consIdle": "Aquí apareix cada pas.",
     "acts": "Accions",
     "factsH": "En resum",
     "nexa": {
@@ -18,9 +18,9 @@
       "chip": "Projecte del curs · mòdul 5163 · en parella",
       "stProg": "nov. 2026",
       "stDone": "nov. 2026",
-      "tool": "Feta a la consola d'AWS (AWS Management Console), com demana l'enunciat; l'extra opcional de la parella és una plantilla de CloudFormation (infraestructura com a codi), escrita pel meu company.",
-      "toolDone": "Feta a la consola d'AWS (AWS Management Console), com demana l'enunciat; l'extra opcional de la parella és una plantilla de CloudFormation (infraestructura com a codi), escrita pel meu company.",
-      "part": "<b>La meva part:</b> la defensa del disseny (9 preguntes del cas sobre seguretat, manteniment, auditoria i cost) i una demo de monitoratge i auditoria al meu propi AWS Learner Lab amb CloudTrail, CloudWatch, AWS Config i VPC Reachability Analyzer.",
+      "tool": "Feta a la consola d'AWS, com demana l'enunciat; el meu company hi va afegir una plantilla de CloudFormation com a extra.",
+      "toolDone": "Feta a la consola d'AWS, com demana l'enunciat; el meu company hi va afegir una plantilla de CloudFormation com a extra.",
+      "part": "<b>La meva part:</b> defensa del disseny (9 preguntes del cas) i demo de monitoratge i auditoria al meu AWS Learner Lab: CloudTrail, CloudWatch, AWS Config, VPC Reachability Analyzer.",
       "svgT": "Diagrama de xarxa de NexaRetail",
       "svgD": "Una VPC a AWS amb una capa web en una subxarxa pública, una capa d'aplicació i una capa de dades en subxarxes privades, grups de seguretat entre les capes i una NAT per a les actualitzacions del sistema operatiu, només de sortida.",
       "internet": "Internet",
@@ -53,16 +53,16 @@
         "Una NAT permet que les capes privades baixin actualitzacions del SO, només de sortida. Des d'internet no s'hi pot arribar."
       ],
       "facts": [
-        "Una VPC (10.20.0.0/16) amb tres capes (web, aplicació i dades) repartides en dues zones de disponibilitat",
-        "Dues subxarxes per capa: públiques per al web, privades per a l'aplicació i les dades (una per zona de disponibilitat; el diagrama està simplificat)",
-        "Un grup de seguretat per capa decideix quina capa pot parlar amb quina, i tots els recursos porten etiquetes",
-        "Una NAT, perquè les capes privades només surtin a internet per actualitzar el SO"
+        "VPC 10.20.0.0/16 amb tres capes (web, app, dades) en dues zones de disponibilitat",
+        "Subxarxes públiques per al web i privades per a app i dades, una per zona (diagrama simplificat)",
+        "Un grup de seguretat per capa; tots els recursos etiquetats",
+        "NAT: les capes privades només surten per actualitzar el SO"
       ]
     },
     "ld": {
       "h": "Logística Directa S.A. · un pla de migració a AWS",
-      "chip": "Projecte del curs · mòdul 5160 · en parella · dissenyat i presentat a classe (exposició de 10 minuts, 16 diapositives)",
-      "case": "Un pla per a l'empresa d'un cas pràctic: tots els costos són estimacions.",
+      "chip": "Projecte del curs · mòdul 5160 · en parella · presentat a classe (10 min, 16 diapositives)",
+      "case": "Cas pràctic: tots els costos són estimacions.",
       "part": "<b>La meva part:</b> coautor del pla escrit; a l'exposició vaig presentar el problema, el context i les conclusions (cost i amortització).",
       "svgT": "Diagrama de la migració de Logística Directa",
       "svgD": "Un centre de dades local connectat a AWS a eu-west-1 (Irlanda) amb un model híbrid; EC2 Auto Scaling de 2 a 10 instàncies; RDS Multi-AZ, amb una base de dades principal i una altra en espera; AWS DMS copia les dades; el canvi es fa en un cap de setmana.",
@@ -154,7 +154,7 @@
     },
     "mods": {
       "h": "Mòduls del curs",
-      "cap": "On apareix cada mòdul als projectes del curs",
+      "cap": "on apareix cadascun",
       "aria": "Ressalta un mòdul al diagrama"
     },
     "m": {

@@ -22,8 +22,11 @@ export async function init(root, ctx) {
  const sq = ss('aa-q');
  if (sq != null && +sq < tier) tier = +sq;
  if (local && Q.has('q')) tier = +Q.get('q');
- /* html.gl-pre (head script) holds the 3D layout from the first paint; any 'off' drops it so the 2D layout returns */
- const gl = (on, why) => { if (!on) cl.remove('gl-pre'); bus.emit('aa:gl', { on, tier, why }); };
+ /* html.gl-pre (head script) holds the 3D layout from the first paint; on desktop any 'off' drops it so the 2D layout returns.
+    Phones keep it (9-nov-2026 round 3): their stage boots and can give up ('slow', 'lost', …) while the reader is scrolling, and
+    dropping the 3D layout then re-laid the whole page (CLS 0.83, a 166 ms task at 4x CPU); the 2D twins fill the same boxes
+    instead, and the next visit starts 2D (aa-q = 0 skips gl-pre in the head script) */
+ const gl = (on, why) => { if (!on && !mob) cl.remove('gl-pre'); bus.emit('aa:gl', { on, tier, why }); };
  if (tier < 1) return gl(false, 'tier');
 
  /* which slots: flags.worlds.<id> (or ?w=all|test on localhost); ?still=<id> renders only that one; no hero on phones */
@@ -438,7 +441,8 @@ export async function init(root, ctx) {
   if (dead) return;
   sleep(); W.forEach((w) => w.w && off(w)); dead = 1;
   offs.forEach((f) => f()); offs.length = 0; bus.emit = e0;
-  cl.remove('gl', 'gl-pre', 'gl-q1', 'gl-q2', 'gl-q3');
+  cl.remove('gl', 'gl-q1', 'gl-q2', 'gl-q3');
+  if (!mob || cl.contains('doc')) cl.remove('gl-pre');
   if (cv.parentNode !== home) home.insertBefore(cv, homeNext);
   cv.style.visibility = 'hidden';
   try { kit.destroy && kit.destroy(); R.dispose(); R.forceContextLoss(); } catch (e) {}

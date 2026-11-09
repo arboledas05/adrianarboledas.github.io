@@ -107,11 +107,11 @@ html.js .bugphone:not(.mod-failed) .bp-static,html:not(.js) :is(.bp-toggles,.bp-
   /* the stage goes on top by grid row, not `order` (order would also paint it under the card it sticks over) */
   .bw-stage{grid-row:1}
   .bw-card{grid-row:2}
-  html.js .bw-stage{position:relative} /* phones: the stage scrolls away so the sprint log gets the full screen (no z-index: it no longer overlaps the card) */
-  html.js .bw-stage .world{position:relative;display:block;height:44svh;min-height:250px;border:1px solid var(--line);border-radius:var(--r-card);background:var(--w-bg,#E9F4EF);overflow:hidden}
+  html.js .bw-stage .world{position:relative;display:block;height:var(--dk-h);border:1px solid var(--line);border-radius:var(--r-card);background:var(--w-bg,#E9F4EF);box-shadow:0 14px 24px -18px #17150f59;overflow:hidden} /* --dk-h: stage.css (9-nov-2026: compact and docked from 521 px high) */
   html.js .bw-stage .world-slot{position:absolute;inset:0;height:auto}
   html.gl .bw-stage .slot-ui::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(90deg,var(--w-bg,#E9F4EF),#e9f4ef00 5%,#e9f4ef00 80%,var(--w-bg,#E9F4EF) 97%)}
-  html.js .bw-stage .bp-stage{--L:min(300px,72vw,calc(44svh - 96px))}
+  html.js .bw-stage .bp-stage{--L:min(300px,72vw,calc(var(--dk-h) - 96px))}
+  html.rm .bw-stage .bp-stage{--L:min(300px,72vw,calc(var(--dk-h) - 120px))} /* the toggles cover the 2D twin's base */
   /* the icon row sits on its own paper pill, so it never reads as floating over the bench */
   html.js .bw-stage .bp-toggles{position:absolute;left:50%;bottom:8px;z-index:4;flex-wrap:nowrap;gap:8px;padding:5px;border-radius:999px;background:var(--scrim,#f4f1eaf0);box-shadow:var(--sh-card);translate:-50% 0}
   html.js .bw-stage .bp-tog{width:46px;height:46px;min-height:0;padding:0;justify-content:center;border-width:1.5px}
@@ -122,13 +122,11 @@ html.js .bugphone:not(.mod-failed) .bp-static,html:not(.js) :is(.bp-toggles,.bp-
   html.js .bw-stage .bp-caption{position:absolute;left:50%;bottom:70px;z-index:4;width:max-content;max-width:calc(100% - 24px);min-height:0;padding:5px 11px;border-radius:12px;background:var(--scrim,#f4f1eaf0);box-shadow:var(--sh-card);font:500 .72rem/1.35 var(--f-mono);color:var(--ink-2);text-wrap:balance;pointer-events:none;translate:-50% 0}
   html.js .bw-stage .world:not(:has(.bp-tog[aria-pressed=true])) .bp-caption{width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;box-shadow:none}
   html.js .bw-stage :is(.bp-title,.bw-spin){display:none!important}
-  html.js .bw-stage .bp-note{position:absolute;left:12px;top:12px;z-index:4;max-width:calc(100% - 160px);font-size:.6rem;line-height:1.3;text-align:left;color:var(--ink-3);pointer-events:none}
-  html.js .bw-stage .world-cap{position:absolute;right:8px;top:6px;z-index:4;margin:0;gap:6px}
+  html.js .bw-stage .bp-note{position:absolute;left:12px;top:12px;z-index:4;max-width:calc(100% - 72px);font-size:.6rem;line-height:1.3;text-align:left;color:var(--ink-3);pointer-events:none}
+  html.js .bw-stage .world-cap{position:absolute;right:2px;top:2px;z-index:4;margin:0;display:flex}
   html.js .bw-stage :is(.fig-n,.fig-name,.fig-hint,.bw-chip){display:none}
-  html.js .bw-stage .fig-pause{width:44px;padding:0;justify-content:center;font-size:0}
-  .sprints li{scroll-margin-top:calc(var(--nav-h) + 16px)}
+  html.js .bw-stage .fig-mode{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap} /* round 2: the corner keeps only the pause disc (stage.css) */
 }
-@media (max-width:359px){html.js .bw-stage .world{height:38svh}}
 
 /* 8-nov-2026: phones (JS): the log shows its first and last period; .sprints-more opens all seven (site.js). Desktop, no-JS, ?doc, print: whole */
 .sprints-more{display:none}

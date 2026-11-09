@@ -29,7 +29,14 @@ html:is(.gl,.gl-pre) #lab .lab-stage{aspect-ratio:var(--ar)}
 html:is(.gl,.gl-pre) #lab .lab-stage>.slot-fallback{position:absolute;inset:0}
 html:is(.gl,.gl-pre) #lab :is(.lab-scene,.lab-scene>.lab-svg){height:100%}
 #lab .lab-stage.is-live>.slot-fallback{visibility:hidden}
-@media (max-width:820px){#lab .lab-stage{--ar:3/2!important}html:is(.gl,.gl-pre) #lab .lab-stage{width:auto;margin-inline:calc(-1*clamp(14px,2.4vw,28px))}} /* beats the inline desktop ratio; phones + tablet: the turntable reads whole, edge to edge of the sheet (w-deploy fits the ring's width) */
+/* 9-nov-2026: phones (≥ 521 px high): the stage docks inside the sheet; the 3/2 ratio and the edge-to-edge stage are retired */
+@media (max-width:820px) and (min-height:521px){
+ html:is(.gl,.gl-pre) #lab{display:flex;flex-direction:column}
+ html:is(.gl,.gl-pre) #lab>.lab-world{order:1;margin-top:12px;border:1px solid #1f4fb833;border-radius:var(--r-card);--w-bg:var(--bp-paper);background:var(--w-bg);box-shadow:0 14px 24px -18px #17150f59}
+ html:is(.gl,.gl-pre) #lab>.lab-mods{order:2;margin-top:14px}
+ html:is(.gl,.gl-pre) #lab>.lab-panel{order:3}
+ html:is(.gl,.gl-pre) #lab .lab-stage{margin-inline:0!important;height:min(var(--dk-h),64vw);aspect-ratio:auto!important;border-radius:inherit;overflow:hidden}
+}
 #lab .slot-hit,#lab .slot-ui{display:none}
 html.gl #lab .lab-stage.is-live>:is(.slot-hit,.slot-ui){display:block}
 #lab .slot-ui{position:absolute;inset:0;z-index:3;pointer-events:none}

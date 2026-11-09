@@ -9,7 +9,7 @@
     "cRotate": "En horizontal: el diseño se recoloca en vez de romperse",
     "cKeyboard": "Con el teclado abierto: el footer fijo queda por encima",
     "cOverflow": "Con mucho contenido: se desplaza en vez de desbordarse",
-    "idle": "Elige un tipo de error para ver la solución.",
+    "idle": "Elige un error y mira la solución.",
     "note": "Solo es una ilustración: no es la app real del cliente.",
     "st0": "GetX",
     "st1": "Componentes",

@@ -60,32 +60,35 @@ html.js:not(.rm) .hero-bead{animation:hero-hop 6s var(--ease-out) 1.4s infinite}
    one line wherever the column allows; balance splits it evenly where it does not (ES/CA are longer) */
 .hero .eyebrow{letter-spacing:.12em;text-wrap:balance;max-width:100%}
 
-/* phones and small tablets: a top banner in the hero's flex column (site.css puts the copy after it, z 4):
-   poster + portrait, no WebGL. IT first and the CV in 10 s: the first screen holds the banner, the role line, the name,
-   the tagline, the fact pills (Accenture and DAM first) and the CV button; the "now" chip, the sub and the contact line
-   follow. The banner is shorter than before and overlaps the copy only a little, so his shoulders stay in the picture. */
+/* phones and small tablets, 9-nov-2026 "Portada" (magazine cover): eyebrow + a big name set in the poster's empty sky, his
+   head in front of the name's lower edge (portrait z 3 > name z 1 > poster), then the tagline, the CV buttons, the fact pills
+   and the "now" chip. .hero-copy becomes display:contents so its children and the figure share ONE flex column (no markup
+   change); the sub and the contact line are hidden here with JS (same facts in the glance card, About and the dock). */
 @media (max-width:820px){
-  .hero-visual{position:relative;align-self:stretch;height:36svh;max-width:none;width:auto;margin:-46px calc(-1*var(--gutter)) -3vh;display:flex;justify-content:center;pointer-events:none}
-  .hero-visual .world-slot{height:100%;width:auto}
-  .hero-visual .world-cap,.hero-visual .slot-ui,.hero-visual .slot-hit{display:none}
-  .hero-portrait{left:21%;width:60%;bottom:-2%} /* smaller and seated lower: his head sits under the blade-label band */
+  .hero{padding-top:calc(var(--nav-h) + 22px)}
+  .hero-grid{gap:10px}
+  html:not(.doc,.print) .hero-grid .hero-copy{display:contents}
+  .hero-visual{max-width:none;width:auto;pointer-events:none;order:2;display:block;height:auto;overflow:clip;margin:calc(-12px - 23.3vw) calc(-1*var(--gutter)) -15.6vw}
+  .hero-visual .world-slot{width:94vw;height:auto;margin:0 4.2vw 0 0} /* round 3: the figure hugs its slot from the right edge, so the fan (2.5–100 % of the poster) sits 4.2 vw from both edges; round 2 ran 04 into the right edge */
+  .hero-visual :is(.world-cap,.slot-ui,.slot-hit),.hero-portrait::after{display:none}
+  .hero-portrait{left:16%;width:68%;bottom:1%}
   .hero-portrait img{filter:drop-shadow(-1px -1px 2px #5b47ff38)}
   html.js:not(.rm) .hero-visual .slot-fallback img{animation:hero-float 7s ease-in-out infinite}
-  .hero-grid .hero-copy::before{height:28px}
-  .hero-copy>*{order:5}
-  .hero-copy>.eyebrow,.hero-copy>.hero-name,.hero-copy>.hero-tag{order:0}
-  .hero-copy>.hero-pills{order:1}
-  .hero-copy>.hero-cta{order:2}
-  .hero-copy>.now-chip{order:3}
-  .hero-copy>.hero-sub{order:4}
-  .hero-grid .hero-copy{gap:10px}
-  .hero-tag{font-size:clamp(1.15rem,5.2vw,1.45rem)}
-  .hero-pills{grid-template-columns:1fr 1fr;gap:6px}
+  .hero-copy>:not(.eyebrow){order:6}
+  .hero-copy>.hero-name{order:1;position:relative;z-index:1;font-size:clamp(2.9rem,14.6vw,3.7rem);line-height:.92;margin:0}
+  .hero-copy>.hero-tag{order:3;font-size:clamp(1.15rem,5.2vw,1.45rem)}
+  html:not(.doc,.print) .hero-copy>.hero-tag{position:relative;z-index:4;max-width:none;margin-inline:calc(-1*var(--gutter));padding:4px var(--gutter) 0;background:var(--paper);box-shadow:0 22px 0 var(--paper)}
+  html:not(.doc,.print) .hero-copy>.hero-tag::before{content:'';position:absolute;inset-inline:0;bottom:100%;height:72px;background:linear-gradient(#0000,var(--paper));pointer-events:none}
+  .hero-copy>.hero-cta{order:4;position:relative;z-index:4}
+  .hero-copy>.hero-pills{order:5;margin-top:6px}
+  .js:not(.doc,.print) .hero-copy>:is(.hero-sub,.hero-contact){display:none}
+  html .hero .eyebrow{letter-spacing:.06em}
+  .hero-pills{gap:6px}
   .hero-pills .pill{padding:.42rem .6rem;border-radius:10px;font-size:.74rem;line-height:1.3}
   .hero-pills .pill-period{font-size:.6rem}
 }
-@media (max-width:820px) and (max-height:760px){.hero-visual{height:31svh}.hero .hero-name{font-size:clamp(2.3rem,11vw,2.9rem)}}
-@media (min-width:600px) and (max-width:820px){.hero-visual{height:40svh}.hero-pills .pill{font-size:.8rem}}
+@media (max-width:820px) and (max-height:700px){.hero-copy>.hero-name{font-size:clamp(2.5rem,12.4vw,3.1rem)}.hero-visual{margin-bottom:-17.4vw}}
+@media (min-width:600px) and (max-width:820px){.hero-visual .world-slot{width:90vw;margin:0 0 0 5vw}.hero-visual{margin-top:calc(-12px - 22.4vw);margin-bottom:-16.6vw}.hero-pills .pill{font-size:.8rem}}
 @keyframes hero-float{50%{transform:translate3d(0,-4px,0)}}
 
 @media (prefers-reduced-motion:reduce){.hero-visual *{animation:none!important;transition:none!important}}

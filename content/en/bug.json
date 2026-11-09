@@ -10,7 +10,7 @@
     "cRotate": "Landscape: the layout reflows instead of breaking",
     "cKeyboard": "Keyboard open: the sticky footer stays above it",
     "cOverflow": "More content than fits: it scrolls instead of overflowing",
-    "idle": "Pick a type of bug to see the fix.",
+    "idle": "Pick a bug to see the fix.",
     "note": "Illustration only: not the client's real app.",
     "st0": "GetX",
     "st1": "Components",

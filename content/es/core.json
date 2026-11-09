@@ -104,10 +104,10 @@
   },
   "hero": {
     "eyebrow": "Desarrollador de software junior · Cloud (AWS) · Flutter · Barcelona",
-    "now": "Ahora · Curso de especialización cloud (AWS) · ITB Barcelona · 2026–27 · <b>disponible a media jornada; jornada completa desde abril de 2027</b>",
+    "now": "Ahora · Cloud (AWS) en el ITB · <b>media jornada ya; completa desde abril de 2027</b>",
     "tag": "<em>Construyo</em><span class=\"ins\">, despliego</span> y <em>hago crecer</em> productos digitales.",
     "tagFull": "Construyo, despliego y hago crecer productos digitales.",
-    "sub": "Desarrollador Flutter en prácticas en Accenture durante unos 8 meses, en una app bancaria en producción. Ahora me especializo en cloud (AWS) en el ITB de Barcelona. A tiempo parcial, desarrollador web y gestor de Google Ads en una empresa familiar de reformas.",
+    "sub": "Prácticas Flutter en Accenture (app bancaria en producción) · ahora cloud (AWS) en el ITB · web y Google Ads a tiempo parcial.",
     "pills": [
       "Accenture · prácticas de Flutter · ≈8 meses (≈435 h)",
       "CFGS DAM · nota media 7,87/10",
@@ -174,46 +174,46 @@
         "world": "build",
         "num": "01",
         "name": "Construir",
-        "line": "Prácticas de desarrollador Flutter en Accenture (≈8 meses, ≈435 h) · CFGS DAM, nota media 7,87/10 · web trilingüe de más de 260 páginas en producción"
+        "line": "Prácticas Flutter en Accenture (≈8 meses) · CFGS DAM 7,87/10 · web de 260+ páginas en producción"
       },
       {
         "id": "deploy",
         "world": "deploy",
         "num": "02",
         "name": "Desplegar",
-        "line": "Curso de especialización cloud (AWS) · ITB · 2026–27 · 2 proyectos en pareja: VPC de tres capas en 2 zonas de disponibilidad + plan de migración · examen AWS Cloud Practitioner previsto antes de abr 2027"
+        "line": "Cloud (AWS) en el ITB · 2 proyectos en pareja: VPC de tres capas y plan de migración · examen Cloud Practitioner previsto antes de abr 2027"
       },
       {
         "id": "grow",
         "world": "grow",
         "num": "03",
         "name": "Crecer",
-        "line": "Web y Google Ads para una empresa de reformas · CTR 9,3 % (abr–jul 2026) · 19 contactos (8–23 oct 2026) · resolví un fallo de CSP que bloqueaba la medición de conversiones"
+        "line": "Google Ads de una empresa de reformas · CTR 9,3 % (abr–jul 2026) · 19 contactos (8–23 oct 2026) · arreglé un bloqueo de CSP en la medición"
       },
       {
         "id": "sites-h",
         "world": "",
         "num": "",
         "name": "Código",
-        "line": "github.com/arboledas05 · el código de esta web es público: mundos en three.js, build multilingüe y herramientas de QA"
+        "line": "github.com/arboledas05 · el código de esta web es público"
       },
       {
         "id": "europe",
         "world": "map",
         "num": "04",
         "name": "Qué busco",
-        "line": "Software (Flutter, web) o cloud · Barcelona o en remoto · media jornada ya, completa desde abril de 2027"
+        "line": "Flutter, web o cloud · Barcelona o remoto · media jornada ya, completa desde abr 2027"
       }
     ]
   },
   "about": {
     "eyebrow": "Sobre mí",
     "h2": "Del código <em>a producción.</em>",
-    "body": "Desarrollador de software junior de Mollet del Vallès, cerca de Barcelona. Tras unos ocho meses de prácticas como desarrollador Flutter en Accenture, actualmente curso una especialización oficial de FP en cloud (AWS y OpenNebula) en el Institut Tecnològic de Barcelona. A tiempo parcial, creo y gestiono la web y las campañas de Google Ads de la empresa de reformas de mi familia; esas campañas han ayudado a aumentar su facturación. A partir de abril de 2027, cuando termine el curso, estaré disponible a jornada completa para puestos de desarrollo de software (Flutter, web) o de infraestructura cloud, en Barcelona o en remoto.",
+    "body": "Tras unos ocho meses de prácticas Flutter en Accenture, curso una especialización oficial de FP en cloud (AWS y OpenNebula) en el ITB. A tiempo parcial llevo la web y Google Ads de la empresa de reformas de mi familia; esas campañas han ayudado a aumentar su facturación.",
     "facts": [
       {
         "k": "Vivo en",
-        "v": "Barcelona (Mollet del Vallès), España · CET (UTC+1; UTC+2 en verano)"
+        "v": "Mollet del Vallès (Barcelona), España · CET/CEST"
       },
       {
         "k": "Nacionalidad",
@@ -221,27 +221,15 @@
       },
       {
         "k": "Disponibilidad",
-        "v": "Media jornada (tardes) ya · jornada completa desde abril de 2027 · mi horario coincide con las mañanas de la Costa Este de EE. UU. · acepto remoto · traslado negociable"
+        "v": "Media jornada (tardes) ya; completa desde abr 2027 · remoto · traslado negociable · horario compatible con la Costa Este de EE. UU."
       },
       {
         "k": "Idiomas",
         "v": "Castellano y catalán (nativos) · inglés C1 (comprensión auditiva C2)"
       },
       {
-        "k": "Estudios",
-        "v": "Curso de especialización cloud, ITB, 2026–27"
-      },
-      {
-        "k": "Carné",
-        "v": "Permiso B, coche propio"
-      },
-      {
-        "k": "Dron",
-        "v": "Certificado de piloto de AESA, A1/A2/A3"
-      },
-      {
         "k": "Intereses",
-        "v": "Grabación y fotografía con dron · gimnasio (unos 4 años) · IA, diseño web y animación"
+        "v": "Vídeo y foto con dron · gimnasio · IA, diseño web y animación"
       }
     ]
   },
@@ -251,16 +239,16 @@
     "acc": {
       "h3": "Desarrollador Flutter (prácticas) · Accenture",
       "pill": "Prácticas (FCT) · parte del CFGS DAM",
-      "meta": "Barcelona (oficina de Sant Gervasi) · 18 sept 2025 – 14 may 2026 (≈8 meses, ≈435 horas) · prácticas a través de Tecnilógica Ecosistemas, S.A.U. (grupo Accenture)",
-      "lead": "Una app Flutter en producción para un banco español líder: financiación al consumo en el punto de venta (crédito en tienda), usada por grandes cadenas de distribución y miles de usuarios.",
+      "meta": "Barcelona · 18 sept 2025 – 14 may 2026 · ≈8 meses, ≈435 h",
+      "lead": "App Flutter en producción de un banco español líder: crédito en tienda, usado por grandes cadenas y miles de usuarios.",
       "teamH": "Cómo trabajaba el equipo",
-      "team": "Scrum con sprints de dos semanas y reuniones diarias · merge requests, revisión de código e integración continua en GitLab · Jira y Confluence · con perfiles de diseño, QA y backend",
-      "sprintsH": "Registro de sprints · sept 2025 → may 2026",
+      "team": "Scrum (sprints de dos semanas, dailies) · merge requests, revisión de código y CI en GitLab · Jira, Confluence",
+      "sprintsH": "Registro de sprints",
       "sprintsAria": "En qué trabajé en cada periodo de las prácticas",
       "sprints": [
         {
           "k": "sept–nov 2025",
-          "d": "Incorporación: Flutter SDK, Android Studio, VS Code, GitLab y Jira; aprendí la arquitectura GetX (controllers, routes, bindings); primeras correcciones de UI supervisadas."
+          "d": "Incorporación: Flutter SDK, GitLab y Jira; arquitectura GetX; primeras correcciones de UI supervisadas."
         },
         {
           "k": "dic 2025",
@@ -284,10 +272,10 @@
         },
         {
           "k": "may 2026",
-          "d": "Builds de distribución APK / AAB para Android con Firebase App Distribution; pruebas finales de usabilidad; documentación de cierre."
+          "d": "Builds APK / AAB con Firebase App Distribution; pruebas finales y documentación de cierre."
         }
       ],
-      "sprintsMore": "Ver los 7 periodos (sept 2025 → may 2026)",
+      "sprintsMore": "Registro de sprints (7 periodos)",
       "sprintsLess": "Ver menos",
       "bullets": [
         "Dart con gestión de estado GetX; integración de APIs REST (autenticación, control de errores)",
@@ -318,7 +306,7 @@
       {
         "id": "reno",
         "title": "Empresa de reformas",
-        "desc": "Web trilingüe en Astro · más de 260 páginas · landings por servicio y por municipio",
+        "desc": "Astro · ES/CA/EN · 260+ páginas · landings por servicio y municipio",
         "href": "https://reformasmopri.com/",
         "linkLabel": "Ver la web ↗",
         "live": "reformasmopri.com",
@@ -330,7 +318,7 @@
       {
         "id": "servicempro",
         "title": "servicempro.com",
-        "desc": "Empresa de reformas de lujo en Texas, EE. UU. · web multilingüe",
+        "desc": "Reformas de lujo en Texas (EE. UU.) · web multilingüe",
         "href": "https://servicempro.com/",
         "linkLabel": "Ver la web ↗",
         "live": "servicempro.com",
@@ -342,7 +330,7 @@
       {
         "id": "cv",
         "title": "Este CV online",
-        "desc": "Seis escenas three.js en un solo contexto WebGL · build ES/CA/EN desde JSON · QA automatizada en Chrome headless",
+        "desc": "Seis mundos three.js en un solo contexto WebGL · build ES/CA/EN · QA automatizada",
         "href": "https://github.com/arboledas05/adrianarboledas.github.io",
         "linkLabel": "Ver el código ↗",
         "live": "github.com/arboledas05",
@@ -354,25 +342,25 @@
     ],
     "cap": "Web que he hecho",
     "live": "LIVE",
-    "stack": "Hechas con Astro, React, Tailwind CSS, TypeScript, GSAP, Three.js y Lenis · multilingües, SEO, rendimiento."
+    "stack": "Con Astro, React, TypeScript, Tailwind CSS, GSAP, Three.js y Lenis."
   },
   "deploy": {
     "eyebrow": "02 — Desplegar",
     "h2": "Ahora aprendo a <em>llevarlas a la nube.</em>",
     "course": {
       "h3": "Curso de especialización en Recursos y Servicios en la Nube",
-      "sub": "FP de grado superior · título oficial, nivel 5 del EQF · 41 ECTS · 700 horas",
-      "meta": "Institut Tecnològic de Barcelona (ITB), centro público · oct 2026 – abr 2027 · en curso",
-      "line": "Se imparte con Amazon Web Services (AWS) y OpenNebula, en cinco módulos oficiales (5160–5164): fundamentos cloud, cómputo, bases de datos y almacenamiento, redes y servicios administrados."
+      "sub": "FP de grado superior · título oficial (EQF 5) · 41 ECTS · 700 h",
+      "meta": "Institut Tecnològic de Barcelona (ITB), público · oct 2026 – abr 2027",
+      "line": "Con AWS y OpenNebula: fundamentos cloud, cómputo, bases de datos y almacenamiento, redes y servicios administrados."
     },
-    "takeaway": "Dos proyectos en pareja del curso: un plan de migración a AWS (diseñado y presentado en clase) y una red de tres capas de alta disponibilidad en AWS (nov 2026).",
+    "takeaway": "Dos proyectos en pareja: plan de migración a AWS y red de tres capas (alta disponibilidad).",
     "skillsLink": "Todas las tecnologías cloud, en Competencias →"
   },
   "grow": {
     "eyebrow": "03 — Crecer",
     "h2": "Y luego <em>las hago crecer</em> con datos.",
-    "intro": "Desde abril de 2026, a la vez que estudio, soy el desarrollador web y gestor de Google Ads de una empresa familiar de reformas del área de Barcelona, fundada en 1994. Es mi trabajo actual, a tiempo parcial. Datos de su cuenta de Google Ads:",
-    "footnote": "Fuente: la cuenta de Google Ads de la empresa. Cada dato indica su periodo; los periodos nunca se suman.",
+    "intro": "Mi trabajo actual (a tiempo parcial, desde abr 2026): web y Google Ads de la empresa de reformas de mi familia.",
+    "footnote": "Fuente: su cuenta de Google Ads. Cada dato lleva su periodo; no se suman.",
     "chipsH": "También para esta empresa:",
     "chips": [
       "SEO local + plan de Google Business Profile",
@@ -401,7 +389,6 @@
         "org": "Empresa familiar de reformas · área de Barcelona",
         "date": "abr 2026 – actualidad",
         "tags": [
-          "Tiempo parcial",
           "Compaginado con los estudios"
         ],
         "bullets": [
@@ -409,7 +396,7 @@
             "text": "Creo y mantengo la web de la empresa (Astro, ES/CA/EN, más de 260 páginas, landings por servicio y por municipio) y su medición"
           },
           {
-            "text": "Gestiono la campaña de búsqueda de Google Ads (más de 170 palabras clave negativas, revisión semanal de términos de búsqueda): CTR del 9,3 % frente al ≈6 % del sector de la construcción (21 abr – 27 jul 2026) y 19 contactos de 430 clics (8–23 oct 2026)"
+            "text": "Gestiono la campaña de búsqueda de Google Ads (170+ palabras clave negativas, revisión semanal): CTR 9,3 % frente al ≈6 % del sector de la construcción (21 abr – 27 jul 2026); 19 contactos de 430 clics (8–23 oct 2026)"
           }
         ],
         "more": [
@@ -432,13 +419,11 @@
         ],
         "bullets": [
           {
-            "text": "Trabajé en un equipo Scrum en una app Flutter en producción para un banco español líder (financiación al consumo en el punto de venta), usada en tienda por grandes cadenas: Dart, gestión de estado con GetX y API REST con autenticación y control de errores"
-          },
-          {
-            "text": "Corregí errores de UX complejos en producción en Android e iOS: vistas en horizontal, footers fijos, desbordamientos y el comportamiento del drawer, el teclado y el scroll"
+            "text": "Equipo Scrum en una app Flutter en producción de un banco español líder (crédito en tienda para grandes cadenas): Dart, GetX y API REST con autenticación y control de errores"
           }
         ],
         "more": [
+          "Corregí errores de UX complejos en producción en Android e iOS: vistas en horizontal, footers fijos, desbordamientos y el comportamiento del drawer, el teclado y el scroll",
           "Refactoricé la interfaz para móvil y tablet (MediaQuery, LayoutBuilder)",
           "≈435 horas; sprints de dos semanas con daily stand-ups",
           "Trabajé en un flujo de GitLab con merge requests, revisiones de código e integración continua; Jira y Confluence",
@@ -459,16 +444,14 @@
         ],
         "bullets": [
           {
-            "text": "Proyecto de agencia de dos socios que ofrecía automatizaciones sobre el CRM GoHighLevel a clínicas dentales privadas; creé pipelines, flujos, recordatorios de citas y reactivación de pacientes"
-          },
-          {
-            "text": "Dirigí el marketing y la prospección (Google Ads, Meta Ads y demos), con una demo para una clínica de ortodoncia de Figueres"
+            "text": "Agencia de dos socios: automatizaciones en el CRM GoHighLevel para clínicas dentales (pipelines, flujos, recordatorios de citas, reactivación de pacientes)"
           },
           {
             "text": "Terminó en noviembre de 2026 sin llegar a tener clientes de pago"
           }
         ],
         "more": [
+          "Dirigí el marketing y la prospección (Google Ads, Meta Ads y demos), con una demo para una clínica de ortodoncia de Figueres",
           "También trabajé en IA aplicada y en la web y la marca de la agencia"
         ],
         "link": "",
@@ -486,7 +469,7 @@
         ],
         "bullets": [
           {
-            "text": "Webs multilingües optimizadas para SEO: servicempro.com (empresa de reformas de lujo en Texas, EE. UU.) y la de mi marca de vídeo aéreo"
+            "text": "Webs multilingües con SEO: servicempro.com (reformas de lujo, Texas) y la de mi marca de vídeo aéreo"
           },
           {
             "text": "Astro, React, TypeScript, Tailwind CSS, GSAP, Three.js y Lenis, cuidando el rendimiento"
@@ -538,7 +521,7 @@
             "ev": ""
           },
           {
-            "text": "Dos proyectos en pareja en AWS: plan de migración y red de tres capas de alta disponibilidad (mi parte: presentación, defensa del diseño, monitorización)",
+            "text": "Dos proyectos en pareja en AWS: plan de migración y red de tres capas (mi parte: presentación, defensa del diseño, monitorización)",
             "ev": "itb-nexa"
           }
         ],
@@ -640,13 +623,13 @@
     "legendReal": "▭ ya usada (trabajo o estudios)",
     "legendLearning": "┅ aprendiendo en el ITB",
     "learningSr": "aprendiendo",
-    "code": "El código de esta web es público: mundos en three.js, un pipeline de build multilingüe y herramientas de QA.",
-    "codeLink": "Lo enseño en «Este CV online», en 01 Construir ↑",
+    "code": "Código público:",
+    "codeLink": "«Este CV online» en 01 Construir ↑",
     "cards": [
       {
         "n": "01",
         "title": "Construir",
-        "desc": "Apps y webs: con qué las construyo.",
+        "desc": "Apps y webs.",
         "chips": [
           {
             "label": "Flutter",
@@ -737,7 +720,7 @@
       {
         "n": "02",
         "title": "Desplegar",
-        "desc": "Cloud: lo que aprendo en el ITB con proyectos del curso. Examen AWS Cloud Practitioner previsto antes de abril de 2027.",
+        "desc": "Lo que aprendo en el ITB. Examen AWS Cloud Practitioner previsto antes de abril de 2027.",
         "chips": [
           {
             "label": "Amazon EC2",
@@ -824,7 +807,7 @@
       {
         "n": "03",
         "title": "Crecer",
-        "desc": "Marketing y medición en campañas reales.",
+        "desc": "Campañas reales, medidas.",
         "chips": [
           {
             "label": "Google Ads (búsqueda, anuncios adaptables, seguimiento de conversiones)",
@@ -863,7 +846,7 @@
       {
         "n": "04",
         "title": "Fundamentos",
-        "desc": "Datos, herramientas, métodos y sistemas.",
+        "desc": "Datos, herramientas y sistemas.",
         "chips": [
           {
             "label": "SQL",
@@ -940,11 +923,11 @@
     "how": [
       {
         "k": "Trabajo en equipo",
-        "v": "un equipo Scrum durante las prácticas en Accenture; proyectos en pareja en el ITB"
+        "v": "Scrum en las prácticas de Accenture; proyectos en pareja en el ITB"
       },
       {
         "k": "Comunicación",
-        "v": "llamadas y demos con clientes potenciales (Growlityc); una exposición de 10 minutos en clase sobre el plan de migración a AWS, con un compañero"
+        "v": "demos con clientes potenciales; exposición en pareja (10 min) del plan de migración a AWS"
       },
       {
         "k": "Responsabilidad",
@@ -956,7 +939,7 @@
       },
       {
         "k": "Resolución de problemas",
-        "v": "encontré y corregí el error de CSP que bloqueaba las conversiones; corregí errores de UX en producción"
+        "v": "el bloqueo de CSP en las conversiones; bugs de UX en producción"
       },
       {
         "k": "Adaptabilidad y aprendizaje rápido",
@@ -964,7 +947,7 @@
       },
       {
         "k": "Organización",
-        "v": "compagino el curso del ITB con un trabajo a tiempo parcial"
+        "v": "curso del ITB + trabajo a tiempo parcial"
       }
     ],
     "langsH": "Idiomas",
@@ -1021,7 +1004,7 @@
   "drone": {
     "eyebrow": "Más allá del código",
     "h2": "Lejos del teclado, <em>vuelo.</em>",
-    "body": "Piloto de dron certificado por AESA, la Agencia Estatal de Seguridad Aérea, en las categorías A1, A2 y A3. Grabo vídeo aéreo con mi propia marca, ElevvaVisuals.",
+    "body": "Piloto de dron certificado por AESA (A1, A2 y A3). Grabo vídeo aéreo con mi marca, ElevvaVisuals.",
     "link": "https://elevvavisuals.com/",
     "linkLabel": "elevvavisuals.com ↗",
     "live": "LIVE",
@@ -1034,28 +1017,28 @@
   "europe": {
     "eyebrow": "04 — Destino",
     "h2": "Próximo destino: <em>Barcelona</em>, o en remoto.",
-    "lead": "Busco prácticas o un puesto junior como desarrollador de software (Flutter, web) o en infraestructura cloud. Mi primera opción es Barcelona: presencial, híbrido o en remoto. También me interesan puestos en remoto en el resto de España, Europa y América, y el traslado se puede hablar. Trabajo en inglés (C1), castellano y catalán.",
+    "lead": "Prácticas o puesto junior en desarrollo de software (Flutter, web) o cloud. Barcelona primero; en remoto, el resto de España, Europa y América (traslado negociable).",
     "status": "Estado: media jornada (tardes) ahora · jornada completa desde abril de 2027",
     "bringH": "Qué aporto",
     "bring": [
       "Desarrollo Flutter y web llevado a producción",
-      "Fundamentos de cloud en AWS con dos proyectos del curso",
+      "Base de cloud en AWS (dos proyectos del curso)",
       "Google Ads y analítica con resultados medidos",
-      "Trabajo en equipo: un equipo Scrum en las prácticas de Accenture y proyectos en pareja en el ITB"
+      "Equipo Scrum en las prácticas de Accenture y proyectos en pareja en el ITB"
     ],
     "learnH": "Qué quiero aprender",
-    "learn": "Cómo un equipo profesional desarrolla y mantiene apps (Flutter, web) en producción, y cómo gestiona servicios cloud con infraestructura como código (por ejemplo, CloudFormation), seguros y con el coste bajo control.",
+    "learn": "Cómo un equipo profesional mantiene apps en producción y gestiona cloud con infraestructura como código, seguro y con el coste controlado.",
     "placesH": "Lugares del mapa",
     "places": [
       {
         "id": "mollet",
         "name": "Barcelona",
-        "line": "casa y primera opción para trabajar · el ITB, las prácticas en Accenture, mi trabajo actual a tiempo parcial"
+        "line": "casa y primera opción · ITB, prácticas en Accenture y mi trabajo actual"
       },
       {
         "id": "ireland",
         "name": "Irlanda · eu-west-1",
-        "line": "la región de AWS de mi plan de migración (proyecto del curso)"
+        "line": "región de AWS de mi plan de migración"
       },
       {
         "id": "texas",
@@ -1064,25 +1047,25 @@
       },
       {
         "id": "eu",
-        "name": "? · Europa",
-        "line": "¿tu empresa?"
+        "name": "¿tu empresa? · Europa",
+        "line": "un pin libre: deja el tuyo"
       },
       {
         "id": "am",
-        "name": "? · América",
-        "line": "¿tu empresa?"
+        "name": "¿tu empresa? · América",
+        "line": "un pin libre: deja el tuyo"
       }
     ],
     "pins": {
       "mollet": {
         "label": "Barcelona",
         "name": "Barcelona",
-        "line": "casa y primera opción para trabajar · el ITB, las prácticas en Accenture, mi trabajo actual a tiempo parcial"
+        "line": "casa y primera opción · ITB, prácticas en Accenture y mi trabajo actual"
       },
       "ireland": {
         "label": "Irlanda",
         "name": "Irlanda · eu-west-1",
-        "line": "la región de AWS de mi plan de migración (proyecto del curso)"
+        "line": "región de AWS de mi plan de migración"
       },
       "texas": {
         "label": "Texas",
@@ -1116,7 +1099,7 @@
   },
   "contact": {
     "h2": "<em>Hablemos.</em>",
-    "sub": "Prácticas o puesto junior en desarrollo de software (Flutter, web) o cloud. Media jornada por las tardes ya; jornada completa desde abril de 2027. Prioridad: Barcelona (presencial, híbrido o remoto); en remoto para el resto de España, Europa y América, con traslado negociable.",
+    "sub": "Prácticas o puesto junior en Flutter, web o cloud. Media jornada ya; completa desde abril de 2027.",
     "copy": "Copiar",
     "mailSubject": "Oportunidad — Adrián Arboledas",
     "copyAria": "Copiar la dirección de email",

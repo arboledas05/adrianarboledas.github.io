@@ -53,14 +53,13 @@
     "csp": {
       "k": "Incidència a producció: conversions perdudes",
       "s1k": "Símptoma",
-      "s1": "Google Ads registrava moltes menys conversions que els contactes que arribaven de debò (set. 2026: 4 conversions registrades davant d'uns 20 contactes reals)",
+      "s1": "Google Ads registrava moltes menys conversions que contactes reals (set. 2026: 4 davant d'uns 20)",
       "s2k": "Causa",
       "s2": "la Content-Security-Policy del web bloquejava el seguiment",
       "s3k": "Solució",
       "s3": "vaig afegir a la política el hash i els orígens que hi faltaven; el seguiment va passar a Consent Mode v2",
       "s4k": "Resultat",
-      "s4": "comprovat en producció: les peticions de conversió passen",
-      "tech": "Ho vaig veure a DevTools: a script-src hi faltaven el hash SHA-256 de l'script en línia i googletagmanager.com; després, a connect-src hi faltaven els endpoints de conversió de Google (pagead2.googlesyndication.com, www.google.com, ad.doubleclick.net).",
+      "s4": "comprovat en producció: les peticions de conversió passen",
       "before": "Abans",
       "after": "Després",
       "from": "Formulari",
@@ -68,7 +67,7 @@
       "fixed": "política corregida: el seguiment passa",
       "cm": "Consent Mode v2",
       "ga": "Google Ads",
-      "back": "Vaig rastrejar les conversions perdudes fins a la Content-Security-Policy del web, vaig canviar la política perquè el seguiment pogués funcionar i vaig comprovar que les conversions es tornaven a registrar.",
+      "back": "Ho vaig veure a DevTools: a script-src hi faltaven el hash SHA-256 de l'script en línia i googletagmanager.com; després, a connect-src hi faltaven els endpoints de conversió de Google (pagead2.googlesyndication.com, www.google.com, ad.doubleclick.net).",
       "readout": "Incidència: la CSP bloquejava les conversions · resolta"
     },
     "match": {
@@ -84,7 +83,7 @@
       "hl": "Ressalta",
       "hlSvc": "servei",
       "hlTown": "municipi",
-      "cap": "El patró darrere de cada anunci (il·lustratiu, no és un anunci real)",
+      "cap": "Patró il·lustratiu, no és un anunci real",
       "back": "Cada anunci porta a una pàgina de destinació que hi encaixa, així la persona arriba al que buscava. El web té pàgines de destinació per servei i per municipi.",
       "readout": "Coherència: cerca → anunci → pàgina de destinació"
     }

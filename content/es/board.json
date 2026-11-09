@@ -53,14 +53,13 @@
     "csp": {
       "k": "Incidencia en producción: conversiones perdidas",
       "s1k": "Síntoma",
-      "s1": "Google Ads registraba muchas menos conversiones que los contactos que llegaban de verdad (sept 2026: 4 conversiones registradas frente a unos 20 contactos reales)",
+      "s1": "Google Ads registraba muchas menos conversiones que contactos reales (sept 2026: 4 frente a unos 20)",
       "s2k": "Causa",
       "s2": "la Content-Security-Policy de la web bloqueaba el seguimiento",
       "s3k": "Solución",
       "s3": "añadí a la política el hash y los orígenes que faltaban; el seguimiento pasó a Consent Mode v2",
       "s4k": "Resultado",
-      "s4": "comprobado en producción: las peticiones de conversión pasan",
-      "tech": "Lo vi en DevTools: a script-src le faltaban el hash SHA-256 del script en línea y googletagmanager.com; después, a connect-src le faltaban los endpoints de conversión de Google (pagead2.googlesyndication.com, www.google.com, ad.doubleclick.net).",
+      "s4": "comprobado en producción: las peticiones de conversión pasan",
       "before": "Antes",
       "after": "Después",
       "from": "Formulario",
@@ -68,7 +67,7 @@
       "fixed": "política corregida: el seguimiento pasa",
       "cm": "Consent Mode v2",
       "ga": "Google Ads",
-      "back": "Seguí el rastro de las conversiones perdidas hasta dar con la Content-Security-Policy de la web, cambié la política para que el seguimiento funcionara y comprobé que las conversiones volvían a registrarse.",
+      "back": "Lo vi en DevTools: a script-src le faltaban el hash SHA-256 del script en línea y googletagmanager.com; después, a connect-src le faltaban los endpoints de conversión de Google (pagead2.googlesyndication.com, www.google.com, ad.doubleclick.net).",
       "readout": "Incidencia: la CSP bloqueaba las conversiones · resuelta"
     },
     "match": {
@@ -84,7 +83,7 @@
       "hl": "Resaltar",
       "hlSvc": "servicio",
       "hlTown": "municipio",
-      "cap": "El patrón detrás de cada anuncio (ilustrativo, no es un anuncio real)",
+      "cap": "Patrón ilustrativo, no es un anuncio real",
       "back": "Cada anuncio lleva a una página de destino que encaja con él, así la persona aterriza en lo que buscaba. La web tiene páginas de destino por servicio y por municipio.",
       "readout": "Coherencia del mensaje: búsqueda → anuncio → página de destino"
     }

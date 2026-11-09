@@ -1,17 +1,17 @@
 {
   "lab": {
     "_src": "FACTS §2.1 (ITB course projects AP1 module 5160 'Logística Directa', AP01 module 5163 'NexaRetail'). Course projects in a pair, never work experience. Every € is projected. No AZ labels or ports; the only CIDR shown is the VPC's 10.20.0.0/16 (FACTS §11, 7-nov-2026); load balancer, IGW, CI/CD, containers or Terraform. The Auto Scaling demand control is illustrative.",
-    "kicker": "Cloud Lab · my two course projects",
-    "hint": "Select a part of the diagram to inspect it, or run an action.",
+    "kicker": "Cloud Lab · my two pair projects",
+    "hint": "Pick a part or run an action.",
     "tabs": "Course projects",
     "tNexa": "NexaRetail",
     "tNexaS": "three-tier network",
     "tLd": "Logística Directa",
     "tLdS": "migration plan",
     "insp": "Inspector",
-    "inspIdle": "Select a part of the diagram to see what it does.",
+    "inspIdle": "Here you’ll see what each part does.",
     "cons": "Console",
-    "consIdle": "Run an action: each step appears here.",
+    "consIdle": "Each step shows up here.",
     "acts": "Actions",
     "factsH": "In short",
     "nexa": {
@@ -19,9 +19,9 @@
       "chip": "Course project · module 5163 · pair",
       "stProg": "Nov 2026",
       "stDone": "Nov 2026",
-      "tool": "Built in the AWS Management Console, as the brief requires; the pair's optional extra is a CloudFormation template (Infrastructure as Code), written by my partner.",
-      "toolDone": "Built in the AWS Management Console, as the brief requires; the pair's optional extra is a CloudFormation template (Infrastructure as Code), written by my partner.",
-      "part": "<b>My part:</b> the design defence (9 case questions on security, maintenance, audit and cost) and a monitoring and audit demo in my own AWS Learner Lab with CloudTrail, CloudWatch, AWS Config and VPC Reachability Analyzer.",
+      "tool": "Built in the AWS console, as the brief requires; my partner added a CloudFormation template as an extra.",
+      "toolDone": "Built in the AWS console, as the brief requires; my partner added a CloudFormation template as an extra.",
+      "part": "<b>My part:</b> design defence (9 case questions) and a monitoring and audit demo in my AWS Learner Lab: CloudTrail, CloudWatch, AWS Config, VPC Reachability Analyzer.",
       "svgT": "NexaRetail network diagram",
       "svgD": "A VPC on AWS with a web tier in a public subnet, an app tier and a data tier in private subnets, security groups between the tiers, and a NAT for outbound OS updates.",
       "internet": "Internet",
@@ -54,16 +54,16 @@
         "A NAT lets the private tiers download OS updates, outbound only. Nothing can reach them from the internet."
       ],
       "facts": [
-        "One VPC (10.20.0.0/16) with three tiers (web, app and data) across two Availability Zones",
-        "Two subnets per tier: public for the web tier, private for the app and data tiers (one per Availability Zone; the diagram is simplified)",
-        "A security group per tier controls which tier can talk to which, and every resource is tagged",
-        "A NAT, so the private tiers can only go out to the internet for OS updates"
+        "VPC 10.20.0.0/16 with three tiers (web, app, data) across two Availability Zones",
+        "Public subnets for web, private ones for app and data, one per zone (diagram simplified)",
+        "One security group per tier; every resource tagged",
+        "NAT: the private tiers only go out for OS updates"
       ]
     },
     "ld": {
       "h": "Logística Directa S.A. · a migration plan to AWS",
-      "chip": "Course project · module 5160 · pair · designed and presented in class (10-minute talk, 16 slides)",
-      "case": "A plan for a case-study company: all costs are projections.",
+      "chip": "Course project · module 5160 · pair · presented in class (10-min talk, 16 slides)",
+      "case": "Case-study company: all costs are projections.",
       "part": "<b>My part:</b> co-author of the written plan; in the talk I presented the problem, the context and the conclusions (cost and payback).",
       "svgT": "Logística Directa migration diagram",
       "svgD": "An on-premises data centre linked to AWS in eu-west-1 (Ireland) in a hybrid model; EC2 Auto Scaling from 2 to 10 instances; RDS Multi-AZ with a primary and a standby database; AWS DMS copying the data; the cutover over one weekend.",
@@ -155,7 +155,7 @@
     },
     "mods": {
       "h": "Course modules",
-      "cap": "Where each module shows up in the course projects",
+      "cap": "where each one shows up",
       "aria": "Highlight a module in the diagram"
     },
     "m": {
